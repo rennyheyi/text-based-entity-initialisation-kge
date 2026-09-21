@@ -1,0 +1,152 @@
+{
+  "schema_version": 1,
+  "status": "official_claims_frozen_pending_official_design",
+  "official_result": false,
+  "approved_by_protocol_owner": true,
+  "approval_date": "2026-08-05",
+  "protocol_sha256": "98d2eeb474d22beb703a8edd073996dda23fb5f772d71f9d7fb4244ecaa0e1dc",
+  "protocol_amendment_001_sha256": "def04a542dcc51195825f1855cfa14f51986c9c9bfbd8ac0f9d264885593a18a",
+  "final_hyperparameters_sha256": "4c56649068a80a986a5fec6198c70d97baa7ac6b28bc3a02a5f35e81f9b9b869",
+  "hpo_design_sha256": "3487938ccafb1ad4f7f4a0be037a717ce8b8769606bb652d1ccdc66250f1bb93",
+  "information_boundary": {
+    "test_data_accessed": false,
+    "correct_text_results_accessed": false,
+    "shuffled_text_results_accessed": false,
+    "random_hpo_validation_results_accessed": true,
+    "random_hpo_results_used_to_set_sesoi_or_guardrail": false
+  },
+  "units": {
+    "datasets": [
+      "FB15k-237",
+      "WN18RR",
+      "CoDEx-M"
+    ],
+    "models": [
+      "TransE",
+      "DistMult"
+    ],
+    "analysis_level": "separate_dataset_model_unit"
+  },
+  "primary_contrasts": [
+    {
+      "contrast_id": "correct_text_vs_random",
+      "condition": "correct_text",
+      "control": "random"
+    },
+    {
+      "contrast_id": "correct_text_vs_shuffled_text",
+      "condition": "correct_text",
+      "control": "shuffled_text"
+    }
+  ],
+  "secondary_mechanistic_contrast": {
+    "contrast_id": "shuffled_text_vs_random",
+    "condition": "shuffled_text",
+    "control": "random",
+    "directional_hypothesis": false
+  },
+  "directional_hypotheses": [
+    {
+      "hypothesis_id": "H-RANK-RANDOM",
+      "contrast_id": "correct_text_vs_random",
+      "metric": "combined_filtered_test_mrr",
+      "direction": "higher"
+    },
+    {
+      "hypothesis_id": "H-RANK-SHUFFLED",
+      "contrast_id": "correct_text_vs_shuffled_text",
+      "metric": "combined_filtered_test_mrr",
+      "direction": "higher"
+    },
+    {
+      "hypothesis_id": "H-NLL-RANDOM",
+      "contrast_id": "correct_text_vs_random",
+      "metric": "calibrated_test_multiclass_nll",
+      "direction": "lower"
+    },
+    {
+      "hypothesis_id": "H-NLL-SHUFFLED",
+      "contrast_id": "correct_text_vs_shuffled_text",
+      "metric": "calibrated_test_multiclass_nll",
+      "direction": "lower"
+    },
+    {
+      "hypothesis_id": "H-EAURC-RANDOM",
+      "contrast_id": "correct_text_vs_random",
+      "metric": "calibrated_test_eaurc",
+      "direction": "lower"
+    },
+    {
+      "hypothesis_id": "H-EAURC-SHUFFLED",
+      "contrast_id": "correct_text_vs_shuffled_text",
+      "metric": "calibrated_test_eaurc",
+      "direction": "lower"
+    }
+  ],
+  "confirmatory_testing": {
+    "paired_unit": "official_training_seed",
+    "replicates_per_unit": 5,
+    "test": "two_sided_paired_t_test",
+    "familywise_alpha": 0.05,
+    "multiplicity_adjustment": "Holm",
+    "families": [
+      "correct_text_vs_random__combined_filtered_test_mrr",
+      "correct_text_vs_shuffled_text__combined_filtered_test_mrr",
+      "correct_text_vs_random__calibrated_test_multiclass_nll",
+      "correct_text_vs_shuffled_text__calibrated_test_multiclass_nll",
+      "correct_text_vs_random__calibrated_test_eaurc",
+      "correct_text_vs_shuffled_text__calibrated_test_eaurc"
+    ],
+    "tests_per_family": 6
+  },
+  "smallest_effects_of_interest": {
+    "calibrated_test_multiclass_nll": {
+      "status": "not_numerically_defined",
+      "reason": "No transferable minimum important difference is established for temperature-calibrated filtered KGE NLL; no threshold was derived from HPO or official outcomes."
+    },
+    "calibrated_test_eaurc": {
+      "status": "not_numerically_defined",
+      "reason": "No transferable minimum important difference is established for filtered KGE E-AURC; no threshold was derived from HPO or official outcomes."
+    }
+  },
+  "mrr_accuracy_guardrail": {
+    "metric": "combined_filtered_test_mrr",
+    "paired_difference": "condition_minus_control",
+    "minimum_acceptable_mean_difference": -0.01,
+    "scale": "absolute_mrr",
+    "scope": "each_primary_contrast_within_each_dataset_model_unit",
+    "interpretation": "investigator_defined_accuracy_uncertainty_tradeoff_boundary",
+    "does_not_establish": [
+      "equivalence",
+      "non_inferiority"
+    ]
+  },
+  "claim_language": {
+    "supported_uncertainty_improvement_permitted": false,
+    "permitted_primary_categories": [
+      "directionally consistent evidence",
+      "partial evidence",
+      "mixed evidence",
+      "no primary evidence"
+    ],
+    "accuracy_uncertainty_tradeoff_required_when": "Primary uncertainty outcomes improve but mean paired MRR difference is below -0.01."
+  },
+  "literature_basis": [
+    {
+      "citation": "Xie et al. (2016), Representation Learning of Knowledge Graphs with Entity Descriptions",
+      "identifier": "doi:10.1609/aaai.v30i1.10329"
+    },
+    {
+      "citation": "Yao et al. (2019), KG-BERT: BERT for Knowledge Graph Completion",
+      "identifier": "arXiv:1909.03193"
+    },
+    {
+      "citation": "Guo et al. (2017), On Calibration of Modern Neural Networks",
+      "identifier": "PMLR:70:1321-1330"
+    },
+    {
+      "citation": "Ding et al. (2020), Revisiting the Evaluation of Uncertainty Estimation and Its Application to Explore Model Complexity-Uncertainty Trade-Off",
+      "identifier": "doi:10.1109/CVPRW50498.2020.00010"
+    }
+  ]
+}

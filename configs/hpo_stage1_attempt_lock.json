@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "status": "hpo_stage_1_attempts_frozen_pending_selection",
+  "official_result": false,
+  "test_data_accessed": false,
+  "text_conditions_accessed": false,
+  "protocol_sha256": "98d2eeb474d22beb703a8edd073996dda23fb5f772d71f9d7fb4244ecaa0e1dc",
+  "hpo_design_sha256": "3487938ccafb1ad4f7f4a0be037a717ce8b8769606bb652d1ccdc66250f1bb93",
+  "canonical_attempt_ranges": [
+    {
+      "array_job_id": "440726",
+      "first_array_index": 0,
+      "last_array_index": 0
+    },
+    {
+      "array_job_id": "440727",
+      "first_array_index": 1,
+      "last_array_index": 71
+    }
+  ],
+  "excluded_attempts": [
+    {
+      "array_job_id": "440798",
+      "array_index": 0,
+      "reason": "Accidental duplicate submitted after the canonical 72 Stage 1 reports had completed and been downloaded for completeness checking; excluded regardless of its metric value."
+    }
+  ],
+  "selection_rule": "Only the exact canonical array-job and array-index pairs listed above may contribute to Stage 1 ranking. Every listed excluded attempt remains preserved in the audit trail and must not influence selection."
+}

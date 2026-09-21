@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "text-based-entity-initialisation-kge"
+version = "1.0.0"
+description = "Auditable experiments for text-based entity initialisation in knowledge graph link prediction"
+readme = "README.md"
+requires-python = "==3.10.*"
+authors = [
+  {name = "Renyi Xu"}
+]
+dependencies = [
+  "numpy==2.2.6",
+  "scipy==1.17.0",
+  "torch==2.12.1",
+  "sentence-transformers==5.6.0",
+  "transformers==5.12.1",
+]
+
+[project.optional-dependencies]
+figures = ["matplotlib>=3.9,<4"]
+
+[tool.setuptools.packages.find]
+where = ["src"]

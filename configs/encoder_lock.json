@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "status": "frozen_text_encoder_configuration",
+  "protocol_sha256": "98d2eeb474d22beb703a8edd073996dda23fb5f772d71f9d7fb4244ecaa0e1dc",
+  "model": {
+    "repo_id": "sentence-transformers/all-MiniLM-L6-v2",
+    "revision": "c9745ed1d9f207416be6d2e6f8de32d1f16199bf",
+    "source_url": "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/commit/c9745ed1d9f207416be6d2e6f8de32d1f16199bf",
+    "trust_remote_code": false,
+    "required_files": [
+      "1_Pooling/config.json",
+      "config.json",
+      "config_sentence_transformers.json",
+      "model.safetensors",
+      "modules.json",
+      "sentence_bert_config.json",
+      "special_tokens_map.json",
+      "tokenizer.json",
+      "tokenizer_config.json",
+      "vocab.txt"
+    ]
+  },
+  "runtime": {
+    "device": "cuda",
+    "batch_size": 256,
+    "embedding_dimension": 384,
+    "raw_dtype": "float32",
+    "maximum_sequence_length": 256,
+    "truncation": true,
+    "pooling": "mean_tokens",
+    "normalise_during_encoding": false,
+    "post_encoding_l2_normalisation": true,
+    "minimum_raw_norm": 1e-12,
+    "unit_norm_absolute_tolerance": 1e-6
+  },
+  "environment": {
+    "python": "3.10.20",
+    "numpy": "2.2.6",
+    "sentence-transformers": "5.6.0",
+    "torch": "2.12.1",
+    "torch_runtime": "2.12.1+cu130",
+    "transformers": "5.12.1"
+  }
+}

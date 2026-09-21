@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "status": "pinned_dataset_materialization_plan",
+  "mapping_rule": {
+    "entities": "zero-based lexicographic order over the train-valid-test union",
+    "relations": "zero-based lexicographic order over the train-valid-test union"
+  },
+  "datasets": [
+    {
+      "name": "FB15k-237",
+      "expected": {
+        "train_rows": 272115,
+        "valid_rows": 17535,
+        "test_rows": 20466,
+        "entities": 14541,
+        "relations": 237
+      },
+      "canonical": {
+        "source_id": "fb15k237_microsoft_benchmark",
+        "splits": {
+          "train": {"label": "FB15K-237.2.zip", "archive_member": "Release/train.txt"},
+          "valid": {"label": "FB15K-237.2.zip", "archive_member": "Release/valid.txt"},
+          "test": {"label": "FB15K-237.2.zip", "archive_member": "Release/test.txt"}
+        }
+      },
+      "crosschecks": [
+        {
+          "source_id": "fb15k237_conve_mirror",
+          "splits": {
+            "train": {"repository_path": "FB15k-237.tar.gz", "archive_member": "train.txt"},
+            "valid": {"repository_path": "FB15k-237.tar.gz", "archive_member": "valid.txt"},
+            "test": {"repository_path": "FB15k-237.tar.gz", "archive_member": "test.txt"}
+          }
+        },
+        {
+          "source_id": "fb15k237_kgbert_evidence",
+          "splits": {
+            "train": {"repository_path": "data/FB15k-237/train.tsv"},
+            "valid": {"repository_path": "data/FB15k-237/dev.tsv"},
+            "test": {"repository_path": "data/FB15k-237/test.tsv"}
+          }
+        }
+      ]
+    },
+    {
+      "name": "WN18RR",
+      "expected": {
+        "train_rows": 86835,
+        "valid_rows": 3034,
+        "test_rows": 3134,
+        "entities": 40943,
+        "relations": 11
+      },
+      "canonical": {
+        "source_id": "wn18rr_figshare_benchmark",
+        "splits": {
+          "train": {"label": "WN18RR.zip", "archive_member": "WN18RR/train.txt"},
+          "valid": {"label": "WN18RR.zip", "archive_member": "WN18RR/valid.txt"},
+          "test": {"label": "WN18RR.zip", "archive_member": "WN18RR/test.txt"}
+        }
+      },
+      "crosschecks": [
+        {
+          "source_id": "wn18rr_conve_mirror",
+          "splits": {
+            "train": {"repository_path": "WN18RR.tar.gz", "archive_member": "train.txt"},
+            "valid": {"repository_path": "WN18RR.tar.gz", "archive_member": "valid.txt"},
+            "test": {"repository_path": "WN18RR.tar.gz", "archive_member": "test.txt"}
+          }
+        },
+        {
+          "source_id": "wn18rr_kgbert_mapping",
+          "splits": {
+            "train": {"repository_path": "data/WN18RR/train.tsv"},
+            "valid": {"repository_path": "data/WN18RR/dev.tsv"},
+            "test": {"repository_path": "data/WN18RR/test.tsv"}
+          }
+        }
+      ]
+    },
+    {
+      "name": "CoDEx-M",
+      "expected": {
+        "train_rows": 185584,
+        "valid_rows": 10310,
+        "test_rows": 10311,
+        "entities": 17050,
+        "relations": 51
+      },
+      "canonical": {
+        "source_id": "codex_m_official",
+        "splits": {
+          "train": {"repository_path": "data/triples/codex-m/train.txt"},
+          "valid": {"repository_path": "data/triples/codex-m/valid.txt"},
+          "test": {"repository_path": "data/triples/codex-m/test.txt"}
+        }
+      },
+      "crosschecks": []
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "status": "hpo_stage_2_attempts_frozen_pending_selection",
+  "official_result": false,
+  "test_data_accessed": false,
+  "text_conditions_accessed": false,
+  "protocol_sha256": "98d2eeb474d22beb703a8edd073996dda23fb5f772d71f9d7fb4244ecaa0e1dc",
+  "source_hpo_design_sha256": "3487938ccafb1ad4f7f4a0be037a717ce8b8769606bb652d1ccdc66250f1bb93",
+  "stage_2_design_sha256": "f28776481ecff19142f8174245c4ab11b95aeaeffd74f11188c827e41848ffd9",
+  "canonical_attempt_ranges": [
+    {
+      "array_job_id": "440800",
+      "first_array_index": 0,
+      "last_array_index": 0
+    },
+    {
+      "array_job_id": "440801",
+      "first_array_index": 1,
+      "last_array_index": 47
+    }
+  ],
+  "excluded_completed_attempt_ranges": [
+    {
+      "array_job_id": "440859",
+      "first_array_index": 1,
+      "last_array_index": 7,
+      "reason": "Accidental duplicate Stage 2 array submitted after the canonical 48 Stage 2 reports had completed; excluded regardless of metric values."
+    }
+  ],
+  "cancelled_duplicate_submission": {
+    "array_job_id": "440859",
+    "requested_first_array_index": 1,
+    "requested_last_array_index": 47,
+    "maximum_concurrent_tasks": 2,
+    "completed_report_indices": [1, 2, 3, 4, 5, 6, 7],
+    "cancelled_running_indices_without_reports": [8, 9],
+    "cancelled_pending_ranges_without_reports": [
+      {
+        "first_array_index": 10,
+        "last_array_index": 47
+      }
+    ],
+    "reason": "The duplicate array was cancelled immediately after its identity was established. Completed duplicate reports and all available logs remain preserved; cancelled and never-started tasks produced no result reports."
+  },
+  "selection_rule": "Only the exact canonical array-job and array-index pairs listed above may contribute to Stage 2 ranking. Completed duplicate attempts remain preserved in the audit trail and must not influence selection. Cancelled duplicate tasks without result reports are recorded but are not treated as failed canonical trajectories."
+}

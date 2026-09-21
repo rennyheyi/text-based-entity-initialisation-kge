@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "status": "official_evaluation_procedure_frozen_pending_validation_calibration",
+  "official_result": false,
+  "test_data_accessed": false,
+  "inputs": {
+    "official_experiment_design_sha256": "48a82e2bf835942f1d76ec40ce0b9b52499aa3a0c16f40ab31c04652215a6ee5",
+    "official_checkpoint_lock_sha256": "220e4dd3d74a7a3699a32c64fd763f99b6af97dbcf9d1fedbd2ddebbe27f7a86",
+    "protocol_sha256": "98d2eeb474d22beb703a8edd073996dda23fb5f772d71f9d7fb4244ecaa0e1dc",
+    "protocol_amendment_001_sha256": "def04a542dcc51195825f1855cfa14f51986c9c9bfbd8ac0f9d264885593a18a",
+    "official_claims_lock_sha256": "b9c95461918502934ae43d5b17261361c98e400909658821ee1293e4d694174e"
+  },
+  "scoring": {
+    "higher_scores_are_more_plausible": true,
+    "candidate_score_dtype": "float32",
+    "candidate_vocabulary": "complete_frozen_dataset_vocabulary",
+    "query_batch_size": 32,
+    "candidate_chunk_size": 4096,
+    "tie_detection": "exact_float32_equality",
+    "realistic_rank": "1 + strictly_greater + 0.5 * exactly_equal_other",
+    "top_label_tie_break": "smallest_canonical_entity_index"
+  },
+  "filtering": {
+    "validation": [
+      "train",
+      "validation"
+    ],
+    "test": [
+      "train",
+      "validation",
+      "test"
+    ],
+    "target_always_restored": true,
+    "test_excluded_from_validation_filtering": true
+  },
+  "temperature_scaling": {
+    "scope": "one_global_temperature_per_official_run_jointly_over_head_and_tail_validation_queries",
+    "objective": "mean_filtered_multiclass_validation_nll",
+    "parameterisation": "natural_log_temperature",
+    "temperature_lower_bound": 0.001,
+    "temperature_upper_bound": 1000.0,
+    "optimiser": "scipy.optimize.minimize_scalar_bounded",
+    "xatol_log_temperature": 1e-06,
+    "maximum_iterations": 100,
+    "boundary_objectives_evaluated_explicitly": true,
+    "objective_reduction_dtype": "float64",
+    "test_queries_used_for_fitting": false
+  },
+  "probabilities": {
+    "raw_temperature": 1.0,
+    "calibrated_temperature_source": "validation_fitted_official_run_temperature",
+    "normalisation": "stable_filtered_log_sum_exp",
+    "reduction_dtype": "float64"
+  },
+  "metrics": {
+    "ranking": [
+      "mrr",
+      "hits_at_1",
+      "hits_at_3",
+      "hits_at_10"
+    ],
+    "primary_uncertainty": [
+      "calibrated_multiclass_nll",
+      "calibrated_eaurc"
+    ],
+    "secondary_uncertainty": [
+      "raw_multiclass_nll",
+      "raw_ece",
+      "calibrated_ece",
+      "raw_top_label_brier",
+      "calibrated_top_label_brier",
+      "raw_auroc",
+      "calibrated_auroc",
+      "raw_aurc",
+      "calibrated_aurc",
+      "raw_eaurc",
+      "raw_normalised_entropy",
+      "calibrated_normalised_entropy",
+      "fitted_temperature"
+    ],
+    "ece_bins": 15,
+    "ece_bin_rule": "left_closed_right_open_final_bin_includes_one",
+    "risk_coverage_tie_break": "deterministic_query_identifier"
+  },
+  "calibration_outputs": {
+    "reports": 90,
+    "test_data_accessed": false,
+    "freeze_before_test_evaluation": true
+  }
+}

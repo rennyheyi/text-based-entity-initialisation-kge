@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "status": "development_training_smoke_configuration",
+  "official_result": false,
+  "dataset": "FB15k-237",
+  "models": ["TransE", "DistMult"],
+  "conditions": ["random", "correct_text", "shuffled_text"],
+  "selection": {
+    "most_frequent_training_entities": 500,
+    "additional_training_unseen_entities": 1,
+    "maximum_positive_training_triples": 8192,
+    "maximum_validation_triples": 100
+  },
+  "training": {
+    "epochs": 3,
+    "batch_size": 256,
+    "negatives_per_positive": 16,
+    "learning_rate": 0.001,
+    "regularisation_coefficient": 0.001,
+    "transe_distance_norm": 1,
+    "maximum_negative_sampling_attempts": 1000,
+    "adam_beta1": 0.9,
+    "adam_beta2": 0.999,
+    "adam_epsilon": 1e-8,
+    "weight_decay": 0.0
+  },
+  "shuffle": {
+    "maximum_attempts": 1000
+  },
+  "development_seed_label": "gate-c-training-smoke-v1"
+}

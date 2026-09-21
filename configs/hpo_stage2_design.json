@@ -1,0 +1,1050 @@
+{
+  "advance": 2,
+  "epochs": 75,
+  "fixed_training": {
+    "adam_beta1": 0.9,
+    "adam_beta2": 0.999,
+    "adam_epsilon": 1e-08,
+    "entity_embedding_dimension": 384,
+    "initialisation_condition": "random",
+    "negative_sampler": "uniform_single_side_train_seen_reject_train_truth",
+    "objective": "mean_softplus_negative_minus_positive",
+    "optimiser": "Adam",
+    "relation_embedding_dimension": 384,
+    "weight_decay": 0.0
+  },
+  "official_result": false,
+  "protocol_sha256": "98d2eeb474d22beb703a8edd073996dda23fb5f772d71f9d7fb4244ecaa0e1dc",
+  "schema_version": 1,
+  "selection_metric": "mean_combined_filtered_validation_mrr",
+  "source_hpo_design_sha256": "3487938ccafb1ad4f7f4a0be037a717ce8b8769606bb652d1ccdc66250f1bb93",
+  "source_stage_1_attempt_lock_sha256": "dee93cf7da08cff01b1d32dc295bd0bb64770380921b5e2e880f33f564bd5f20",
+  "source_stage_1_report_manifest_sha256": "dc1cddf1b14b4179686b2c0fdb6797fc84cff5a2280855ad3ab21d4dc9f0fa0f",
+  "source_stage_1_runner_git_commit": "0a00b18816cbdaff5433deff7c1a5041af1de66e",
+  "stage": 2,
+  "status": "hpo_stage_2_design_frozen_pending_runs",
+  "test_data_accessed": false,
+  "text_conditions_accessed": false,
+  "tie_breaking": [
+    "smaller_negatives_per_positive",
+    "smaller_batch_size",
+    "lexicographically_smaller_candidate_id"
+  ],
+  "tuning_replicates": [
+    1,
+    2
+  ],
+  "units": [
+    {
+      "advancing_candidates": [
+        {
+          "candidate_configuration_sha256": "ee84eba1056c5a03152d06811c46ea2742cb08ef5bd3b85c8ef4836aa56dfd63",
+          "candidate_id": "fb15k237-transe-c08-ee84eba1056c",
+          "parameters": {
+            "batch_size": 256,
+            "learning_rate": 0.00024641810111778275,
+            "negatives_per_positive": 64,
+            "regularisation_coefficient": 0.0001,
+            "transe_distance_norm": 2
+          },
+          "stage_1_rank": 1,
+          "stage_1_report_sha256": "d55c6f9147c8df6cf496942360c9a1fb5d46218154a5176fe31b235a0c29f6b8",
+          "stage_1_validation_mrr": 0.23080252777736798
+        },
+        {
+          "candidate_configuration_sha256": "062b8c9bf4fb53dc4393c028cf521956fc55261dbe0c7f598db6358718749f9c",
+          "candidate_id": "fb15k237-transe-c11-062b8c9bf4fb",
+          "parameters": {
+            "batch_size": 512,
+            "learning_rate": 0.0005387126265595769,
+            "negatives_per_positive": 1,
+            "regularisation_coefficient": 0.0,
+            "transe_distance_norm": 2
+          },
+          "stage_1_rank": 2,
+          "stage_1_report_sha256": "6c892ea3a81ed3220aec84f3a86d89c504d17c5111e2a1502645567f9e965859",
+          "stage_1_validation_mrr": 0.2120695955229306
+        },
+        {
+          "candidate_configuration_sha256": "eea361c6d497741c6b7dbaf5b00b8cf5987d22eb7923bdd5dbc4d5ece67b3982",
+          "candidate_id": "fb15k237-transe-c07-eea361c6d497",
+          "parameters": {
+            "batch_size": 256,
+            "learning_rate": 0.0012967170784334205,
+            "negatives_per_positive": 1,
+            "regularisation_coefficient": 0.0,
+            "transe_distance_norm": 2
+          },
+          "stage_1_rank": 3,
+          "stage_1_report_sha256": "d4341aab1a549127424ccfccedc3603e5f9496966c60b623cdbed94ab24a9a93",
+          "stage_1_validation_mrr": 0.20932961180918705
+        },
+        {
+          "candidate_configuration_sha256": "a87b12edd1b0f468edb145f044d372144108503b9940395400e27e45b1950a17",
+          "candidate_id": "fb15k237-transe-c12-a87b12edd1b0",
+          "parameters": {
+            "batch_size": 1024,
+            "learning_rate": 0.0002810849326761154,
+            "negatives_per_positive": 16,
+            "regularisation_coefficient": 0.01,
+            "transe_distance_norm": 2
+          },
+          "stage_1_rank": 4,
+          "stage_1_report_sha256": "38d64ce2c06e5b3e54426fb721c549c23bc0f8f1943a16a114a8161efe98e683",
+          "stage_1_validation_mrr": 0.17762110809753295
+        }
+      ],
+      "dataset": "FB15k-237",
+      "model": "TransE",
+      "tuning_stream_derivations": [
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|1|FB15k-237|TransE|random_entity_initialisation",
+          "namespace": "random_entity_initialisation",
+          "replicate": 1,
+          "seed": 4136354639,
+          "sha256": "f68bc34f3e608169ddea2a5147b120d8a09f6c81fad13478262103462b467fbe"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|1|FB15k-237|TransE|relation_initialisation",
+          "namespace": "relation_initialisation",
+          "replicate": 1,
+          "seed": 3918809759,
+          "sha256": "e9944a9f01ea8596a616da1708bcb04f48ad1e71b42fb3c6ebba33a930ae6e2c"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|1|FB15k-237|TransE|batch_order",
+          "namespace": "batch_order",
+          "replicate": 1,
+          "seed": 732465892,
+          "sha256": "2ba88ae4ab1470f228854d2ad195c6b5ead7b2aeeb2e83995ae4d34279431673"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|1|FB15k-237|TransE|negative_sampling",
+          "namespace": "negative_sampling",
+          "replicate": 1,
+          "seed": 3462559640,
+          "sha256": "ce627798066da615ec3fa9b3a76e6ad7d5f43867471100f5da921eaf8625729e"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|1|FB15k-237|TransE|data_loader_workers",
+          "namespace": "data_loader_workers",
+          "replicate": 1,
+          "seed": 3316166937,
+          "sha256": "c5a8b11952373ec1178e394a469c2c0c5fddebebd595271da52daefb80c531da"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|2|FB15k-237|TransE|random_entity_initialisation",
+          "namespace": "random_entity_initialisation",
+          "replicate": 2,
+          "seed": 728102850,
+          "sha256": "2b65f7c299fd14bedc04469bb6eeb055f6def4564ba6b2d4459bd0e0826fac2a"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|2|FB15k-237|TransE|relation_initialisation",
+          "namespace": "relation_initialisation",
+          "replicate": 2,
+          "seed": 2759580395,
+          "sha256": "a47bdaeb390544c3817d59fa006e16770260d9694a64bc3d23daea055d378760"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|2|FB15k-237|TransE|batch_order",
+          "namespace": "batch_order",
+          "replicate": 2,
+          "seed": 3153405573,
+          "sha256": "bbf52685da943399d2095356d57634a76f9eda27d61d09184aa53811dfc2a1e7"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|2|FB15k-237|TransE|negative_sampling",
+          "namespace": "negative_sampling",
+          "replicate": 2,
+          "seed": 4069608897,
+          "sha256": "f2914dc1019c05f002c55d42a48abf402c635de501dd418baf8928a0f69b7151"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|2|FB15k-237|TransE|data_loader_workers",
+          "namespace": "data_loader_workers",
+          "replicate": 2,
+          "seed": 2385093828,
+          "sha256": "8e29a4c440b8d383687f14e75d00f049ef0a0652b81d11caadeaf1cc316bfed0"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|3|FB15k-237|TransE|random_entity_initialisation",
+          "namespace": "random_entity_initialisation",
+          "replicate": 3,
+          "seed": 3137489647,
+          "sha256": "bb024aefdf0c38f635ff1f2641ed332ad6e99326c354f2188e2e0e1917f704fe"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|3|FB15k-237|TransE|relation_initialisation",
+          "namespace": "relation_initialisation",
+          "replicate": 3,
+          "seed": 994694598,
+          "sha256": "3b49d5c604c95de501471ab3fe1f6e583f1152996b2e117594abd182fb9340e5"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|3|FB15k-237|TransE|batch_order",
+          "namespace": "batch_order",
+          "replicate": 3,
+          "seed": 1941831863,
+          "sha256": "73be00b705cbb52fc2ccedb5a8854c890fdd0ba45fe2c544586b285f54781bc7"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|3|FB15k-237|TransE|negative_sampling",
+          "namespace": "negative_sampling",
+          "replicate": 3,
+          "seed": 2180719729,
+          "sha256": "81fb2471de5384dece66042d54891b8f5e8acfb8c2836a300843b42f4b30117c"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|3|FB15k-237|TransE|data_loader_workers",
+          "namespace": "data_loader_workers",
+          "replicate": 3,
+          "seed": 2924836595,
+          "sha256": "ae5576f3fffee5565d984a97c41d66febc94fdf74700f0c06b01e86d44b93211"
+        }
+      ],
+      "unit_id": "fb15k237-transe"
+    },
+    {
+      "advancing_candidates": [
+        {
+          "candidate_configuration_sha256": "633d16a0dbbbc386f1262536978c3e7ef15b088ab6f07b385727402b058e1172",
+          "candidate_id": "fb15k237-distmult-c05-633d16a0dbbb",
+          "parameters": {
+            "batch_size": 512,
+            "learning_rate": 0.0013692783791385294,
+            "negatives_per_positive": 16,
+            "regularisation_coefficient": 0.0001
+          },
+          "stage_1_rank": 1,
+          "stage_1_report_sha256": "53f81fda34d6b0bcd278eb6551f051744ba67a1bd62c776ca73817ca5af10977",
+          "stage_1_validation_mrr": 0.24570753816609128
+        },
+        {
+          "candidate_configuration_sha256": "040d629286961759ef993a1fd23d299303dcb4996eab42d269282e02e038d2a8",
+          "candidate_id": "fb15k237-distmult-c04-040d62928696",
+          "parameters": {
+            "batch_size": 1024,
+            "learning_rate": 0.0002240108993512661,
+            "negatives_per_positive": 64,
+            "regularisation_coefficient": 0.001
+          },
+          "stage_1_rank": 2,
+          "stage_1_report_sha256": "f0e9d2b9cccc9b93f54eab6ec73c67c65281e2e720c3420abe0fea2b38472b70",
+          "stage_1_validation_mrr": 0.235362010421933
+        },
+        {
+          "candidate_configuration_sha256": "594bffc0a2011c10d61a56ef1f27aa1371d80bdc338a5de9891a67e6d3a33a24",
+          "candidate_id": "fb15k237-distmult-c09-594bffc0a201",
+          "parameters": {
+            "batch_size": 256,
+            "learning_rate": 0.00010984416798594875,
+            "negatives_per_positive": 16,
+            "regularisation_coefficient": 0.001
+          },
+          "stage_1_rank": 3,
+          "stage_1_report_sha256": "c717b17a0460ac52eafa57aadc1a1cbb03e2be2eff2a343cb67b3ef4e1b34fd9",
+          "stage_1_validation_mrr": 0.2288445429870924
+        },
+        {
+          "candidate_configuration_sha256": "16e55c8f9b67d8543e61d7d43757b48a919b8a6386ac24ac7b0423462072a742",
+          "candidate_id": "fb15k237-distmult-c08-16e55c8f9b67",
+          "parameters": {
+            "batch_size": 512,
+            "learning_rate": 0.00020767451731142994,
+            "negatives_per_positive": 1,
+            "regularisation_coefficient": 0.001
+          },
+          "stage_1_rank": 4,
+          "stage_1_report_sha256": "ac4dc51320cf0544492181b25fc49202f7cb5ef93c4d887e4a363e2b525945e6",
+          "stage_1_validation_mrr": 0.22565306440652005
+        }
+      ],
+      "dataset": "FB15k-237",
+      "model": "DistMult",
+      "tuning_stream_derivations": [
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|1|FB15k-237|DistMult|random_entity_initialisation",
+          "namespace": "random_entity_initialisation",
+          "replicate": 1,
+          "seed": 2371994489,
+          "sha256": "8d61c379d0edb7d7fd6a9555d8bea1828241488e7c39edf83721d82d323cdaed"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|1|FB15k-237|DistMult|relation_initialisation",
+          "namespace": "relation_initialisation",
+          "replicate": 1,
+          "seed": 1625862924,
+          "sha256": "60e8b30c26ecb6cc8565e2ec4e685734a40b31fd2cc2c6ca6db9083e02fa238d"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|1|FB15k-237|DistMult|batch_order",
+          "namespace": "batch_order",
+          "replicate": 1,
+          "seed": 419338183,
+          "sha256": "18fe97c706c9516b27409ed7e5db9493c163dc793add4766fd4caa0411a5b896"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|1|FB15k-237|DistMult|negative_sampling",
+          "namespace": "negative_sampling",
+          "replicate": 1,
+          "seed": 3806682434,
+          "sha256": "e2e55d42f250acf25ac6f889e89e159ed68eaca585387f9c909bc56d4bfaa7f2"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|1|FB15k-237|DistMult|data_loader_workers",
+          "namespace": "data_loader_workers",
+          "replicate": 1,
+          "seed": 1107635293,
+          "sha256": "42052c5dfcc9b4f10dafeccaebdaba186c451c4e49eed8a64ea2e6e7c06698a7"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|2|FB15k-237|DistMult|random_entity_initialisation",
+          "namespace": "random_entity_initialisation",
+          "replicate": 2,
+          "seed": 2182462164,
+          "sha256": "8215bad4ab9bfe19cb5b290dec799a7db830619cdfb08ae15400e27f1080dfde"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|2|FB15k-237|DistMult|relation_initialisation",
+          "namespace": "relation_initialisation",
+          "replicate": 2,
+          "seed": 2613144963,
+          "sha256": "9bc16d83559ae1844f101528286f7bc1d9645da4388121b887847d783ad8c459"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|2|FB15k-237|DistMult|batch_order",
+          "namespace": "batch_order",
+          "replicate": 2,
+          "seed": 2420506640,
+          "sha256": "904600105b783954df829d14a8aa5f8d80f6c9389eb7e43989bf364c0ac2c086"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|2|FB15k-237|DistMult|negative_sampling",
+          "namespace": "negative_sampling",
+          "replicate": 2,
+          "seed": 1258483326,
+          "sha256": "4b02ee7eca804771da1859d55044d68a3eb03342b5e59c5a23e6c450f787166e"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|2|FB15k-237|DistMult|data_loader_workers",
+          "namespace": "data_loader_workers",
+          "replicate": 2,
+          "seed": 2755232967,
+          "sha256": "a43984c70be72b6a037fac3e8aa1a5ad9c067bce9b40cb1a03b4f17f5b79f3a2"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|3|FB15k-237|DistMult|random_entity_initialisation",
+          "namespace": "random_entity_initialisation",
+          "replicate": 3,
+          "seed": 1335515677,
+          "sha256": "4f9a5a1d60b63bf7138196170cb9f795b8ca3d3f05b0f5a3c3bb619729becef3"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|3|FB15k-237|DistMult|relation_initialisation",
+          "namespace": "relation_initialisation",
+          "replicate": 3,
+          "seed": 428671907,
+          "sha256": "198d03a30f64a6e134b942e95a1ec9b2bccae4401139e850a6fe02aa8d13e0f0"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|3|FB15k-237|DistMult|batch_order",
+          "namespace": "batch_order",
+          "replicate": 3,
+          "seed": 1230785008,
+          "sha256": "495c49f0af2066e45ab4c8dc57c13ad4fb31e9abfbb273f85e7a2647f6c477aa"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|3|FB15k-237|DistMult|negative_sampling",
+          "namespace": "negative_sampling",
+          "replicate": 3,
+          "seed": 1261243360,
+          "sha256": "4b2d0be0e4c31123b46985f65423bf783157f9771d869feacfd72cb55ac36b61"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|3|FB15k-237|DistMult|data_loader_workers",
+          "namespace": "data_loader_workers",
+          "replicate": 3,
+          "seed": 3478962348,
+          "sha256": "cf5cc0aca0e1feb2d6e8028ee28a706ebf57a47c1fae0a86a4e98d0f054c8e06"
+        }
+      ],
+      "unit_id": "fb15k237-distmult"
+    },
+    {
+      "advancing_candidates": [
+        {
+          "candidate_configuration_sha256": "cbc7bd2fc01626901f4754a0fe5545e339bc28d6df932bf5779939c564c6abbc",
+          "candidate_id": "wn18rr-transe-c11-cbc7bd2fc016",
+          "parameters": {
+            "batch_size": 1024,
+            "learning_rate": 0.0026303653918607808,
+            "negatives_per_positive": 1,
+            "regularisation_coefficient": 0.0,
+            "transe_distance_norm": 2
+          },
+          "stage_1_rank": 1,
+          "stage_1_report_sha256": "c522f3ac1185574eb7fec667c3053429a5f6f7aaabce57b57488c17a43994c3f",
+          "stage_1_validation_mrr": 0.18424802977751964
+        },
+        {
+          "candidate_configuration_sha256": "ac5ba339aa1698ef5b11a5b0bf69d02eb2af83c231706a82fbfbf732dc7c561b",
+          "candidate_id": "wn18rr-transe-c07-ac5ba339aa16",
+          "parameters": {
+            "batch_size": 256,
+            "learning_rate": 0.0007517512008930239,
+            "negatives_per_positive": 64,
+            "regularisation_coefficient": 0.0,
+            "transe_distance_norm": 2
+          },
+          "stage_1_rank": 2,
+          "stage_1_report_sha256": "538d364bfa13ed0148c1126aa99da2b6c2af94e0e6d43cc10484bbd3b9bd4441",
+          "stage_1_validation_mrr": 0.18401019113067185
+        },
+        {
+          "candidate_configuration_sha256": "3c16dd1181ca96d6a14ac1718b5a72134d9379bbb73767e42422b1632ebec79b",
+          "candidate_id": "wn18rr-transe-c09-3c16dd1181ca",
+          "parameters": {
+            "batch_size": 1024,
+            "learning_rate": 0.0006337482521681493,
+            "negatives_per_positive": 16,
+            "regularisation_coefficient": 0.0001,
+            "transe_distance_norm": 2
+          },
+          "stage_1_rank": 3,
+          "stage_1_report_sha256": "84e655f91ce95c69b38ec0669b9699dea60e62bf548ecc81e7b452154447111b",
+          "stage_1_validation_mrr": 0.17168480179187737
+        },
+        {
+          "candidate_configuration_sha256": "65884ecfc933025d31e82a04c4665a86c992c73c71010e23e80312a4a2db7afe",
+          "candidate_id": "wn18rr-transe-c06-65884ecfc933",
+          "parameters": {
+            "batch_size": 256,
+            "learning_rate": 0.0002636113318532488,
+            "negatives_per_positive": 64,
+            "regularisation_coefficient": 0.001,
+            "transe_distance_norm": 1
+          },
+          "stage_1_rank": 4,
+          "stage_1_report_sha256": "1529a955f43714966aa0216622b4a1b50f3acf0ce194fb8105b0d9930eabfee6",
+          "stage_1_validation_mrr": 0.16722427120450528
+        }
+      ],
+      "dataset": "WN18RR",
+      "model": "TransE",
+      "tuning_stream_derivations": [
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|1|WN18RR|TransE|random_entity_initialisation",
+          "namespace": "random_entity_initialisation",
+          "replicate": 1,
+          "seed": 1250344645,
+          "sha256": "4a86bec5ff29a4e9bc7fed5b77a8cc65489c1a0c3d33000feee0eac372ae6551"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|1|WN18RR|TransE|relation_initialisation",
+          "namespace": "relation_initialisation",
+          "replicate": 1,
+          "seed": 2426286463,
+          "sha256": "909e317f0ddbb588691d6d49b1b8f03c8cf9a137e54874f3197c0d9b2cdda3d0"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|1|WN18RR|TransE|batch_order",
+          "namespace": "batch_order",
+          "replicate": 1,
+          "seed": 1855929549,
+          "sha256": "6e9f3ccdd07c1e63fb231caac215f267208e5300f544aaddeab2d014df29a97b"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|1|WN18RR|TransE|negative_sampling",
+          "namespace": "negative_sampling",
+          "replicate": 1,
+          "seed": 1715178070,
+          "sha256": "663b8a567f6b72ae384b1790ab00c6d0dd8cf8c458c8a214fdc4bd227e6e01f1"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|1|WN18RR|TransE|data_loader_workers",
+          "namespace": "data_loader_workers",
+          "replicate": 1,
+          "seed": 1097501187,
+          "sha256": "416a8a03a425619c890daff6ecf519b479867b9f0afd8caa269cf3df07f903f8"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|2|WN18RR|TransE|random_entity_initialisation",
+          "namespace": "random_entity_initialisation",
+          "replicate": 2,
+          "seed": 858917040,
+          "sha256": "333208b0dd10b4197047051ec70ba736cbf4e06ac4f0ad415a1be22b68471f8a"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|2|WN18RR|TransE|relation_initialisation",
+          "namespace": "relation_initialisation",
+          "replicate": 2,
+          "seed": 233054479,
+          "sha256": "0de4210f05c9d34ece6d06c2498f9a4bb75d72a1c144a1c8ba4044ac7d22f6c1"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|2|WN18RR|TransE|batch_order",
+          "namespace": "batch_order",
+          "replicate": 2,
+          "seed": 3989676632,
+          "sha256": "edcda25896119e032ca10d4d5bc104d39687a671ff15dfcbaed311af613aa155"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|2|WN18RR|TransE|negative_sampling",
+          "namespace": "negative_sampling",
+          "replicate": 2,
+          "seed": 174741489,
+          "sha256": "0a6a57f189bb0717c8dd85190d02cf7007d2cd8377206b63f1111b84df26b112"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|2|WN18RR|TransE|data_loader_workers",
+          "namespace": "data_loader_workers",
+          "replicate": 2,
+          "seed": 4119806634,
+          "sha256": "f58f42aaf33eb0c02eef55dddc0095d9c1fb02f966874abbe542080195c5fd14"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|3|WN18RR|TransE|random_entity_initialisation",
+          "namespace": "random_entity_initialisation",
+          "replicate": 3,
+          "seed": 3777235841,
+          "sha256": "e1240b816adb04beb750414c31b19db5eba317e28b9e2ac0dd72670366190454"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|3|WN18RR|TransE|relation_initialisation",
+          "namespace": "relation_initialisation",
+          "replicate": 3,
+          "seed": 451283515,
+          "sha256": "1ae60a3b4f8ad6862055eb85a857c4b5942db8bdd4dc5e26ddb05ce83ad11d84"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|3|WN18RR|TransE|batch_order",
+          "namespace": "batch_order",
+          "replicate": 3,
+          "seed": 1469392163,
+          "sha256": "57952523a1101ca9b8035850c2db44bc7e952a9c2cec9003f4e89196e497d062"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|3|WN18RR|TransE|negative_sampling",
+          "namespace": "negative_sampling",
+          "replicate": 3,
+          "seed": 2863211055,
+          "sha256": "aaa9222f0e7c0e3e294717df53103327e3174b79139abea9a1e098cc01c12a41"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|3|WN18RR|TransE|data_loader_workers",
+          "namespace": "data_loader_workers",
+          "replicate": 3,
+          "seed": 993168845,
+          "sha256": "3b328dcd6b24af300824b29f5d6c29eeb5e544223a8ef3e90a7824d8dee6ee98"
+        }
+      ],
+      "unit_id": "wn18rr-transe"
+    },
+    {
+      "advancing_candidates": [
+        {
+          "candidate_configuration_sha256": "58ff3447a4564b8fef8f0386eb7095ace4d6139c7126d64fbb05b6b9cd7cd02e",
+          "candidate_id": "wn18rr-distmult-c01-58ff3447a456",
+          "parameters": {
+            "batch_size": 512,
+            "learning_rate": 0.0012101268353271399,
+            "negatives_per_positive": 64,
+            "regularisation_coefficient": 0.001
+          },
+          "stage_1_rank": 1,
+          "stage_1_report_sha256": "e58af9aefdbb9b8706cbb77f261297743f919951e320dadb1f7cc92f49ecda77",
+          "stage_1_validation_mrr": 0.41202230614915347
+        },
+        {
+          "candidate_configuration_sha256": "98326bc0e618c7cd2ad96c77430ed3a484d5002edb37d061120fd6cfb0b09294",
+          "candidate_id": "wn18rr-distmult-c08-98326bc0e618",
+          "parameters": {
+            "batch_size": 512,
+            "learning_rate": 0.0006736353063100325,
+            "negatives_per_positive": 64,
+            "regularisation_coefficient": 0.0
+          },
+          "stage_1_rank": 2,
+          "stage_1_report_sha256": "838319c9996162dc200444bc9c2def8a3d80279faafdee7149607127cd8f9f79",
+          "stage_1_validation_mrr": 0.4026857957812008
+        },
+        {
+          "candidate_configuration_sha256": "8ce6e56bb8aacd8f22264850b2460fcb83f1b9163523f56af541652de0d55af5",
+          "candidate_id": "wn18rr-distmult-c11-8ce6e56bb8aa",
+          "parameters": {
+            "batch_size": 256,
+            "learning_rate": 0.0005305795730480443,
+            "negatives_per_positive": 64,
+            "regularisation_coefficient": 0.0
+          },
+          "stage_1_rank": 3,
+          "stage_1_report_sha256": "b613c94646f27949934e16603f39431da37b39a979e17d7bd7199f2941bfd35d",
+          "stage_1_validation_mrr": 0.40181473805612966
+        },
+        {
+          "candidate_configuration_sha256": "8eecd960ae4a2f5b788b40e75c8058701be1fa5bfc35dd8e59feb84887606445",
+          "candidate_id": "wn18rr-distmult-c10-8eecd960ae4a",
+          "parameters": {
+            "batch_size": 512,
+            "learning_rate": 0.0007256015866146469,
+            "negatives_per_positive": 1,
+            "regularisation_coefficient": 0.001
+          },
+          "stage_1_rank": 4,
+          "stage_1_report_sha256": "bc62505eea13e2662da6d7346db25196db29b093231e80003ff36407dee05c9b",
+          "stage_1_validation_mrr": 0.4016696533094561
+        }
+      ],
+      "dataset": "WN18RR",
+      "model": "DistMult",
+      "tuning_stream_derivations": [
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|1|WN18RR|DistMult|random_entity_initialisation",
+          "namespace": "random_entity_initialisation",
+          "replicate": 1,
+          "seed": 768622954,
+          "sha256": "2dd0416ac32b9c463f36a0e74e3cd327e8e4f1908fcc4a1cf8aafff7edebbf09"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|1|WN18RR|DistMult|relation_initialisation",
+          "namespace": "relation_initialisation",
+          "replicate": 1,
+          "seed": 395858766,
+          "sha256": "1798534e23f5c195254cb317d399534b768576a416efb0fb1cf0aec7b762b197"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|1|WN18RR|DistMult|batch_order",
+          "namespace": "batch_order",
+          "replicate": 1,
+          "seed": 1111294663,
+          "sha256": "423d02c78c52019a4d15d14ed8a0e31e1da8b96d4c4806b7b6733858e6b192c6"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|1|WN18RR|DistMult|negative_sampling",
+          "namespace": "negative_sampling",
+          "replicate": 1,
+          "seed": 1292719970,
+          "sha256": "4d0d5762aa355fa424141626bd21a9a8c21bc173ec7e135a70841bcbdf27acb4"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|1|WN18RR|DistMult|data_loader_workers",
+          "namespace": "data_loader_workers",
+          "replicate": 1,
+          "seed": 2783836049,
+          "sha256": "a5edf791f77359009bcc7d402ee057fb7e3b0cdb87badc34dcbac31dfde9efdd"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|2|WN18RR|DistMult|random_entity_initialisation",
+          "namespace": "random_entity_initialisation",
+          "replicate": 2,
+          "seed": 3177678036,
+          "sha256": "bd6784d4f15a6701d5233b2ba3734043ace78ac4213d69f2d64287ef2be161ec"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|2|WN18RR|DistMult|relation_initialisation",
+          "namespace": "relation_initialisation",
+          "replicate": 2,
+          "seed": 574884480,
+          "sha256": "22440a809efa4f1f16ca1d7892d78da8706294fbc6beba52516e4db294bffb7c"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|2|WN18RR|DistMult|batch_order",
+          "namespace": "batch_order",
+          "replicate": 2,
+          "seed": 2882184697,
+          "sha256": "abcaa5f97348744c042fdd127009493be2603e0cc0889f19587debbe198f7816"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|2|WN18RR|DistMult|negative_sampling",
+          "namespace": "negative_sampling",
+          "replicate": 2,
+          "seed": 165134318,
+          "sha256": "09d7bfeee360f3f129dd83dfd49277c41052efc98519e391b25da760304810ec"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|2|WN18RR|DistMult|data_loader_workers",
+          "namespace": "data_loader_workers",
+          "replicate": 2,
+          "seed": 813638794,
+          "sha256": "307f248aaaf193f3afaa600b4db3bc2bc00bce6d11719df1206614ac20759b4a"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|3|WN18RR|DistMult|random_entity_initialisation",
+          "namespace": "random_entity_initialisation",
+          "replicate": 3,
+          "seed": 3745486316,
+          "sha256": "df3f95eca055d484a060de7bec9e362481f4e225d513fc281987dc0322417133"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|3|WN18RR|DistMult|relation_initialisation",
+          "namespace": "relation_initialisation",
+          "replicate": 3,
+          "seed": 2158119662,
+          "sha256": "80a24aee7f13bd9012c4a9feeb3550d1d1452913315b9520963a76fc8716ea0d"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|3|WN18RR|DistMult|batch_order",
+          "namespace": "batch_order",
+          "replicate": 3,
+          "seed": 3376769998,
+          "sha256": "c9456bcebbe407e508550fabe972f620c475f9052ca9ce1145f68da7e8afac85"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|3|WN18RR|DistMult|negative_sampling",
+          "namespace": "negative_sampling",
+          "replicate": 3,
+          "seed": 68166016,
+          "sha256": "0410218061e79a3a61d1b9b81200818a4095245efc6eec462d06386554ae95f8"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|3|WN18RR|DistMult|data_loader_workers",
+          "namespace": "data_loader_workers",
+          "replicate": 3,
+          "seed": 554742343,
+          "sha256": "2110b247bfcc4cbcc5d7262c5332a8d4e77091ca7409e3dccda6d8091734aa75"
+        }
+      ],
+      "unit_id": "wn18rr-distmult"
+    },
+    {
+      "advancing_candidates": [
+        {
+          "candidate_configuration_sha256": "a0a9e0e959c30b1e1505ea46ba3abe23db04cae74a6aecc4dbb6abe37b5ea0fd",
+          "candidate_id": "codexm-transe-c11-a0a9e0e959c3",
+          "parameters": {
+            "batch_size": 1024,
+            "learning_rate": 0.00010204664170299752,
+            "negatives_per_positive": 64,
+            "regularisation_coefficient": 0.0001,
+            "transe_distance_norm": 2
+          },
+          "stage_1_rank": 1,
+          "stage_1_report_sha256": "748739df6082c769920e8840f88cc97e79d931cec0c0d1d2d926fb98ea60fb73",
+          "stage_1_validation_mrr": 0.16708932008292213
+        },
+        {
+          "candidate_configuration_sha256": "5cfaa735cde25f74644d35be4b95474b26bf61d9475d537f77dbd052cb0a0c02",
+          "candidate_id": "codexm-transe-c10-5cfaa735cde2",
+          "parameters": {
+            "batch_size": 256,
+            "learning_rate": 0.00011666183661128273,
+            "negatives_per_positive": 64,
+            "regularisation_coefficient": 0.001,
+            "transe_distance_norm": 2
+          },
+          "stage_1_rank": 2,
+          "stage_1_report_sha256": "c0a23ce4853082ff1bc0a5b765d9e8312e9da6e20a445d0b13a72fe87c07c979",
+          "stage_1_validation_mrr": 0.1652554347515334
+        },
+        {
+          "candidate_configuration_sha256": "f4ca60733760d16bc20a9275331a4d09e7909185527084607b9bfc5f592802a3",
+          "candidate_id": "codexm-transe-c12-f4ca60733760",
+          "parameters": {
+            "batch_size": 1024,
+            "learning_rate": 0.00043665655276221437,
+            "negatives_per_positive": 16,
+            "regularisation_coefficient": 0.01,
+            "transe_distance_norm": 2
+          },
+          "stage_1_rank": 3,
+          "stage_1_report_sha256": "decc278e6627b6c12d5974e778ba83f1510916bc3ef28997d4acb55f5edf49f2",
+          "stage_1_validation_mrr": 0.1518769168396599
+        },
+        {
+          "candidate_configuration_sha256": "1e166cce810a676bf6c37e95f66d9b5e9cac03a5eb70958d1a37091ae14d937d",
+          "candidate_id": "codexm-transe-c08-1e166cce810a",
+          "parameters": {
+            "batch_size": 256,
+            "learning_rate": 0.00048420744298206103,
+            "negatives_per_positive": 16,
+            "regularisation_coefficient": 0.01,
+            "transe_distance_norm": 2
+          },
+          "stage_1_rank": 4,
+          "stage_1_report_sha256": "012df312d6d9388d62d3bd6c3e0aa919e5558eb3d96ca7628d0d4cab4a6e1f98",
+          "stage_1_validation_mrr": 0.13088677058281178
+        }
+      ],
+      "dataset": "CoDEx-M",
+      "model": "TransE",
+      "tuning_stream_derivations": [
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|1|CoDEx-M|TransE|random_entity_initialisation",
+          "namespace": "random_entity_initialisation",
+          "replicate": 1,
+          "seed": 1833487851,
+          "sha256": "6d48cdebd86ca77a192802dee58a3b5ab81e96e7610a1796196bc713be8c9e23"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|1|CoDEx-M|TransE|relation_initialisation",
+          "namespace": "relation_initialisation",
+          "replicate": 1,
+          "seed": 3491304712,
+          "sha256": "d0191508d130952028eab624603f93700e6f80e38c2cb3289c047180cc1062f4"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|1|CoDEx-M|TransE|batch_order",
+          "namespace": "batch_order",
+          "replicate": 1,
+          "seed": 356339821,
+          "sha256": "153d506d043726ce839b504b0ef030c948675b06f56c9a19fe923f192e2fabcb"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|1|CoDEx-M|TransE|negative_sampling",
+          "namespace": "negative_sampling",
+          "replicate": 1,
+          "seed": 3067486461,
+          "sha256": "b6d620fd0fa56152c61f12736d641c73c5690e6934094359e16c89b47692b474"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|1|CoDEx-M|TransE|data_loader_workers",
+          "namespace": "data_loader_workers",
+          "replicate": 1,
+          "seed": 2487879153,
+          "sha256": "944a05f1281088a6dd4faab7af15c3e8c5dc1f0009b0135e8d5ce5c4d38af9b5"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|2|CoDEx-M|TransE|random_entity_initialisation",
+          "namespace": "random_entity_initialisation",
+          "replicate": 2,
+          "seed": 3720324300,
+          "sha256": "ddbfa4ccf4b1168f98dff65cb33e9b959462f43c84e5e1ee7d97ac09f71fea28"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|2|CoDEx-M|TransE|relation_initialisation",
+          "namespace": "relation_initialisation",
+          "replicate": 2,
+          "seed": 486581595,
+          "sha256": "1d00a55b57cfb20c73b6c73080b91a40bda65f8cc0b82ed075b6538ccfe6971d"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|2|CoDEx-M|TransE|batch_order",
+          "namespace": "batch_order",
+          "replicate": 2,
+          "seed": 2013931237,
+          "sha256": "780a26e59943102d9190e27aee9a54f59c0a47180c1b680ec80a909ad3d32665"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|2|CoDEx-M|TransE|negative_sampling",
+          "namespace": "negative_sampling",
+          "replicate": 2,
+          "seed": 554730525,
+          "sha256": "2110841d2a0f687af5fc6d7fc3c454e03bbc0a7a8b36651cf69725025434d122"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|2|CoDEx-M|TransE|data_loader_workers",
+          "namespace": "data_loader_workers",
+          "replicate": 2,
+          "seed": 2040038863,
+          "sha256": "799885cf5aa4c2fce741ba350d97d4ee4e5fcd7af4ece3ee88dfd7eb4ee06615"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|3|CoDEx-M|TransE|random_entity_initialisation",
+          "namespace": "random_entity_initialisation",
+          "replicate": 3,
+          "seed": 201054287,
+          "sha256": "0bfbd84f7897f846d3631fb0630cef2c73c986e2c07089defcaea12b7ab4839f"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|3|CoDEx-M|TransE|relation_initialisation",
+          "namespace": "relation_initialisation",
+          "replicate": 3,
+          "seed": 1817720392,
+          "sha256": "6c583648e83df9ae1ee5cf94ca23e317444fefa7e44a23565f6bd5448653568d"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|3|CoDEx-M|TransE|batch_order",
+          "namespace": "batch_order",
+          "replicate": 3,
+          "seed": 1393156254,
+          "sha256": "5309e09e98af6e8a76287bbc0782e7bae4c93fbfa001cbd449d8d7c7743b6133"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|3|CoDEx-M|TransE|negative_sampling",
+          "namespace": "negative_sampling",
+          "replicate": 3,
+          "seed": 1473850336,
+          "sha256": "57d92be0ff22efe520c840270b8df4420f0907e9cfd26f424cb4b0b3a018ecba"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|3|CoDEx-M|TransE|data_loader_workers",
+          "namespace": "data_loader_workers",
+          "replicate": 3,
+          "seed": 1059438894,
+          "sha256": "3f25c12ebbce855cdb557952a88c0ddfd2f9367c6996e986de5b5ea008fc3bc5"
+        }
+      ],
+      "unit_id": "codexm-transe"
+    },
+    {
+      "advancing_candidates": [
+        {
+          "candidate_configuration_sha256": "c84667d7750ad176c22bd99fa55174c299cfc202bd08f1ea93b21d9af7c3f55c",
+          "candidate_id": "codexm-distmult-c11-c84667d7750a",
+          "parameters": {
+            "batch_size": 512,
+            "learning_rate": 0.000620154012927797,
+            "negatives_per_positive": 64,
+            "regularisation_coefficient": 0.0
+          },
+          "stage_1_rank": 1,
+          "stage_1_report_sha256": "c76b5f182eece7a8a59a4f459bc696e2f24f762c64ff5375f9a012ecc1d803c0",
+          "stage_1_validation_mrr": 0.22959985254275458
+        },
+        {
+          "candidate_configuration_sha256": "21bb6cc4268e7fbf48823a26f20f4ec34d66a646386a7fa2aceeb19ff58f3e98",
+          "candidate_id": "codexm-distmult-c04-21bb6cc4268e",
+          "parameters": {
+            "batch_size": 1024,
+            "learning_rate": 0.001030567122317667,
+            "negatives_per_positive": 64,
+            "regularisation_coefficient": 0.0
+          },
+          "stage_1_rank": 2,
+          "stage_1_report_sha256": "3fcd808f6ac27c5a766361f4ed38a86553a67a8a1a6da8e00b49a7934e729be5",
+          "stage_1_validation_mrr": 0.22906382243285905
+        },
+        {
+          "candidate_configuration_sha256": "5af2cb0ad32b34ef8a3d677a91c89a127f260415f0070700c3ebd043d816710e",
+          "candidate_id": "codexm-distmult-c05-5af2cb0ad32b",
+          "parameters": {
+            "batch_size": 256,
+            "learning_rate": 0.0006359214598662142,
+            "negatives_per_positive": 1,
+            "regularisation_coefficient": 0.0001
+          },
+          "stage_1_rank": 3,
+          "stage_1_report_sha256": "849b6ae0e619d12fec812c712b98b85065342a2b2ef58e32f994b46342aca10c",
+          "stage_1_validation_mrr": 0.22725352451792
+        },
+        {
+          "candidate_configuration_sha256": "3f8af729fb1dd7b1ce0ed744dd8b07f6e1117b6df8e3535c65b6f8d6d0821c8a",
+          "candidate_id": "codexm-distmult-c10-3f8af729fb1d",
+          "parameters": {
+            "batch_size": 1024,
+            "learning_rate": 0.001126495732758828,
+            "negatives_per_positive": 64,
+            "regularisation_coefficient": 0.001
+          },
+          "stage_1_rank": 4,
+          "stage_1_report_sha256": "2ef3e2eaa02d6919335f41db3a687de4100134b9230c1affd9b21791092bf469",
+          "stage_1_validation_mrr": 0.22494763954550123
+        }
+      ],
+      "dataset": "CoDEx-M",
+      "model": "DistMult",
+      "tuning_stream_derivations": [
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|1|CoDEx-M|DistMult|random_entity_initialisation",
+          "namespace": "random_entity_initialisation",
+          "replicate": 1,
+          "seed": 3069304974,
+          "sha256": "b6f1e08e6533a61b4f35d537526dfb3cd0e54441eb556568a8e762b41af039df"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|1|CoDEx-M|DistMult|relation_initialisation",
+          "namespace": "relation_initialisation",
+          "replicate": 1,
+          "seed": 2637753228,
+          "sha256": "9d38eb8ca194858513d541b976b083e21b252c0dc0e3ce7b784b73e3e135cc01"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|1|CoDEx-M|DistMult|batch_order",
+          "namespace": "batch_order",
+          "replicate": 1,
+          "seed": 1316892779,
+          "sha256": "4e7e306be4dbbfe8eacec575ea0cfc8bc8e9312d4055dee998202e14f389ed8a"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|1|CoDEx-M|DistMult|negative_sampling",
+          "namespace": "negative_sampling",
+          "replicate": 1,
+          "seed": 2573633250,
+          "sha256": "996686e2a43fe091975387a6592aea9ee5959f7cf4fbd540dd805ec00951f104"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|1|CoDEx-M|DistMult|data_loader_workers",
+          "namespace": "data_loader_workers",
+          "replicate": 1,
+          "seed": 1862758567,
+          "sha256": "6f0770a7c1c3506bcbd83de1738610d33c8a94b010c229a10086aac0ae13d931"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|2|CoDEx-M|DistMult|random_entity_initialisation",
+          "namespace": "random_entity_initialisation",
+          "replicate": 2,
+          "seed": 1661122380,
+          "sha256": "6302b74c55de745720edf070d9b35b86a694bc5a5a61de1329abe4f1a80463a6"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|2|CoDEx-M|DistMult|relation_initialisation",
+          "namespace": "relation_initialisation",
+          "replicate": 2,
+          "seed": 943841046,
+          "sha256": "3841df16db42e4f6aeca96316bcfd5a266e69f00f0d4dd3e62e3f91c716980a4"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|2|CoDEx-M|DistMult|batch_order",
+          "namespace": "batch_order",
+          "replicate": 2,
+          "seed": 1542716371,
+          "sha256": "5bf3fbd344bde6132b82d8d241698051ce975fd48cb2afdb94b9e75479512092"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|2|CoDEx-M|DistMult|negative_sampling",
+          "namespace": "negative_sampling",
+          "replicate": 2,
+          "seed": 3731557435,
+          "sha256": "de6b0c3bd7ea355205f59209914dd897f909f7ec94111aba21d72815283565f6"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|2|CoDEx-M|DistMult|data_loader_workers",
+          "namespace": "data_loader_workers",
+          "replicate": 2,
+          "seed": 1897632150,
+          "sha256": "711b919631bdba34370331a1b8449f75f0fc086d3eed5be27f7d3225d062d655"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|3|CoDEx-M|DistMult|random_entity_initialisation",
+          "namespace": "random_entity_initialisation",
+          "replicate": 3,
+          "seed": 2395384093,
+          "sha256": "8ec6a91da04a46d9d0ce480718b7784d6ada70063f55fdd078088eb23173f370"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|3|CoDEx-M|DistMult|relation_initialisation",
+          "namespace": "relation_initialisation",
+          "replicate": 3,
+          "seed": 2735332330,
+          "sha256": "a309dbea08b67d43441ce00699c6634446a44aede0ff4a3fa37d1720150092a6"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|3|CoDEx-M|DistMult|batch_order",
+          "namespace": "batch_order",
+          "replicate": 3,
+          "seed": 3693336816,
+          "sha256": "dc23d8f0b78362d7fddcd7c0c1e3a8543c09d26b612764d7f98ccc356a5ce89c"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|3|CoDEx-M|DistMult|negative_sampling",
+          "namespace": "negative_sampling",
+          "replicate": 3,
+          "seed": 347562876,
+          "sha256": "14b7637c517016bf655f36f56b242c748174536798182c266e7b847ca5cfc43e"
+        },
+        {
+          "input": "Integrating External Evidence to Reduce Uncertainty in Link Prediction|stream|tuning|3|CoDEx-M|DistMult|data_loader_workers",
+          "namespace": "data_loader_workers",
+          "replicate": 3,
+          "seed": 3774869524,
+          "sha256": "e0fff014d9f1637529b31a3f58d3f2c5b2d265c514a8d69c5937dba9e45bf82e"
+        }
+      ],
+      "unit_id": "codexm-distmult"
+    }
+  ],
+  "validation_epochs": [
+    75
+  ]
+}

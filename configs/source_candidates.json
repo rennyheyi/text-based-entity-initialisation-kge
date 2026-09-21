@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "status": "candidate_sources_only_not_pinned",
+  "sources": [
+    {
+      "id": "fb15k237_microsoft_benchmark",
+      "dataset": "FB15k-237",
+      "role": "canonical_benchmark_candidate",
+      "kind": "http_file",
+      "source_page": "https://www.microsoft.com/en-us/download/details.aspx?id=52312",
+      "url": "https://download.microsoft.com/download/8/7/0/8700516a-ab3d-4850-b4bb-805c515aece1/FB15K-237.2.zip",
+      "declared_version": "1.0",
+      "filename": "FB15K-237.2.zip",
+      "archive_format": "zip",
+      "max_download_bytes": 262144000,
+      "max_unpacked_bytes": 2147483648
+    },
+    {
+      "id": "fb15k237_conve_mirror",
+      "dataset": "FB15k-237",
+      "role": "benchmark_mirror_crosscheck",
+      "kind": "github_files",
+      "repository": "https://github.com/TimDettmers/ConvE.git",
+      "ref": "master",
+      "files": [
+        {
+          "path": "FB15k-237.tar.gz",
+          "archive_format": "tar.gz",
+          "max_download_bytes": 20971520,
+          "max_unpacked_bytes": 1073741824
+        }
+      ]
+    },
+    {
+      "id": "fb15k237_kgbert_evidence",
+      "dataset": "FB15k-237",
+      "role": "entity_evidence_candidate",
+      "kind": "github_files",
+      "repository": "https://github.com/yao8839836/kg-bert.git",
+      "ref": "62b76ed5652bf3da5a355cbe9c1109f58290756f",
+      "files": [
+        {"path": "data/FB15k-237/FB15k_mid2name.txt", "max_download_bytes": 20971520},
+        {"path": "data/FB15k-237/FB15k_mid2description.txt", "max_download_bytes": 52428800},
+        {"path": "data/FB15k-237/train.tsv", "max_download_bytes": 52428800},
+        {"path": "data/FB15k-237/dev.tsv", "max_download_bytes": 10485760},
+        {"path": "data/FB15k-237/test.tsv", "max_download_bytes": 10485760}
+      ]
+    },
+    {
+      "id": "wn18rr_figshare_benchmark",
+      "dataset": "WN18RR",
+      "role": "canonical_benchmark_candidate",
+      "kind": "figshare_file",
+      "source_page": "https://doi.org/10.6084/m9.figshare.11911272",
+      "article_id": 11911272,
+      "article_version": 1,
+      "expected_title": "WN18RR",
+      "filename": "WN18RR.zip",
+      "archive_format": "zip",
+      "max_metadata_bytes": 2097152,
+      "max_download_bytes": 31457280,
+      "max_unpacked_bytes": 268435456
+    },
+    {
+      "id": "wn18rr_conve_mirror",
+      "dataset": "WN18RR",
+      "role": "benchmark_mirror_crosscheck",
+      "kind": "github_files",
+      "repository": "https://github.com/TimDettmers/ConvE.git",
+      "ref": "master",
+      "files": [
+        {
+          "path": "WN18RR.tar.gz",
+          "archive_format": "tar.gz",
+          "max_download_bytes": 10485760,
+          "max_unpacked_bytes": 268435456
+        }
+      ]
+    },
+    {
+      "id": "wn18rr_kgbert_mapping",
+      "dataset": "WN18RR",
+      "role": "entity_pos_mapping_candidate",
+      "kind": "github_files",
+      "repository": "https://github.com/yao8839836/kg-bert.git",
+      "ref": "62b76ed5652bf3da5a355cbe9c1109f58290756f",
+      "files": [
+        {"path": "data/WN18RR/wordnet-mlj12-definitions.txt", "max_download_bytes": 20971520},
+        {"path": "data/WN18RR/train.tsv", "max_download_bytes": 20971520},
+        {"path": "data/WN18RR/dev.tsv", "max_download_bytes": 10485760},
+        {"path": "data/WN18RR/test.tsv", "max_download_bytes": 10485760}
+      ]
+    },
+    {
+      "id": "wordnet_3_0_princeton",
+      "dataset": "WN18RR",
+      "role": "authoritative_lexical_source",
+      "kind": "http_file",
+      "source_page": "https://wordnetcode.princeton.edu/3.0/",
+      "url": "https://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz",
+      "declared_version": "3.0",
+      "filename": "WordNet-3.0.tar.gz",
+      "archive_format": "tar.gz",
+      "max_download_bytes": 31457280,
+      "max_unpacked_bytes": 268435456
+    },
+    {
+      "id": "codex_m_official",
+      "dataset": "CoDEx-M",
+      "role": "canonical_benchmark_and_evidence_candidate",
+      "kind": "github_files",
+      "repository": "https://github.com/tsafavi/codex.git",
+      "ref": "master",
+      "files": [
+        {"path": "data/triples/codex-m/train.txt", "max_download_bytes": 52428800},
+        {"path": "data/triples/codex-m/valid.txt", "max_download_bytes": 10485760},
+        {"path": "data/triples/codex-m/test.txt", "max_download_bytes": 10485760},
+        {"path": "data/entities/en/entities.json", "max_download_bytes": 104857600},
+        {"path": "data/relations/en/relations.json", "max_download_bytes": 10485760}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "status": "pinned_evidence_audit_plan",
+  "datasets": [
+    {
+      "name": "FB15k-237",
+      "kind": "freebase_kgbert",
+      "expected": {
+        "vocabulary": 14541,
+        "full": 14515,
+        "name_only": 26,
+        "missing": 0,
+        "unique_evidence_texts": 14537,
+        "duplicate_text_groups": 4,
+        "maximum_text_multiplicity": 2
+      },
+      "name_source": {
+        "source_id": "fb15k237_kgbert_evidence",
+        "repository_path": "data/FB15k-237/FB15k_mid2name.txt"
+      },
+      "description_source": {
+        "source_id": "fb15k237_kgbert_evidence",
+        "repository_path": "data/FB15k-237/FB15k_mid2description.txt"
+      }
+    },
+    {
+      "name": "WN18RR",
+      "kind": "wordnet_3_0",
+      "expected": {
+        "vocabulary": 40943,
+        "full": 40943,
+        "missing": 0,
+        "unique_evidence_texts": 40940,
+        "duplicate_text_groups": 3,
+        "maximum_text_multiplicity": 2,
+        "mapping_gloss_alignment": {
+          "exact_wordnet_gloss": 40711,
+          "target_gloss_with_extra_text": 232
+        },
+        "pos_counts": {
+          "JJ": 1105,
+          "NN": 32093,
+          "RB": 31,
+          "VB": 7714
+        }
+      },
+      "mapping_gloss_policy": "The aligned mapping supplies POS, lemma, and sense. Its gloss field is cross-checked but is not used as evidence because equal numeric offsets across POS can concatenate glosses. Evidence is constructed only from the uniquely resolved Princeton WordNet 3.0 entry.",
+      "mapping_source": {
+        "source_id": "wn18rr_kgbert_mapping",
+        "repository_path": "data/WN18RR/wordnet-mlj12-definitions.txt"
+      },
+      "wordnet_source": {
+        "source_id": "wordnet_3_0_princeton",
+        "label": "WordNet-3.0.tar.gz"
+      }
+    },
+    {
+      "name": "CoDEx-M",
+      "kind": "codex_metadata",
+      "expected": {
+        "vocabulary": 17050,
+        "full": 16927,
+        "label_only": 123,
+        "missing": 0,
+        "unique_evidence_texts": 17050,
+        "duplicate_text_groups": 0,
+        "maximum_text_multiplicity": 1
+      },
+      "metadata_source": {
+        "source_id": "codex_m_official",
+        "repository_path": "data/entities/en/entities.json"
+      }
+    }
+  ]
+}

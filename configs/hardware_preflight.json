@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "status": "development_hardware_feasibility_preflight_configuration",
+  "official_result": false,
+  "datasets": ["FB15k-237", "WN18RR", "CoDEx-M"],
+  "models": [
+    {"name": "TransE", "transe_distance_norm": 2},
+    {"name": "DistMult", "transe_distance_norm": 1}
+  ],
+  "training_steps": 3,
+  "embedding_dimension": 384,
+  "batch_size": 1024,
+  "negatives_per_positive": 64,
+  "learning_rate": 0.003,
+  "regularisation_coefficient": 0.1,
+  "maximum_negative_sampling_attempts": 1000,
+  "adam_beta1": 0.9,
+  "adam_beta2": 0.999,
+  "adam_epsilon": 1e-8,
+  "weight_decay": 0.0,
+  "development_seed_label": "hardware-feasibility-preflight-v1"
+}

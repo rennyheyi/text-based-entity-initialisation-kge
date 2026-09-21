@@ -1,0 +1,2746 @@
+{
+  "official_artifacts_sha256": "539bd5804ce519da7eee2946ea356329879f504ec58af9b641622ce9be6878c1",
+  "official_calibration_lock_sha256": "6dac32077c03e97d10ad28168c31ef39d88e1da18f4774d00969559675c51cd1",
+  "official_checkpoint_lock_sha256": "220e4dd3d74a7a3699a32c64fd763f99b6af97dbcf9d1fedbd2ddebbe27f7a86",
+  "official_claims_lock_sha256": "b9c95461918502934ae43d5b17261361c98e400909658821ee1293e4d694174e",
+  "official_design_sha256": "48a82e2bf835942f1d76ec40ce0b9b52499aa3a0c16f40ab31c04652215a6ee5",
+  "official_evaluation_lock_sha256": "ffc14e3084a63d336e6da4c8b6dbe950e8f41cb6558b7e244809be7d9cccf4fa",
+  "official_result": true,
+  "official_runs": 90,
+  "official_test_git_commit": "592ba17f227f6d53a0db54c8af6ee5fdb40157d1",
+  "paired_blocks": 30,
+  "result_artifacts": {
+    "holm_adjusted_p_values": {
+      "path": "results/official_test/holm_adjusted_p_values.tsv",
+      "sha256": "cb1f3f40f1bc2cf95c6eac4809d1e60aa712a157948f085289467ca930351eed",
+      "size_bytes": 4651
+    },
+    "paired_differences": {
+      "path": "results/official_test/paired_differences.tsv",
+      "sha256": "72040fccbf45e6de0c782b4613de00aaaa9ef39c0886b2bb90180c8564ad175d",
+      "size_bytes": 328430
+    },
+    "per_run_metrics": {
+      "path": "results/official_test/per_run_metrics.tsv",
+      "sha256": "199ffba263243ce24c4085c1cd6d7352eba6e3cf9e70491a27ca295492ce643e",
+      "size_bytes": 45364
+    },
+    "statistical_analysis": {
+      "path": "results/official_test/statistical_analysis.json",
+      "sha256": "bb9b9224998509f573041969976a2e9b8aa553460a3a41b5b319a2242e7108e8",
+      "size_bytes": 1345606
+    },
+    "summary_statistics_and_confidence_intervals": {
+      "path": "results/official_test/summary_statistics_and_confidence_intervals.tsv",
+      "sha256": "2537069fcb8f67c6f2a6e5cc36b6400dc9ba916cb1e02bc200dd198deda6530b",
+      "size_bytes": 145139
+    }
+  },
+  "run_metrics_sha256": "f60b961be2a7dd8921364f0a23ccd69207827a4d48f1b3e54fb7d461d443fc88",
+  "runs": [
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/FB15k-237/TransE/replicate_01/random/metrics.json",
+          "sha256": "d9f4bd87fc4b2723a9e7a67a9cf81e99c5e9f0f8d6608410e8235e077b59313f",
+          "size_bytes": 3608
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/FB15k-237/TransE/replicate_01/random/ece_bins.tsv",
+          "sha256": "d0a76317fe3a55802f7678fc7f9d5335143aa241cabe2cafb12d6d8f3dabb128",
+          "size_bytes": 3780
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/FB15k-237/TransE/replicate_01/random/per_query.tsv",
+          "sha256": "a30381c7fa29ce1c664dbe9dfb4946056922cae17e59bb3dc5871e6a98a9ec13",
+          "size_bytes": 13829877
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/FB15k-237/TransE/replicate_01/random/risk_coverage.tsv",
+          "sha256": "5627fd8ad431ee738518c363cd45796d685d223994e9c510bbbee647cc3ecda6",
+          "size_bytes": 10049663
+        }
+      },
+      "report": {
+        "path": "reports/official_test/FB15k-237/TransE/replicate_01/random.json",
+        "sha256": "3ea545a6d2e6dccb0bbaa056a61c339ba5cf3066c2af2e2f198ec331f3be99fa",
+        "size_bytes": 7438
+      },
+      "run_id": "fb15k-237-transe-official-r01-random"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/FB15k-237/TransE/replicate_01/correct_text/metrics.json",
+          "sha256": "bdf7d9eec2114ba782da1ad498130a251f3be2a1cd4848c2ae049df8c4f5aebf",
+          "size_bytes": 3640
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/FB15k-237/TransE/replicate_01/correct_text/ece_bins.tsv",
+          "sha256": "da0df6fb347ecc5d764c6e622e011543586fb7063bb0a5e116642f8a337f209f",
+          "size_bytes": 3697
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/FB15k-237/TransE/replicate_01/correct_text/per_query.tsv",
+          "sha256": "97483a801bf9409e68230e808eab716b8d55834e8a748a8d40517ab15edb7c09",
+          "size_bytes": 14072336
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/FB15k-237/TransE/replicate_01/correct_text/risk_coverage.tsv",
+          "sha256": "279350af2bfba297f5a0a3dfde77221a625f3a8ed64d0c33e096667146678acd",
+          "size_bytes": 10058370
+        }
+      },
+      "report": {
+        "path": "reports/official_test/FB15k-237/TransE/replicate_01/correct_text.json",
+        "sha256": "3def6c64b28f32c0c33969ce7a02aabb38adadf0e8a5ade465517bfd6305e6a3",
+        "size_bytes": 7500
+      },
+      "run_id": "fb15k-237-transe-official-r01-correct-text"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/FB15k-237/TransE/replicate_01/shuffled_text/metrics.json",
+          "sha256": "a6a1a8252905117050018d3f4f397a4dcafe0511c6e41a8744c5fdd652fd9b3b",
+          "size_bytes": 3639
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/FB15k-237/TransE/replicate_01/shuffled_text/ece_bins.tsv",
+          "sha256": "47b2c460870ad57ae5ceff6284f674c89245d0c19ea30c3b653d49fb2796f5bb",
+          "size_bytes": 3719
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/FB15k-237/TransE/replicate_01/shuffled_text/per_query.tsv",
+          "sha256": "42651163863899bcfd62ad98427f0fe96363cf3f494ae238ab524c79b168cd14",
+          "size_bytes": 14077428
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/FB15k-237/TransE/replicate_01/shuffled_text/risk_coverage.tsv",
+          "sha256": "64e9f90f96eab5620203191495f2b97181f6b84618cb97b78cdcbde68530d677",
+          "size_bytes": 10051762
+        }
+      },
+      "report": {
+        "path": "reports/official_test/FB15k-237/TransE/replicate_01/shuffled_text.json",
+        "sha256": "2ac74953fee144cba6926e96481afe403e0f94e69900490e867c4c901c3c6b9a",
+        "size_bytes": 7503
+      },
+      "run_id": "fb15k-237-transe-official-r01-shuffled-text"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/FB15k-237/TransE/replicate_02/random/metrics.json",
+          "sha256": "8cb7f7cd64b8d2cd44ef567363405c09452567d83d1e0f855b9d490dbcb6f64d",
+          "size_bytes": 3622
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/FB15k-237/TransE/replicate_02/random/ece_bins.tsv",
+          "sha256": "95352c38062c026cd4aac96a4e09cdc87e3023bb1c55a5aac1169bdafd76be49",
+          "size_bytes": 3728
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/FB15k-237/TransE/replicate_02/random/per_query.tsv",
+          "sha256": "2f7d408ed8b09430988ec0e563a1961ac4d5a1b6ab1468c22c08316e43dd2f0f",
+          "size_bytes": 13829419
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/FB15k-237/TransE/replicate_02/random/risk_coverage.tsv",
+          "sha256": "78b7c027b1d36fef6d419efb926dfe896b02f05bbe83c71f9579b7864f8832ca",
+          "size_bytes": 10048574
+        }
+      },
+      "report": {
+        "path": "reports/official_test/FB15k-237/TransE/replicate_02/random.json",
+        "sha256": "4775938bc8b50a43e5850cf91c0859be4de0ee9df3cee24a30f82eb247f30f61",
+        "size_bytes": 7452
+      },
+      "run_id": "fb15k-237-transe-official-r02-random"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/FB15k-237/TransE/replicate_02/correct_text/metrics.json",
+          "sha256": "178c5dd0d1345bf2c8a79d69453f5e4ccd79202ebbfa933aa760c04d5530e80e",
+          "size_bytes": 3641
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/FB15k-237/TransE/replicate_02/correct_text/ece_bins.tsv",
+          "sha256": "73c0b55ef5ce72d56b0142d4d6ca7aca8f6f7bcf15021a7b5b806cbe91dccd82",
+          "size_bytes": 3719
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/FB15k-237/TransE/replicate_02/correct_text/per_query.tsv",
+          "sha256": "e8ef3551cdcf15bd47a8650197b78779af30ca3fb1ead054243625e01e502a0c",
+          "size_bytes": 14072185
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/FB15k-237/TransE/replicate_02/correct_text/risk_coverage.tsv",
+          "sha256": "774cb24e747458794151e4f0b97a228f578ed1b5f083a8890ffba3efe727a172",
+          "size_bytes": 10056164
+        }
+      },
+      "report": {
+        "path": "reports/official_test/FB15k-237/TransE/replicate_02/correct_text.json",
+        "sha256": "bb6fc5c48f2a8edc87581d9c5efda183a138794bd217449e838580b1005ff1d5",
+        "size_bytes": 7501
+      },
+      "run_id": "fb15k-237-transe-official-r02-correct-text"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/FB15k-237/TransE/replicate_02/shuffled_text/metrics.json",
+          "sha256": "11eb19527c3cc1c7a6500c9f09876bef9c0faaa1a178d31b8a362cb37d148253",
+          "size_bytes": 3629
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/FB15k-237/TransE/replicate_02/shuffled_text/ece_bins.tsv",
+          "sha256": "8e97ec710e7feb125564877d41d1bddc2dc0ab0ea8498d62fba99aaab38b020e",
+          "size_bytes": 3703
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/FB15k-237/TransE/replicate_02/shuffled_text/per_query.tsv",
+          "sha256": "305d1b322ea53ab65f02c28124c6d47d7546e0ef41395a74d643a4d09c484a51",
+          "size_bytes": 14116664
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/FB15k-237/TransE/replicate_02/shuffled_text/risk_coverage.tsv",
+          "sha256": "f830e95bf91a744f102827e095a6aa9aabdd66d6af4037f1448e27093875604c",
+          "size_bytes": 10048436
+        }
+      },
+      "report": {
+        "path": "reports/official_test/FB15k-237/TransE/replicate_02/shuffled_text.json",
+        "sha256": "743efff1333f29f91bb0b37a9119e3fea6aa174cfea8a4ee5a5c88db5401fe7a",
+        "size_bytes": 7494
+      },
+      "run_id": "fb15k-237-transe-official-r02-shuffled-text"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/FB15k-237/TransE/replicate_03/random/metrics.json",
+          "sha256": "f974dff7527a38a485a5343cc3268654af23b0d591ebfed8639867c50401a70f",
+          "size_bytes": 3614
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/FB15k-237/TransE/replicate_03/random/ece_bins.tsv",
+          "sha256": "3a7ab6f89483d9053080a2bba857ffbae35fa3667d0aaa6eaf6225c59afd8aea",
+          "size_bytes": 3715
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/FB15k-237/TransE/replicate_03/random/per_query.tsv",
+          "sha256": "e81272f00a51d6bb96dbf9e6336c70a5b8c03b1e31a69b15fb0068e6c82ae044",
+          "size_bytes": 13829722
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/FB15k-237/TransE/replicate_03/random/risk_coverage.tsv",
+          "sha256": "9fbd3d46078bfc2dd31a0af39a913f0e6fcced07b30e59b4a6aae93f0a4a15d3",
+          "size_bytes": 10050003
+        }
+      },
+      "report": {
+        "path": "reports/official_test/FB15k-237/TransE/replicate_03/random.json",
+        "sha256": "27d5cdac639321b157e5732db648506079f3ea0b171e3963d5c471883d928887",
+        "size_bytes": 7444
+      },
+      "run_id": "fb15k-237-transe-official-r03-random"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/FB15k-237/TransE/replicate_03/correct_text/metrics.json",
+          "sha256": "503fc822abac18d0830b1fc70abed62e227b9f524c147bf5cf977ea41dec9298",
+          "size_bytes": 3635
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/FB15k-237/TransE/replicate_03/correct_text/ece_bins.tsv",
+          "sha256": "ff3a3fd3ae4b2880eba0315945b10f7a79e84a436367e3700ec44cbdd443cdc4",
+          "size_bytes": 3694
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/FB15k-237/TransE/replicate_03/correct_text/per_query.tsv",
+          "sha256": "38c22b75db690865b5a87c771a8a59926ee74dfcc43aa8db10eeb0a94e2063ee",
+          "size_bytes": 14072404
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/FB15k-237/TransE/replicate_03/correct_text/risk_coverage.tsv",
+          "sha256": "989f0d61728b74c3fd69af75fbb6a9a9a996a81734259db0cc34dc3c805f593d",
+          "size_bytes": 10059699
+        }
+      },
+      "report": {
+        "path": "reports/official_test/FB15k-237/TransE/replicate_03/correct_text.json",
+        "sha256": "b17f35a429d9248f07022b1489acfda06c576017f89a18048139321e337b19b6",
+        "size_bytes": 7495
+      },
+      "run_id": "fb15k-237-transe-official-r03-correct-text"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/FB15k-237/TransE/replicate_03/shuffled_text/metrics.json",
+          "sha256": "2036fef664de8718ae459f3c2a587e3247ec10f817aa377d9b1befd5dbbf5993",
+          "size_bytes": 3606
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/FB15k-237/TransE/replicate_03/shuffled_text/ece_bins.tsv",
+          "sha256": "0394b091e402defe84917d40361dd2b58c93dafd6ad70989a1ef899a08a1e445",
+          "size_bytes": 3726
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/FB15k-237/TransE/replicate_03/shuffled_text/per_query.tsv",
+          "sha256": "ccbfedaa0119cc1f59f305bcd4d49d2e2aca98edd6ed06efcaa7d40b72a3f066",
+          "size_bytes": 14116789
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/FB15k-237/TransE/replicate_03/shuffled_text/risk_coverage.tsv",
+          "sha256": "206a2492b2e1b1dca8475d15dcc0d81cef7e15e3e002ec785019fb8d64eb658b",
+          "size_bytes": 10052444
+        }
+      },
+      "report": {
+        "path": "reports/official_test/FB15k-237/TransE/replicate_03/shuffled_text.json",
+        "sha256": "6c01b3ca4a810f4ffa9036d5cfcfed309eeeea5f6830767ad7d6d8670e09fb2f",
+        "size_bytes": 7471
+      },
+      "run_id": "fb15k-237-transe-official-r03-shuffled-text"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/FB15k-237/TransE/replicate_04/random/metrics.json",
+          "sha256": "cb9cfe333c41c9a458e89cdc686cbf21cb2e0943bed1b8258b840f1c2e6c47a3",
+          "size_bytes": 3614
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/FB15k-237/TransE/replicate_04/random/ece_bins.tsv",
+          "sha256": "8fc73c9a1f375d6fafab60f7ed0ff4a024bf63ee35858f7de985cbe2deae6a71",
+          "size_bytes": 3720
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/FB15k-237/TransE/replicate_04/random/per_query.tsv",
+          "sha256": "ba7f25d9f45f122044c31c2f5a82f6c61040d29c054a04921b240bb1bf2b88bb",
+          "size_bytes": 13830060
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/FB15k-237/TransE/replicate_04/random/risk_coverage.tsv",
+          "sha256": "c8d319fa7cbcebd6ca7243f0e3063a27e8a92edd2c72a7a304798d0ca712276d",
+          "size_bytes": 10049626
+        }
+      },
+      "report": {
+        "path": "reports/official_test/FB15k-237/TransE/replicate_04/random.json",
+        "sha256": "6f63c9b918bafbab4031f0bd21925df357720004e56b36b73210fe752fccd3a1",
+        "size_bytes": 7444
+      },
+      "run_id": "fb15k-237-transe-official-r04-random"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/FB15k-237/TransE/replicate_04/correct_text/metrics.json",
+          "sha256": "1e4e1e0ca405c4108abf5d3a7b02c2f1e76b8cd873f30654fe952601450e672c",
+          "size_bytes": 3638
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/FB15k-237/TransE/replicate_04/correct_text/ece_bins.tsv",
+          "sha256": "977417cad98e825935a22cd52e258dfcc16a36f180f2a3dc7a03bba176a93d90",
+          "size_bytes": 3708
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/FB15k-237/TransE/replicate_04/correct_text/per_query.tsv",
+          "sha256": "e7ae3039f6ba16bf9df2c68b33f544a514fce2ee91e8294f2331923ae8cfe055",
+          "size_bytes": 14071864
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/FB15k-237/TransE/replicate_04/correct_text/risk_coverage.tsv",
+          "sha256": "789f56c489f87aca4e593a7e77bbd30d25b144fb9a70fa858f3419cb24bd9234",
+          "size_bytes": 10059000
+        }
+      },
+      "report": {
+        "path": "reports/official_test/FB15k-237/TransE/replicate_04/correct_text.json",
+        "sha256": "750e60304ace6e198cb2991d96e7a9aee6bf44c81c22013e6713e4a2e71c95e7",
+        "size_bytes": 7500
+      },
+      "run_id": "fb15k-237-transe-official-r04-correct-text"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/FB15k-237/TransE/replicate_04/shuffled_text/metrics.json",
+          "sha256": "026c6c0125713edaf4dd72fb1e695efcdf81329b7180695eadc4b418129b8ae2",
+          "size_bytes": 3616
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/FB15k-237/TransE/replicate_04/shuffled_text/ece_bins.tsv",
+          "sha256": "0a9cb7529f3db879448466c2c096884c483e4771419414362f692e3ccc15ca58",
+          "size_bytes": 3734
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/FB15k-237/TransE/replicate_04/shuffled_text/per_query.tsv",
+          "sha256": "ce655dff5214a1b934927f2950c8042b28ff1f2ffe9cad74425e07d7f25adb0c",
+          "size_bytes": 14119136
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/FB15k-237/TransE/replicate_04/shuffled_text/risk_coverage.tsv",
+          "sha256": "6db063f094428e5f44ffb2ac3ce7c96ec6ffac1f9fe0aebb29d0f8477b1b7ada",
+          "size_bytes": 10053821
+        }
+      },
+      "report": {
+        "path": "reports/official_test/FB15k-237/TransE/replicate_04/shuffled_text.json",
+        "sha256": "8003250b0b9e4495e9bfd8d222290a9f38695fa535af1a00a84f80a3e02d4e54",
+        "size_bytes": 7483
+      },
+      "run_id": "fb15k-237-transe-official-r04-shuffled-text"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/FB15k-237/TransE/replicate_05/random/metrics.json",
+          "sha256": "d7462676cf060e48491d2677e8f09b269f1cedc725d99045bc15057e99db8ffe",
+          "size_bytes": 3609
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/FB15k-237/TransE/replicate_05/random/ece_bins.tsv",
+          "sha256": "001e95932886e4a6436d43d5013d59ecb91f85646c106feb235ef89292c8610d",
+          "size_bytes": 3690
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/FB15k-237/TransE/replicate_05/random/per_query.tsv",
+          "sha256": "d560f815d642cb41e55ee0057ba370a7625812e1ebedeb5cfebf208478ad60b0",
+          "size_bytes": 13829028
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/FB15k-237/TransE/replicate_05/random/risk_coverage.tsv",
+          "sha256": "63e45ad0a55c1efd6b6a0d32eaf520b7076258042cf68ec7aed6ac6766ce9e7e",
+          "size_bytes": 10049349
+        }
+      },
+      "report": {
+        "path": "reports/official_test/FB15k-237/TransE/replicate_05/random.json",
+        "sha256": "75308a07e4d4a58a2858cfcf4ce6c57ba91ae4f726f7a9824183a5394850343a",
+        "size_bytes": 7441
+      },
+      "run_id": "fb15k-237-transe-official-r05-random"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/FB15k-237/TransE/replicate_05/correct_text/metrics.json",
+          "sha256": "3b8bee14f8e74173d43104ce0f99e4fffe49839bc29afcd52cc96862889da53d",
+          "size_bytes": 3650
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/FB15k-237/TransE/replicate_05/correct_text/ece_bins.tsv",
+          "sha256": "82c09bb6461e182075768312d0ae40ae2c09500ef0b6942fdb7492528f0fa059",
+          "size_bytes": 3697
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/FB15k-237/TransE/replicate_05/correct_text/per_query.tsv",
+          "sha256": "aabe6a53f10624533fb71c6efa0fe0aa057b44eab04c79fc827fc91a2a0c3915",
+          "size_bytes": 14072939
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/FB15k-237/TransE/replicate_05/correct_text/risk_coverage.tsv",
+          "sha256": "052e8733f314dd52b4168fb4de57bd65682fb1b4bcab451688fad48827d3c5a7",
+          "size_bytes": 10058765
+        }
+      },
+      "report": {
+        "path": "reports/official_test/FB15k-237/TransE/replicate_05/correct_text.json",
+        "sha256": "cef63e752095fccb2fd81c06043c9aa4a5a43e0fc84f243f1141ebc9d0d23a6f",
+        "size_bytes": 7512
+      },
+      "run_id": "fb15k-237-transe-official-r05-correct-text"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/FB15k-237/TransE/replicate_05/shuffled_text/metrics.json",
+          "sha256": "252625da531410d76aba72e8a9ca1884b7b7f3e83ee9a9e902bcc0bfd8f3714a",
+          "size_bytes": 3635
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/FB15k-237/TransE/replicate_05/shuffled_text/ece_bins.tsv",
+          "sha256": "793119435babb4f3e9b9b1ea39ac1bf7a63de0ec18c0e0ab2d031c9ed51faa70",
+          "size_bytes": 3728
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/FB15k-237/TransE/replicate_05/shuffled_text/per_query.tsv",
+          "sha256": "123dcfb9ff3f5b6c8deb715d7200cbe6f1869f701f566d06041562873f5ac4ec",
+          "size_bytes": 14116268
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/FB15k-237/TransE/replicate_05/shuffled_text/risk_coverage.tsv",
+          "sha256": "bbeca1d4c77a6cc1a636b67df4c1ba8d488b3fcfb09ae38d1fd8c482804b63f1",
+          "size_bytes": 10050803
+        }
+      },
+      "report": {
+        "path": "reports/official_test/FB15k-237/TransE/replicate_05/shuffled_text.json",
+        "sha256": "99a93b03a19ac3d9b8f0f347b93b763fe52f33b98ac53c2d7fd6c73e0fe75121",
+        "size_bytes": 7502
+      },
+      "run_id": "fb15k-237-transe-official-r05-shuffled-text"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/FB15k-237/DistMult/replicate_01/random/metrics.json",
+          "sha256": "120b764cc55a04b089b82b4fc57f2f566dd48656cfbe9e341824e5836d9d839c",
+          "size_bytes": 3596
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/FB15k-237/DistMult/replicate_01/random/ece_bins.tsv",
+          "sha256": "f327bac032104b64a0d6e23bb1cbd53f0826a07955701a961e3341df3fc97999",
+          "size_bytes": 3968
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/FB15k-237/DistMult/replicate_01/random/per_query.tsv",
+          "sha256": "06aeaaa91d2106f8fe06c2c5cbe0a6adb1877d47ae206e28c283b4750165dfde",
+          "size_bytes": 13813584
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/FB15k-237/DistMult/replicate_01/random/risk_coverage.tsv",
+          "sha256": "eacddd312c9a691fbe6c3d036c650f027f55e75db78c97679fcd374bbf38bbe4",
+          "size_bytes": 10007048
+        }
+      },
+      "report": {
+        "path": "reports/official_test/FB15k-237/DistMult/replicate_01/random.json",
+        "sha256": "5b95a8aa6ada9d25bbb8696f96de4fd51372b29c270a89c5f8045dd65d6530b2",
+        "size_bytes": 7440
+      },
+      "run_id": "fb15k-237-distmult-official-r01-random"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/FB15k-237/DistMult/replicate_01/correct_text/metrics.json",
+          "sha256": "41700fc40e244531e03476983706061583e1beabcc39ec8173c2a669e64b7b01",
+          "size_bytes": 3602
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/FB15k-237/DistMult/replicate_01/correct_text/ece_bins.tsv",
+          "sha256": "5bcc2c4cc3d3906a6efb9d1a8cd0625a9ce8c9ce077f68429bd8dded95615fd6",
+          "size_bytes": 4015
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/FB15k-237/DistMult/replicate_01/correct_text/per_query.tsv",
+          "sha256": "2190a36eefb12eb910cbb62074bb2841d12d7bc3049ab1571aa8436757a1a04d",
+          "size_bytes": 14052649
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/FB15k-237/DistMult/replicate_01/correct_text/risk_coverage.tsv",
+          "sha256": "9b59017028d3b9f8efbd75e065bbb0c02f02aea455ab11df02b983299b90c56c",
+          "size_bytes": 10002201
+        }
+      },
+      "report": {
+        "path": "reports/official_test/FB15k-237/DistMult/replicate_01/correct_text.json",
+        "sha256": "17bd1c099df577ada456d94fb8767375b2f2bc8b703ebb664af43cbe6f9166b9",
+        "size_bytes": 7476
+      },
+      "run_id": "fb15k-237-distmult-official-r01-correct-text"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/FB15k-237/DistMult/replicate_01/shuffled_text/metrics.json",
+          "sha256": "c4a5700e4a1a5c90cc13274f4afcd7085d15d7d8632e4eb1b5dabebf578f22e2",
+          "size_bytes": 3568
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/FB15k-237/DistMult/replicate_01/shuffled_text/ece_bins.tsv",
+          "sha256": "7bef4c2ca9bcabd229d6b8dca5d50e4bdb6909b67cc831a4fef1b7fdd9da4143",
+          "size_bytes": 3989
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/FB15k-237/DistMult/replicate_01/shuffled_text/per_query.tsv",
+          "sha256": "e0e7949c73c9c88c8f6615ac48f56f1ce8032000b64267c4c69a09e71e380d7a",
+          "size_bytes": 14100314
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/FB15k-237/DistMult/replicate_01/shuffled_text/risk_coverage.tsv",
+          "sha256": "741dc805765527ecf800aa4fee41fcf318e333ae7f766c6da38a3452d32135d5",
+          "size_bytes": 10010598
+        }
+      },
+      "report": {
+        "path": "reports/official_test/FB15k-237/DistMult/replicate_01/shuffled_text.json",
+        "sha256": "03f1a4e72869daa098c0cc630970948727c24a2d4398a18e5a48150ec982ce16",
+        "size_bytes": 7447
+      },
+      "run_id": "fb15k-237-distmult-official-r01-shuffled-text"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/FB15k-237/DistMult/replicate_02/random/metrics.json",
+          "sha256": "5b6a33f6d4758fbc7dcdd2de7b9b60428a0c6c274580761ea56bf749ff44a4d4",
+          "size_bytes": 3552
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/FB15k-237/DistMult/replicate_02/random/ece_bins.tsv",
+          "sha256": "03946e1fc07044efe8256948786964212739a6493d892f25f15751108cf9eea2",
+          "size_bytes": 4011
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/FB15k-237/DistMult/replicate_02/random/per_query.tsv",
+          "sha256": "37c57d1d6fd1077d55891d23e9a1c2aff68e757d35f7c98c9cb5fa61294b72b5",
+          "size_bytes": 13772657
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/FB15k-237/DistMult/replicate_02/random/risk_coverage.tsv",
+          "sha256": "400ab8d476674ece277563fbb23d7ae3662a39149eb9e3df84ab2adb6ccecd7e",
+          "size_bytes": 10011056
+        }
+      },
+      "report": {
+        "path": "reports/official_test/FB15k-237/DistMult/replicate_02/random.json",
+        "sha256": "b9d3981e30deb0ab3e01a7903ee9cc7c319781cd93c39355593aab4f50e197b5",
+        "size_bytes": 7395
+      },
+      "run_id": "fb15k-237-distmult-official-r02-random"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/FB15k-237/DistMult/replicate_02/correct_text/metrics.json",
+          "sha256": "b567931da0ddb469dccd9733fe8db346fd9f39e92fc8c7ab14ddc3feeee8a132",
+          "size_bytes": 3567
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/FB15k-237/DistMult/replicate_02/correct_text/ece_bins.tsv",
+          "sha256": "f1f2e1834835b82959c7570dce95f24e65a4e0fac1ec733a6aa4ec085a0a9fe2",
+          "size_bytes": 3974
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/FB15k-237/DistMult/replicate_02/correct_text/per_query.tsv",
+          "sha256": "bf7133937d0274c598ae88b906146343635ab9fdbc630e8741df3a8300741806",
+          "size_bytes": 14050889
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/FB15k-237/DistMult/replicate_02/correct_text/risk_coverage.tsv",
+          "sha256": "76b35821579fe38c4bd6529b90bf313ad83bb56f1317d5136a85e696f30a4b43",
+          "size_bytes": 10001714
+        }
+      },
+      "report": {
+        "path": "reports/official_test/FB15k-237/DistMult/replicate_02/correct_text.json",
+        "sha256": "aa605c04fe2dfe3a1bc8062a76d3c08c9f3126f05511cfa80cb8c4e57d82a318",
+        "size_bytes": 7441
+      },
+      "run_id": "fb15k-237-distmult-official-r02-correct-text"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/FB15k-237/DistMult/replicate_02/shuffled_text/metrics.json",
+          "sha256": "2bdf97e38726269fd83d8a3040719d9388a5a0ea49558079a6fa3a5b9825ff3f",
+          "size_bytes": 3591
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/FB15k-237/DistMult/replicate_02/shuffled_text/ece_bins.tsv",
+          "sha256": "472e959c2f7e66c015097d701fd6b7794e935eb04a0035a9608d4447d72d7492",
+          "size_bytes": 4004
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/FB15k-237/DistMult/replicate_02/shuffled_text/per_query.tsv",
+          "sha256": "fcd04bd0f0803d1ac0e9709f39ae448911fe5e3d15ae6352d0f8fae9cf0b85b6",
+          "size_bytes": 14101172
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/FB15k-237/DistMult/replicate_02/shuffled_text/risk_coverage.tsv",
+          "sha256": "45677fdd6a2e10e235a008bf3c5af45ef8918a63f160f63966efaad41efba499",
+          "size_bytes": 10009093
+        }
+      },
+      "report": {
+        "path": "reports/official_test/FB15k-237/DistMult/replicate_02/shuffled_text.json",
+        "sha256": "9855f81141878611d13b281763f9fdf0145d9afc86c787657ce70c251a9ad3b0",
+        "size_bytes": 7470
+      },
+      "run_id": "fb15k-237-distmult-official-r02-shuffled-text"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/FB15k-237/DistMult/replicate_03/random/metrics.json",
+          "sha256": "79dcb26a1759e57f2346b79bf496a4149fc2fd02f5b4027ac695f9a097f212e2",
+          "size_bytes": 3582
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/FB15k-237/DistMult/replicate_03/random/ece_bins.tsv",
+          "sha256": "94fe097f0e66abf1aca08cd30295fe0eaa88c2b3fcd406099f68588fa2de313f",
+          "size_bytes": 4006
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/FB15k-237/DistMult/replicate_03/random/per_query.tsv",
+          "sha256": "cfa538900a7a270a11ed075bd0e0c5a9ba0db88c31b810d152ada02092ba6597",
+          "size_bytes": 13815397
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/FB15k-237/DistMult/replicate_03/random/risk_coverage.tsv",
+          "sha256": "ea26eb3ae214d811e33e42727be2c0ee97e983c158f23bc1b49940a85bc584c6",
+          "size_bytes": 10008638
+        }
+      },
+      "report": {
+        "path": "reports/official_test/FB15k-237/DistMult/replicate_03/random.json",
+        "sha256": "b9b95bcdb014b256264139883a79d43863552ab43718ebdc717fed6608ecd3e2",
+        "size_bytes": 7426
+      },
+      "run_id": "fb15k-237-distmult-official-r03-random"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/FB15k-237/DistMult/replicate_03/correct_text/metrics.json",
+          "sha256": "552df9cac1476b7ee0393dec087e80f05e7e695f5f23f31eedf78c4e25e8e7fa",
+          "size_bytes": 3602
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/FB15k-237/DistMult/replicate_03/correct_text/ece_bins.tsv",
+          "sha256": "c1904659ffc6ee527549f8d2f2e60fe8b834d447026bab48868f318274d84faf",
+          "size_bytes": 4017
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/FB15k-237/DistMult/replicate_03/correct_text/per_query.tsv",
+          "sha256": "2050330cf29515c13da9f2cb2b3462640e989ee381223e6e54e351f5fc849d04",
+          "size_bytes": 14048962
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/FB15k-237/DistMult/replicate_03/correct_text/risk_coverage.tsv",
+          "sha256": "d126e2ec5477cce3e8fa11cab9dac752d00accdba3ee81604d3437c8fc6f54b1",
+          "size_bytes": 9998116
+        }
+      },
+      "report": {
+        "path": "reports/official_test/FB15k-237/DistMult/replicate_03/correct_text.json",
+        "sha256": "3e5adea1bfd2108b60ccb5c412841d5e5e883673694f24d4bbbe850c96519ad9",
+        "size_bytes": 7475
+      },
+      "run_id": "fb15k-237-distmult-official-r03-correct-text"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/FB15k-237/DistMult/replicate_03/shuffled_text/metrics.json",
+          "sha256": "02a963cf6cfcee4c02f54b27f4ea4a09066565fdda3d5ede39f5566c03366f35",
+          "size_bytes": 3597
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/FB15k-237/DistMult/replicate_03/shuffled_text/ece_bins.tsv",
+          "sha256": "1c2a78cac7e8567b3fbee26da69410c680bd1ab18d1a39d6c4b9819a8e848a66",
+          "size_bytes": 4032
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/FB15k-237/DistMult/replicate_03/shuffled_text/per_query.tsv",
+          "sha256": "bea0d73df34c1f47a7a9139da56dc216bcea27b4257c01d61aecfd942772cfd2",
+          "size_bytes": 14101039
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/FB15k-237/DistMult/replicate_03/shuffled_text/risk_coverage.tsv",
+          "sha256": "8bdb50c7a32d04dd5890ec824b014dd178190893e364f44009b6062660e8c9bc",
+          "size_bytes": 10013470
+        }
+      },
+      "report": {
+        "path": "reports/official_test/FB15k-237/DistMult/replicate_03/shuffled_text.json",
+        "sha256": "c26f3950a9911f7e0d97cf02af96616c917198f8d55b1f2d32dae2f666e2d2e2",
+        "size_bytes": 7476
+      },
+      "run_id": "fb15k-237-distmult-official-r03-shuffled-text"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/FB15k-237/DistMult/replicate_04/random/metrics.json",
+          "sha256": "2ba4c0711953c3c88339249efa4c9b08aa22e84d997eedc6e592841261c560a1",
+          "size_bytes": 3608
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/FB15k-237/DistMult/replicate_04/random/ece_bins.tsv",
+          "sha256": "0b8b68dc545513dec2c660c8e2457e85a986aa5bc2850ed9ec944286bd15eabb",
+          "size_bytes": 3985
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/FB15k-237/DistMult/replicate_04/random/per_query.tsv",
+          "sha256": "9c431cf117026eddd80983f136359c39203daf0a2cb31de1c0f151c4adf5835f",
+          "size_bytes": 13814659
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/FB15k-237/DistMult/replicate_04/random/risk_coverage.tsv",
+          "sha256": "12c0f76f3ede5ce2eca1100b8f2c00a21695bf39da411f98996dbf153639017e",
+          "size_bytes": 10009171
+        }
+      },
+      "report": {
+        "path": "reports/official_test/FB15k-237/DistMult/replicate_04/random.json",
+        "sha256": "fdcc0acde97c4844d5a836493f92e2bdcb0627bb06026ceda987fa225f757a6f",
+        "size_bytes": 7452
+      },
+      "run_id": "fb15k-237-distmult-official-r04-random"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/FB15k-237/DistMult/replicate_04/correct_text/metrics.json",
+          "sha256": "80e012e01e848c7e92b5fb3bdde47d359715cceb0dd659326015ca1952ff40d8",
+          "size_bytes": 3576
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/FB15k-237/DistMult/replicate_04/correct_text/ece_bins.tsv",
+          "sha256": "8f742fdad10d5d813c40d2a4a2512e52ff4b8d479b40e5d3d6a7964b79aa21bc",
+          "size_bytes": 3983
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/FB15k-237/DistMult/replicate_04/correct_text/per_query.tsv",
+          "sha256": "e6d10838c8ac5e42b452f0281886f50a2ec7c2d6686898a6a2e3ed2c3bebbd38",
+          "size_bytes": 14050690
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/FB15k-237/DistMult/replicate_04/correct_text/risk_coverage.tsv",
+          "sha256": "20d089a3fca60863f75aaec964f7d1063ba0d637defe1ab5b278a5e12f52a0e3",
+          "size_bytes": 9998902
+        }
+      },
+      "report": {
+        "path": "reports/official_test/FB15k-237/DistMult/replicate_04/correct_text.json",
+        "sha256": "4d9a3779a3fd60dd7cfa335a024c1086b0fa5d4bc159a2c6439a54c8e0d4e7eb",
+        "size_bytes": 7449
+      },
+      "run_id": "fb15k-237-distmult-official-r04-correct-text"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/FB15k-237/DistMult/replicate_04/shuffled_text/metrics.json",
+          "sha256": "c0dc37835cd11b442cca1537b08bde15d9743d40921c39792458db911e147451",
+          "size_bytes": 3586
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/FB15k-237/DistMult/replicate_04/shuffled_text/ece_bins.tsv",
+          "sha256": "1653be05cca79698914e836d9ecaabed217684fbade3c3ab48568fc29372aaf3",
+          "size_bytes": 4017
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/FB15k-237/DistMult/replicate_04/shuffled_text/per_query.tsv",
+          "sha256": "8927ed692494190610072072003dce6dc73c31080451c2b0112ac0b8f7d58a24",
+          "size_bytes": 14100269
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/FB15k-237/DistMult/replicate_04/shuffled_text/risk_coverage.tsv",
+          "sha256": "5464efe5c8a54fbce383a6c195334ffeb388fe49f627a1b80168f3862e5acaeb",
+          "size_bytes": 10009257
+        }
+      },
+      "report": {
+        "path": "reports/official_test/FB15k-237/DistMult/replicate_04/shuffled_text.json",
+        "sha256": "38b9b9953ea699843da283d0011a3c047c3dc172c80f19ed291c9386b2522a65",
+        "size_bytes": 7465
+      },
+      "run_id": "fb15k-237-distmult-official-r04-shuffled-text"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/FB15k-237/DistMult/replicate_05/random/metrics.json",
+          "sha256": "b9c8228077130109cc283b4558d7d26b8c756ed1a2974b10eb4c85fd09137bab",
+          "size_bytes": 3571
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/FB15k-237/DistMult/replicate_05/random/ece_bins.tsv",
+          "sha256": "6df847c96e357209fbe3b15a6f9cff4ff47109be7c003573bcfc18f2708ff917",
+          "size_bytes": 4017
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/FB15k-237/DistMult/replicate_05/random/per_query.tsv",
+          "sha256": "fac1b8d76f423d87a3bd6c30f5eadb13d1bb68cf0f194fd13d1636dbe4871863",
+          "size_bytes": 13771961
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/FB15k-237/DistMult/replicate_05/random/risk_coverage.tsv",
+          "sha256": "0d3e99db39ef29a13753121bf7bb5dbcc1df576e1ac471e5dab34fdf0e162062",
+          "size_bytes": 10006648
+        }
+      },
+      "report": {
+        "path": "reports/official_test/FB15k-237/DistMult/replicate_05/random.json",
+        "sha256": "d15380709797d3a72db31c39ca2cdb2bdb4af356dbb3c04c3b82b0b7e21ef59e",
+        "size_bytes": 7414
+      },
+      "run_id": "fb15k-237-distmult-official-r05-random"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/FB15k-237/DistMult/replicate_05/correct_text/metrics.json",
+          "sha256": "81250181c60cd7d25c67f89ba6fb0f5a0219856ecf5cab8dea23d4f85d4eb03f",
+          "size_bytes": 3597
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/FB15k-237/DistMult/replicate_05/correct_text/ece_bins.tsv",
+          "sha256": "f248a2ad960a54418783e58384086a3405e0ddbde91b3dc85ecefd5c97a3448d",
+          "size_bytes": 3982
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/FB15k-237/DistMult/replicate_05/correct_text/per_query.tsv",
+          "sha256": "e54b4f7bd9d7a70483388bf80536dc6b13a6b92cbfb38082dde226dd950b1caa",
+          "size_bytes": 14051543
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/FB15k-237/DistMult/replicate_05/correct_text/risk_coverage.tsv",
+          "sha256": "b23119ddc546918b56de792229e2efe55a30d609dc85964c45501c0e5157d650",
+          "size_bytes": 10001234
+        }
+      },
+      "report": {
+        "path": "reports/official_test/FB15k-237/DistMult/replicate_05/correct_text.json",
+        "sha256": "dc207ef94b97ef80a071561402180de0ed2802df219bf12692b224717749b726",
+        "size_bytes": 7471
+      },
+      "run_id": "fb15k-237-distmult-official-r05-correct-text"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/FB15k-237/DistMult/replicate_05/shuffled_text/metrics.json",
+          "sha256": "90d3cfee9b1a0fe6594743b29a61fa9bfa650e21565fe414e89d6baea5c5e28c",
+          "size_bytes": 3560
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/FB15k-237/DistMult/replicate_05/shuffled_text/ece_bins.tsv",
+          "sha256": "30cccb87053083b0baa9e3b2404783b8f307d7e646319b31940e9c6ddb4d2ae4",
+          "size_bytes": 3992
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/FB15k-237/DistMult/replicate_05/shuffled_text/per_query.tsv",
+          "sha256": "4b1885814bb206ebbc61520f34682780b450c1ffe4471f00677dbce3f00821e8",
+          "size_bytes": 14100370
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/FB15k-237/DistMult/replicate_05/shuffled_text/risk_coverage.tsv",
+          "sha256": "11bc60ecde450f759b08c670cc7f7f60711fecc783a3b8043051109430977a02",
+          "size_bytes": 10009731
+        }
+      },
+      "report": {
+        "path": "reports/official_test/FB15k-237/DistMult/replicate_05/shuffled_text.json",
+        "sha256": "6087faf294522e1d35a818975e5056b421cc3ed9379ef91024309a306c69ed3f",
+        "size_bytes": 7439
+      },
+      "run_id": "fb15k-237-distmult-official-r05-shuffled-text"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/WN18RR/TransE/replicate_01/random/metrics.json",
+          "sha256": "bc93cd069183b26040a4b4a71168a3637f575d698b39d78cc5452372af4adbee",
+          "size_bytes": 3623
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/WN18RR/TransE/replicate_01/random/ece_bins.tsv",
+          "sha256": "002e6bb1774c62337a1b986356c4c9ae0f72f5e9a3c2b54b5f31d952c057b713",
+          "size_bytes": 3164
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/WN18RR/TransE/replicate_01/random/per_query.tsv",
+          "sha256": "7ccbdb3e54c8e6776242ef5ae9455fae0711a52dfef6427435c44858014d91d1",
+          "size_bytes": 2096457
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/WN18RR/TransE/replicate_01/random/risk_coverage.tsv",
+          "sha256": "c882411f51b1929455b912508b7821819c9c6e87b1974241497985d9f658910e",
+          "size_bytes": 1435745
+        }
+      },
+      "report": {
+        "path": "reports/official_test/WN18RR/TransE/replicate_01/random.json",
+        "sha256": "d26025b60f2a8380c72f074cf31cc9dd3a1222d81a8aef76f18281eea405d706",
+        "size_bytes": 7431
+      },
+      "run_id": "wn18rr-transe-official-r01-random"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/WN18RR/TransE/replicate_01/correct_text/metrics.json",
+          "sha256": "9dc7a90cfb75d20260b6207a4441c675435429b5256178e643255f7241058590",
+          "size_bytes": 3616
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/WN18RR/TransE/replicate_01/correct_text/ece_bins.tsv",
+          "sha256": "7ac118ad69c621527efd169f1cacada08f9e7116cec9ea854d023fb02926bdec",
+          "size_bytes": 3132
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/WN18RR/TransE/replicate_01/correct_text/per_query.tsv",
+          "sha256": "7d93e944d839f126151b1600a341ea55502e166c3f8d3f73c39659000cab7985",
+          "size_bytes": 2131486
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/WN18RR/TransE/replicate_01/correct_text/risk_coverage.tsv",
+          "sha256": "5b617244b8302b291c31e4ffd3605d93738069bc457c04d84910e2fde2f2e81c",
+          "size_bytes": 1453576
+        }
+      },
+      "report": {
+        "path": "reports/official_test/WN18RR/TransE/replicate_01/correct_text.json",
+        "sha256": "2d67a39511306382f0e1041053566746464946597e87089ca23372f7e3ea69b1",
+        "size_bytes": 7454
+      },
+      "run_id": "wn18rr-transe-official-r01-correct-text"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/WN18RR/TransE/replicate_01/shuffled_text/metrics.json",
+          "sha256": "9f67a8b87209e04a1c7851b4a0a56fbeabd99caa442e63c7f1284a0bf5c220bd",
+          "size_bytes": 3625
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/WN18RR/TransE/replicate_01/shuffled_text/ece_bins.tsv",
+          "sha256": "12463bdbab2f0e6d3467ec8e7f2a24f169ef6168722b225900788e3d48d00d25",
+          "size_bytes": 3141
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/WN18RR/TransE/replicate_01/shuffled_text/per_query.tsv",
+          "sha256": "d68da28f74de098a55bd4622ce0c87d084a4c56753a76991b818be1360ba0d60",
+          "size_bytes": 2143328
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/WN18RR/TransE/replicate_01/shuffled_text/risk_coverage.tsv",
+          "sha256": "c0fc4b560e4d76c55f2a7628d5dc2b7d77420335aa40078d90828684e9fe619b",
+          "size_bytes": 1437955
+        }
+      },
+      "report": {
+        "path": "reports/official_test/WN18RR/TransE/replicate_01/shuffled_text.json",
+        "sha256": "895232dd7e023df34c3e849260e34749619986e1a27b5d4f6db6747b1d7be67a",
+        "size_bytes": 7468
+      },
+      "run_id": "wn18rr-transe-official-r01-shuffled-text"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/WN18RR/TransE/replicate_02/random/metrics.json",
+          "sha256": "f6f6b0cbad4d168c9915f4d8cb64fa818a66e8b26f71447d057a79982c54f02e",
+          "size_bytes": 3598
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/WN18RR/TransE/replicate_02/random/ece_bins.tsv",
+          "sha256": "eeccb134f3e129da07170ce2fa777d13f6392e8c57e8d6bd33bb3c069e0841a0",
+          "size_bytes": 3183
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/WN18RR/TransE/replicate_02/random/per_query.tsv",
+          "sha256": "30dcfd0dcc2a2364338f8057b114a94b4ca0a8f99fa96be6ee67ae5bde6273dc",
+          "size_bytes": 2099078
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/WN18RR/TransE/replicate_02/random/risk_coverage.tsv",
+          "sha256": "c66307f82c38e1d69eec3b70baa8134e8236881f5cf1a0a3a6672e1a26ee435b",
+          "size_bytes": 1431648
+        }
+      },
+      "report": {
+        "path": "reports/official_test/WN18RR/TransE/replicate_02/random.json",
+        "sha256": "6967e4e608aa40b620c8ab913c32ee0972378d45ac0dc335307a4a7d74dbeb12",
+        "size_bytes": 7406
+      },
+      "run_id": "wn18rr-transe-official-r02-random"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/WN18RR/TransE/replicate_02/correct_text/metrics.json",
+          "sha256": "15b381930fae01089820d524d7070b143f8304b8eeb007651157cd99e623f748",
+          "size_bytes": 3624
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/WN18RR/TransE/replicate_02/correct_text/ece_bins.tsv",
+          "sha256": "9b07d2fc11bfe3103dbb3fcc1bd4856796f65ebeb336a77f017771b72ea11324",
+          "size_bytes": 3146
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/WN18RR/TransE/replicate_02/correct_text/per_query.tsv",
+          "sha256": "08f423612231eed0986d9faa01c008b47bd08da18863279c3494076d1ea35b2e",
+          "size_bytes": 2131128
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/WN18RR/TransE/replicate_02/correct_text/risk_coverage.tsv",
+          "sha256": "9b02004edb39716dc2eed5074465790796f1d50a41e9ac2f74f8d08a17047f56",
+          "size_bytes": 1450175
+        }
+      },
+      "report": {
+        "path": "reports/official_test/WN18RR/TransE/replicate_02/correct_text.json",
+        "sha256": "6890cd18000f472e79ac35bf02a4943c1f246f2310b346d8357c2482b804e588",
+        "size_bytes": 7462
+      },
+      "run_id": "wn18rr-transe-official-r02-correct-text"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/WN18RR/TransE/replicate_02/shuffled_text/metrics.json",
+          "sha256": "92bb841024588763dcce25f2596e7b8be4a42b44bb0f5072a408160b94b06ae7",
+          "size_bytes": 3629
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/WN18RR/TransE/replicate_02/shuffled_text/ece_bins.tsv",
+          "sha256": "ed101fda5d5c5336387293db7af12ad821835b0f5c2b2d16d009a87c01a9fa4f",
+          "size_bytes": 3183
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/WN18RR/TransE/replicate_02/shuffled_text/per_query.tsv",
+          "sha256": "7afc853bd25c873bbd2781c7a7db175fbe67ca12efc85d9c4fc6d65fc964e7f4",
+          "size_bytes": 2142633
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/WN18RR/TransE/replicate_02/shuffled_text/risk_coverage.tsv",
+          "sha256": "98609c07a80362552046628c9da5af6f133ffc7b0f9ae22b79313539c53ec31a",
+          "size_bytes": 1433296
+        }
+      },
+      "report": {
+        "path": "reports/official_test/WN18RR/TransE/replicate_02/shuffled_text.json",
+        "sha256": "cc0479bc9ca2295b55adde330e789c37dc1505c4ee5dfb2299593dc1f7ce20f5",
+        "size_bytes": 7472
+      },
+      "run_id": "wn18rr-transe-official-r02-shuffled-text"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/WN18RR/TransE/replicate_03/random/metrics.json",
+          "sha256": "eb421707f74f4917ff98d9f02da7a1fc52c9ae05bb8c378c5d6b15704b9dd3ed",
+          "size_bytes": 3602
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/WN18RR/TransE/replicate_03/random/ece_bins.tsv",
+          "sha256": "fa25050f1a025183b7e4b274298d7832e98e56e0bf6852b0f69ea77c2fe62c84",
+          "size_bytes": 3154
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/WN18RR/TransE/replicate_03/random/per_query.tsv",
+          "sha256": "a11400a998eac0075d5dd0e17faef6454daf17230444cd328b7e05cdc3fe501c",
+          "size_bytes": 2096586
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/WN18RR/TransE/replicate_03/random/risk_coverage.tsv",
+          "sha256": "6e81d2e09b952e52a10702274507133431590e9516e2216e97f68302af5ae457",
+          "size_bytes": 1433807
+        }
+      },
+      "report": {
+        "path": "reports/official_test/WN18RR/TransE/replicate_03/random.json",
+        "sha256": "3c6c0ebcd1c60e7d5780a1d69844099ffa679e5907c6acf904ce312d3fa78cb6",
+        "size_bytes": 7410
+      },
+      "run_id": "wn18rr-transe-official-r03-random"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/WN18RR/TransE/replicate_03/correct_text/metrics.json",
+          "sha256": "5232441a73d9a00f55ce2c71b317fadaccb0602dd35ff244500fab8813fdad69",
+          "size_bytes": 3621
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/WN18RR/TransE/replicate_03/correct_text/ece_bins.tsv",
+          "sha256": "23c8a5d5731598b049338dbef6ac5f6715acba5aceb44663512a005ab43cead1",
+          "size_bytes": 3173
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/WN18RR/TransE/replicate_03/correct_text/per_query.tsv",
+          "sha256": "c55631d6a19b3eeef71a821b2e6f55f852f9094ff3f7ff269871a66d09734fa8",
+          "size_bytes": 2125011
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/WN18RR/TransE/replicate_03/correct_text/risk_coverage.tsv",
+          "sha256": "aa75952e7502760223d1b25a700d571a949009bd57192acefa770d0011dd2ec4",
+          "size_bytes": 1490030
+        }
+      },
+      "report": {
+        "path": "reports/official_test/WN18RR/TransE/replicate_03/correct_text.json",
+        "sha256": "07fa1f1f7009db742e0e314e2ddb9e8b9068842be5836dc39826d1e1b7516907",
+        "size_bytes": 7458
+      },
+      "run_id": "wn18rr-transe-official-r03-correct-text"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/WN18RR/TransE/replicate_03/shuffled_text/metrics.json",
+          "sha256": "49a531203c4ab13979da4d9f22f8dd4ae96d09889d9d43614a0f90fd8cc04b36",
+          "size_bytes": 3595
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/WN18RR/TransE/replicate_03/shuffled_text/ece_bins.tsv",
+          "sha256": "062f18cb90ec6180941467b0fe090fb944ec2edb71a8b3a55d735e4e50605082",
+          "size_bytes": 3152
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/WN18RR/TransE/replicate_03/shuffled_text/per_query.tsv",
+          "sha256": "d2c4796c31f5171cddcddb51f95036c96827c87bee941eb896b2ebe8c162b571",
+          "size_bytes": 2140640
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/WN18RR/TransE/replicate_03/shuffled_text/risk_coverage.tsv",
+          "sha256": "c644baf11c093e417e067128f5d6c54b007e764f011c6feeb82e30f921c0452e",
+          "size_bytes": 1434122
+        }
+      },
+      "report": {
+        "path": "reports/official_test/WN18RR/TransE/replicate_03/shuffled_text.json",
+        "sha256": "97764a8b3db1e843b396dc6f20a3c2c909b123a854d307364a11d0e76f618601",
+        "size_bytes": 7438
+      },
+      "run_id": "wn18rr-transe-official-r03-shuffled-text"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/WN18RR/TransE/replicate_04/random/metrics.json",
+          "sha256": "57dd38d9723caa6c47d6981095e2db5ff93fcdf7a0e78c2410f0585fe6d56071",
+          "size_bytes": 3582
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/WN18RR/TransE/replicate_04/random/ece_bins.tsv",
+          "sha256": "6d192fc9e4019eb6455510e7315b6b3db46e570095283e027ec4d9789ac08461",
+          "size_bytes": 3199
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/WN18RR/TransE/replicate_04/random/per_query.tsv",
+          "sha256": "b49fb0be13cc2d92982d2b5b4b66956e53264d748e8e60a8d29841dde85d7ad2",
+          "size_bytes": 2099134
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/WN18RR/TransE/replicate_04/random/risk_coverage.tsv",
+          "sha256": "dc033341007783e4060bd906cdb019607d21724aa5c302d7bf54258eccb97146",
+          "size_bytes": 1432758
+        }
+      },
+      "report": {
+        "path": "reports/official_test/WN18RR/TransE/replicate_04/random.json",
+        "sha256": "2b02c90b0499540fc37d4a59d28ab22e4db98e846bb7cbf17b1724263b3d8921",
+        "size_bytes": 7390
+      },
+      "run_id": "wn18rr-transe-official-r04-random"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/WN18RR/TransE/replicate_04/correct_text/metrics.json",
+          "sha256": "edf6dde985b6e5903a03ba16688a515d63c9b85b99d136a2bc3f109778693a75",
+          "size_bytes": 3622
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/WN18RR/TransE/replicate_04/correct_text/ece_bins.tsv",
+          "sha256": "69069e180d0e78b9099c8d025e6fff28900d1c81ac1f916aefd32afdc3276c96",
+          "size_bytes": 3195
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/WN18RR/TransE/replicate_04/correct_text/per_query.tsv",
+          "sha256": "9e709fcf57d8c1a18532022cb7d363eb42ef05705621bbfc7a423ca6b63728f2",
+          "size_bytes": 2123031
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/WN18RR/TransE/replicate_04/correct_text/risk_coverage.tsv",
+          "sha256": "59419efbbd4be37f60557a15ad8fcb36f5dcac22e3e9751adc1897760c3234d0",
+          "size_bytes": 1473281
+        }
+      },
+      "report": {
+        "path": "reports/official_test/WN18RR/TransE/replicate_04/correct_text.json",
+        "sha256": "ecbad5433136ce8b3a5c5700365b64d0bdfc934bc4cb5d1a1ececf42d32a3c5e",
+        "size_bytes": 7459
+      },
+      "run_id": "wn18rr-transe-official-r04-correct-text"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/WN18RR/TransE/replicate_04/shuffled_text/metrics.json",
+          "sha256": "78dadc2cac315c9a819ec1f963bf2a77ae926da7880e89685534fc999a6ab60e",
+          "size_bytes": 3605
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/WN18RR/TransE/replicate_04/shuffled_text/ece_bins.tsv",
+          "sha256": "643d8ea03d5f52ce475d7d3557115618cdd88cc024050fa9074ed5a8464977b3",
+          "size_bytes": 3151
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/WN18RR/TransE/replicate_04/shuffled_text/per_query.tsv",
+          "sha256": "c5a0cd16836bfba4d752494ff7d4de2854995d52e20c1bc5034690ab69e84dff",
+          "size_bytes": 2142410
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/WN18RR/TransE/replicate_04/shuffled_text/risk_coverage.tsv",
+          "sha256": "78ce8ea7dcf976b7e5d4e1d8462c92ac21c4958650a75c387b539dbe3f7395c7",
+          "size_bytes": 1429709
+        }
+      },
+      "report": {
+        "path": "reports/official_test/WN18RR/TransE/replicate_04/shuffled_text.json",
+        "sha256": "ef33f16c32a39290f5fa51b775fd97d7e07a3cb9140f19c98517c71e40fc3b70",
+        "size_bytes": 7448
+      },
+      "run_id": "wn18rr-transe-official-r04-shuffled-text"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/WN18RR/TransE/replicate_05/random/metrics.json",
+          "sha256": "3331f532255398fe39aaae4fb56488a7049a49306b1a079cdbe862e766f6b082",
+          "size_bytes": 3601
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/WN18RR/TransE/replicate_05/random/ece_bins.tsv",
+          "sha256": "c9efac57760c3ed370327aa6b1159d03956a35b03fd0466315fde9dd97bafd71",
+          "size_bytes": 3211
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/WN18RR/TransE/replicate_05/random/per_query.tsv",
+          "sha256": "6532963fb6ee7ffb5432e9daf705eed0da19e0aa509d25a4c0de3c21c33a09c4",
+          "size_bytes": 2092913
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/WN18RR/TransE/replicate_05/random/risk_coverage.tsv",
+          "sha256": "c5a88bccc54c5bcd12a7de0e06f15d8ac02268abeb5a724e22b9e914a2c04300",
+          "size_bytes": 1435471
+        }
+      },
+      "report": {
+        "path": "reports/official_test/WN18RR/TransE/replicate_05/random.json",
+        "sha256": "6ed7a75baab11de38cc5a54c0fe0619e651e830586e3d1344e1e6d12640ce933",
+        "size_bytes": 7409
+      },
+      "run_id": "wn18rr-transe-official-r05-random"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/WN18RR/TransE/replicate_05/correct_text/metrics.json",
+          "sha256": "177471ad1bda7a1d7acdd0eb7c88370aeebc8d42c24067a4c86dfc7a3a0219ff",
+          "size_bytes": 3619
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/WN18RR/TransE/replicate_05/correct_text/ece_bins.tsv",
+          "sha256": "212026694eea712ff1c781a9e7cbc6dd05f996c86846c3a6aea8920065a9d94d",
+          "size_bytes": 3132
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/WN18RR/TransE/replicate_05/correct_text/per_query.tsv",
+          "sha256": "51b4e9a076935939e2105ea0c9bb06c75572a608a0b59510ff2ab11e8425c337",
+          "size_bytes": 2127982
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/WN18RR/TransE/replicate_05/correct_text/risk_coverage.tsv",
+          "sha256": "693b4f11f6e174b16484896518c0d17cb741fa77eb1d40844c4564e4a91f4450",
+          "size_bytes": 1453246
+        }
+      },
+      "report": {
+        "path": "reports/official_test/WN18RR/TransE/replicate_05/correct_text.json",
+        "sha256": "2e9e290c626461143132d994a4ee1b9cffacad07c6028e555608501163a0e3b6",
+        "size_bytes": 7457
+      },
+      "run_id": "wn18rr-transe-official-r05-correct-text"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/WN18RR/TransE/replicate_05/shuffled_text/metrics.json",
+          "sha256": "38c906d7db1529feb56a28bd288ba9f57ae9dca67e2ed88938e44172f5f4cc19",
+          "size_bytes": 3591
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/WN18RR/TransE/replicate_05/shuffled_text/ece_bins.tsv",
+          "sha256": "62c2e2a1968fdcf2b17824a0c9a99097a3ccf7a2a85d252ce565b657b36e8ab7",
+          "size_bytes": 3257
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/WN18RR/TransE/replicate_05/shuffled_text/per_query.tsv",
+          "sha256": "73272619ccddb09fcf94eb5366e37272b299cd5743c6d894f990ed1a7e43b0b9",
+          "size_bytes": 2143048
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/WN18RR/TransE/replicate_05/shuffled_text/risk_coverage.tsv",
+          "sha256": "7b375ae10f04b7001bfd9da8e7f9a581629c3ce2c2fd6c94419376e1f5c703dd",
+          "size_bytes": 1440303
+        }
+      },
+      "report": {
+        "path": "reports/official_test/WN18RR/TransE/replicate_05/shuffled_text.json",
+        "sha256": "23ae1573de3defc2ff98a479562dbb8de5f612fa385aa8db266afa7f4353b51b",
+        "size_bytes": 7434
+      },
+      "run_id": "wn18rr-transe-official-r05-shuffled-text"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/WN18RR/DistMult/replicate_01/random/metrics.json",
+          "sha256": "eb27ee316c1e0252628119105c004f6bc0b34f8b7eb8bb78c5b1bb2f80de1eeb",
+          "size_bytes": 3585
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/WN18RR/DistMult/replicate_01/random/ece_bins.tsv",
+          "sha256": "a78067cfed712622b26d7c8cd7e23e208671192586950db66df8d556701cf07a",
+          "size_bytes": 4000
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/WN18RR/DistMult/replicate_01/random/per_query.tsv",
+          "sha256": "da4d98ee7f9fdef10492311679b861469bd534b38a641f5fc1205bd57e3f4580",
+          "size_bytes": 2097341
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/WN18RR/DistMult/replicate_01/random/risk_coverage.tsv",
+          "sha256": "e4cdcbe74589539047567e243152c4fb017eeb2e10462f3657988a01324be634",
+          "size_bytes": 1433144
+        }
+      },
+      "report": {
+        "path": "reports/official_test/WN18RR/DistMult/replicate_01/random.json",
+        "sha256": "691bf4be7596b51a023767aa6199935fd8df43440e85d8176592969c4cd2f73a",
+        "size_bytes": 7404
+      },
+      "run_id": "wn18rr-distmult-official-r01-random"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/WN18RR/DistMult/replicate_01/correct_text/metrics.json",
+          "sha256": "41a02363811f7bb2e149d154d74a48295a705eb7a183bb753373a65fa5a7ce03",
+          "size_bytes": 3589
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/WN18RR/DistMult/replicate_01/correct_text/ece_bins.tsv",
+          "sha256": "e053255ee596588005a1e6f990b757d11c6884666981a12a98d486f47453cb52",
+          "size_bytes": 3831
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/WN18RR/DistMult/replicate_01/correct_text/per_query.tsv",
+          "sha256": "45b881489e4e2ddfbdfef6dc6f49a59dde839eda12d882ff89942a8369799383",
+          "size_bytes": 2125662
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/WN18RR/DistMult/replicate_01/correct_text/risk_coverage.tsv",
+          "sha256": "a493856da7920956f4e77c94c10390e156fab52b4763fb7a20352aae3ea4136d",
+          "size_bytes": 1418450
+        }
+      },
+      "report": {
+        "path": "reports/official_test/WN18RR/DistMult/replicate_01/correct_text.json",
+        "sha256": "039a57eca41b522482186762c06a5c10afc021df9380c94c39568724f4cb7a10",
+        "size_bytes": 7438
+      },
+      "run_id": "wn18rr-distmult-official-r01-correct-text"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/WN18RR/DistMult/replicate_01/shuffled_text/metrics.json",
+          "sha256": "bd3e1e3afe28f5a050c5a0332a57942ea3c0de83ad61cae5f8401f8c980e7b9a",
+          "size_bytes": 3587
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/WN18RR/DistMult/replicate_01/shuffled_text/ece_bins.tsv",
+          "sha256": "4ca97296832bcf0490ab4bdb040d0a9f951b97844f95d1e3099200490a076ac4",
+          "size_bytes": 3991
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/WN18RR/DistMult/replicate_01/shuffled_text/per_query.tsv",
+          "sha256": "db7d39a6c760334e3865d092fef4c71c6b515347eb1005f205ba296f6fbb720f",
+          "size_bytes": 2144050
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/WN18RR/DistMult/replicate_01/shuffled_text/risk_coverage.tsv",
+          "sha256": "895b98372a05f4b589828a858075559d094a45abe549eee81c3f056d0f7d0607",
+          "size_bytes": 1431515
+        }
+      },
+      "report": {
+        "path": "reports/official_test/WN18RR/DistMult/replicate_01/shuffled_text.json",
+        "sha256": "e27658ed7fdae9959fced47cb506de885c53230f53292eae9c2f2234a5dff970",
+        "size_bytes": 7442
+      },
+      "run_id": "wn18rr-distmult-official-r01-shuffled-text"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/WN18RR/DistMult/replicate_02/random/metrics.json",
+          "sha256": "5dc40e365a661f932f223fb62394fc1747403d234ee9f9c8a795b45f24df3540",
+          "size_bytes": 3556
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/WN18RR/DistMult/replicate_02/random/ece_bins.tsv",
+          "sha256": "c2420b39f1f5d93ff0653c007fc819433857439fafe39df9fde92134399fead5",
+          "size_bytes": 3969
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/WN18RR/DistMult/replicate_02/random/per_query.tsv",
+          "sha256": "821a99aa56dcd9fd83caba29c71f472a689f196f427a34307c62bf59acf7ac2d",
+          "size_bytes": 2103089
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/WN18RR/DistMult/replicate_02/random/risk_coverage.tsv",
+          "sha256": "ab6bf20ff29e1013961b888a387bffad23834bf26b4e79687ded7c002af831c7",
+          "size_bytes": 1431560
+        }
+      },
+      "report": {
+        "path": "reports/official_test/WN18RR/DistMult/replicate_02/random.json",
+        "sha256": "89467bf7008d456e7af7e6027700b2cbacd00ac20841b19ea9235fb377716386",
+        "size_bytes": 7376
+      },
+      "run_id": "wn18rr-distmult-official-r02-random"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/WN18RR/DistMult/replicate_02/correct_text/metrics.json",
+          "sha256": "f69dd4946201b148e0dbb51c262ee1c4a79e08ab3ea9ef327ae8bc6f42a30d0a",
+          "size_bytes": 3594
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/WN18RR/DistMult/replicate_02/correct_text/ece_bins.tsv",
+          "sha256": "d2c7349430563c7f67cef2b1a0be0d6c2315c21763e7123a1225edcde255e331",
+          "size_bytes": 3906
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/WN18RR/DistMult/replicate_02/correct_text/per_query.tsv",
+          "sha256": "7e06019596dac3e1b7b36d50389f7be2fa4a5610874b5d1af3a7d43f608251d7",
+          "size_bytes": 2130333
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/WN18RR/DistMult/replicate_02/correct_text/risk_coverage.tsv",
+          "sha256": "3d13d6bffbbb74096f85d6294d0e27845e3c3c8a082b027f47ba34d5489e7dcd",
+          "size_bytes": 1429155
+        }
+      },
+      "report": {
+        "path": "reports/official_test/WN18RR/DistMult/replicate_02/correct_text.json",
+        "sha256": "73e3b3791880eec4ce85670025614471f21c26e05b8ce1407e09b2fe0ff7420e",
+        "size_bytes": 7444
+      },
+      "run_id": "wn18rr-distmult-official-r02-correct-text"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/WN18RR/DistMult/replicate_02/shuffled_text/metrics.json",
+          "sha256": "30b2d760e5cf4a2d0c713a0073347f5157893eaf4366886b96fa3e24d0ee809d",
+          "size_bytes": 3583
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/WN18RR/DistMult/replicate_02/shuffled_text/ece_bins.tsv",
+          "sha256": "c6c80eae1f29713106974d3e7f439abf2cfa343f28a92e0a45121aa78028bdad",
+          "size_bytes": 3999
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/WN18RR/DistMult/replicate_02/shuffled_text/per_query.tsv",
+          "sha256": "5c05cc168dabe5f034c8e768722e3599f286cdc0237c9277e5731449f422eae6",
+          "size_bytes": 2144445
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/WN18RR/DistMult/replicate_02/shuffled_text/risk_coverage.tsv",
+          "sha256": "01c54404e8627e713314b41e9e40083b3e83e3dc669048992b8c5a0a5e3da664",
+          "size_bytes": 1430742
+        }
+      },
+      "report": {
+        "path": "reports/official_test/WN18RR/DistMult/replicate_02/shuffled_text.json",
+        "sha256": "b3c44d7b4600392b32c2c0ae71053ae627f5abacc4783c37cf2e642736daecc9",
+        "size_bytes": 7438
+      },
+      "run_id": "wn18rr-distmult-official-r02-shuffled-text"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/WN18RR/DistMult/replicate_03/random/metrics.json",
+          "sha256": "4df4364fcb120403fcf537e013a0d642cbc9ef90821fa09098bb6716023c81a4",
+          "size_bytes": 3555
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/WN18RR/DistMult/replicate_03/random/ece_bins.tsv",
+          "sha256": "bc5f32b7f2cdc5dd8983fbf8dccba90485ade2299a3dd2535c36d71a7e6de14a",
+          "size_bytes": 3983
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/WN18RR/DistMult/replicate_03/random/per_query.tsv",
+          "sha256": "49a0d8e49775eebe069282c6360e443c5e458d104e5b682f8624e6cf9299ce69",
+          "size_bytes": 2103353
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/WN18RR/DistMult/replicate_03/random/risk_coverage.tsv",
+          "sha256": "f30c16053945e61ea4f807c17251845b49847728c98a92772ae63c1a4ec75a73",
+          "size_bytes": 1432122
+        }
+      },
+      "report": {
+        "path": "reports/official_test/WN18RR/DistMult/replicate_03/random.json",
+        "sha256": "6d18704468dd8f53e74f509f82ac1148ccdcb84ac25c1fc88084c841840c9030",
+        "size_bytes": 7375
+      },
+      "run_id": "wn18rr-distmult-official-r03-random"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/WN18RR/DistMult/replicate_03/correct_text/metrics.json",
+          "sha256": "c949f92f812f491e2a60838a5a5b4d04d85cc3577eec4203c911473f6ba870a7",
+          "size_bytes": 3598
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/WN18RR/DistMult/replicate_03/correct_text/ece_bins.tsv",
+          "sha256": "5094d09679d186c08b45a4df653704c84a9859f0fb3caff4b093913c225a1210",
+          "size_bytes": 3851
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/WN18RR/DistMult/replicate_03/correct_text/per_query.tsv",
+          "sha256": "c666931592cb3112b94a6821352bf59fa74cb43c5c058a51edb25beb60ce79cd",
+          "size_bytes": 2131498
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/WN18RR/DistMult/replicate_03/correct_text/risk_coverage.tsv",
+          "sha256": "e08b91a92d9c6a84a1844dcfe4e91e731829b8e75b623d0dae1ad6ff99653e38",
+          "size_bytes": 1439842
+        }
+      },
+      "report": {
+        "path": "reports/official_test/WN18RR/DistMult/replicate_03/correct_text.json",
+        "sha256": "491894198ae2e542db08899877b8b70322b24d2a66794be76ebfb5d20a98a591",
+        "size_bytes": 7448
+      },
+      "run_id": "wn18rr-distmult-official-r03-correct-text"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/WN18RR/DistMult/replicate_03/shuffled_text/metrics.json",
+          "sha256": "bc2cee70c7a3b60868b4a3e52956ec60cb72b402abb018e58cc84b0b59fe5064",
+          "size_bytes": 3605
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/WN18RR/DistMult/replicate_03/shuffled_text/ece_bins.tsv",
+          "sha256": "b18a301d5cbbd1bb14e664195e801b425f32e30aefbcba4afe210a0886d69f5e",
+          "size_bytes": 4012
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/WN18RR/DistMult/replicate_03/shuffled_text/per_query.tsv",
+          "sha256": "692cef3da95d46971c7ecf5bd68bf006c4dc15caff3eea1d9313abe365987b17",
+          "size_bytes": 2144861
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/WN18RR/DistMult/replicate_03/shuffled_text/risk_coverage.tsv",
+          "sha256": "c59e65d40b48f32e6853d45c21472b69c21ba676d9e4887d0165b667e384e173",
+          "size_bytes": 1432522
+        }
+      },
+      "report": {
+        "path": "reports/official_test/WN18RR/DistMult/replicate_03/shuffled_text.json",
+        "sha256": "6d7c9aa86592ca4ef902f6077c11d0b288d18da598a617497a4376dcbd64c01b",
+        "size_bytes": 7460
+      },
+      "run_id": "wn18rr-distmult-official-r03-shuffled-text"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/WN18RR/DistMult/replicate_04/random/metrics.json",
+          "sha256": "811fd829a7b9027a18382171b8e3c47f7ee57377fb50a824134c9fb9c4ed39e0",
+          "size_bytes": 3592
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/WN18RR/DistMult/replicate_04/random/ece_bins.tsv",
+          "sha256": "a9c9d8f0bcd2ceb07c06078c3bbce33d2668b4c69ed40317401315e693b0918e",
+          "size_bytes": 3984
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/WN18RR/DistMult/replicate_04/random/per_query.tsv",
+          "sha256": "706b30af0c4e1a13fc825e1644eab91a7582563070f6bee3dd513b9341361c97",
+          "size_bytes": 2103716
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/WN18RR/DistMult/replicate_04/random/risk_coverage.tsv",
+          "sha256": "58f181c578a64174b00e8128fe45a6601ad39245ab748ebfb4a82623f01adccc",
+          "size_bytes": 1429328
+        }
+      },
+      "report": {
+        "path": "reports/official_test/WN18RR/DistMult/replicate_04/random.json",
+        "sha256": "8ef11fdc5825a8284c99147066d72456af99496fb68a894f128707b885c2d886",
+        "size_bytes": 7412
+      },
+      "run_id": "wn18rr-distmult-official-r04-random"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/WN18RR/DistMult/replicate_04/correct_text/metrics.json",
+          "sha256": "e40a8558b424ecd05656b294cbb55e74bc84cf1746fc8a4b20a7e6348a811c3a",
+          "size_bytes": 3577
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/WN18RR/DistMult/replicate_04/correct_text/ece_bins.tsv",
+          "sha256": "35362c86d63c3f1b0ded2d7d83d30f1c67fdaa675e41ea7b78593757903705df",
+          "size_bytes": 3882
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/WN18RR/DistMult/replicate_04/correct_text/per_query.tsv",
+          "sha256": "42c3022df9f06fff5afb00913053d15433e2b311a0f4f733fd98ce0676adabd8",
+          "size_bytes": 2129373
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/WN18RR/DistMult/replicate_04/correct_text/risk_coverage.tsv",
+          "sha256": "55c6c61fdcca6ca3f8f44703b9d194bc351eebf0f48791930179e08fb0393710",
+          "size_bytes": 1425654
+        }
+      },
+      "report": {
+        "path": "reports/official_test/WN18RR/DistMult/replicate_04/correct_text.json",
+        "sha256": "2f785d9275269c1126e96dfc53e56c7331e40e6c0886561d4c6987a8b557bc0b",
+        "size_bytes": 7427
+      },
+      "run_id": "wn18rr-distmult-official-r04-correct-text"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/WN18RR/DistMult/replicate_04/shuffled_text/metrics.json",
+          "sha256": "58c37b319eff2ec0f3d76737cd1a00ddda302218b2b3b81f004c86fef6733fb9",
+          "size_bytes": 3592
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/WN18RR/DistMult/replicate_04/shuffled_text/ece_bins.tsv",
+          "sha256": "adea7740e0d88741bbf280cad77435df1ab2104d23fa9a95d3d2b6b99bab99f5",
+          "size_bytes": 4019
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/WN18RR/DistMult/replicate_04/shuffled_text/per_query.tsv",
+          "sha256": "23f0ae19f5363f6c9241cde64a0fae765413e33f5898968b97fb05fca0e41260",
+          "size_bytes": 2144207
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/WN18RR/DistMult/replicate_04/shuffled_text/risk_coverage.tsv",
+          "sha256": "7fd8cefae80c498291b8b742bb4495f4d00693595893f7a920dbeff93b8045b6",
+          "size_bytes": 1430350
+        }
+      },
+      "report": {
+        "path": "reports/official_test/WN18RR/DistMult/replicate_04/shuffled_text.json",
+        "sha256": "48d1d8b8ae1ab1b21cdd1061a2e8e334305e808450accfe9d07520fcb30d7711",
+        "size_bytes": 7447
+      },
+      "run_id": "wn18rr-distmult-official-r04-shuffled-text"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/WN18RR/DistMult/replicate_05/random/metrics.json",
+          "sha256": "3e9b691710f58c355f2bb6f9dbcc5a3ea128db3e241597638dd86a59d46afc8b",
+          "size_bytes": 3592
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/WN18RR/DistMult/replicate_05/random/ece_bins.tsv",
+          "sha256": "eaee237143e1f9aadb85138c2090da9d11ce9ee44ddd00b1b6c301cc4358e80e",
+          "size_bytes": 4010
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/WN18RR/DistMult/replicate_05/random/per_query.tsv",
+          "sha256": "1b772a083f026275b75e84874c57228c5d7caba0b4bae5f30de692e40d08d6f7",
+          "size_bytes": 2104030
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/WN18RR/DistMult/replicate_05/random/risk_coverage.tsv",
+          "sha256": "04677b87da736e7d9442e081f497ef6cf7504ee028cba0fd734161ebe1366552",
+          "size_bytes": 1432807
+        }
+      },
+      "report": {
+        "path": "reports/official_test/WN18RR/DistMult/replicate_05/random.json",
+        "sha256": "8608db374c7355a3a6018bbf1cb9f1b32970defb33519cf1019d6242d6761a6d",
+        "size_bytes": 7412
+      },
+      "run_id": "wn18rr-distmult-official-r05-random"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/WN18RR/DistMult/replicate_05/correct_text/metrics.json",
+          "sha256": "e432e1bd127c82922fdf288073bf21739875573567d85cd468646bc2aa434104",
+          "size_bytes": 3592
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/WN18RR/DistMult/replicate_05/correct_text/ece_bins.tsv",
+          "sha256": "64de9feb8b56f05d9007778c01aa36c62f8cff6e7607f9f512c445b1af992600",
+          "size_bytes": 3852
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/WN18RR/DistMult/replicate_05/correct_text/per_query.tsv",
+          "sha256": "8df0467ece5d368ce3ed2bccbe757bed61eb2c4aca47891b966abaf3fccf0555",
+          "size_bytes": 2133845
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/WN18RR/DistMult/replicate_05/correct_text/risk_coverage.tsv",
+          "sha256": "40516db0113d5c5a386eb5bdfe52c19b029ec7d7cac9005a273e4135e66d588b",
+          "size_bytes": 1422177
+        }
+      },
+      "report": {
+        "path": "reports/official_test/WN18RR/DistMult/replicate_05/correct_text.json",
+        "sha256": "5f178f042cfd81fd335cd0d3baf1c0f81729ad4d981420b62d07cdad166314d4",
+        "size_bytes": 7442
+      },
+      "run_id": "wn18rr-distmult-official-r05-correct-text"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/WN18RR/DistMult/replicate_05/shuffled_text/metrics.json",
+          "sha256": "1c1f43f3330288a0088585a95276976b02640af0834ba2a2207945ec1ddcd262",
+          "size_bytes": 3580
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/WN18RR/DistMult/replicate_05/shuffled_text/ece_bins.tsv",
+          "sha256": "0f9d66a2f1d4d450bb041af76cfff2ebec266c132415c79d416d97ea74ae0f6b",
+          "size_bytes": 3988
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/WN18RR/DistMult/replicate_05/shuffled_text/per_query.tsv",
+          "sha256": "e4c6913b1149fa3986a812748fb0079a41cba63e7b6a60c84b6463070051b364",
+          "size_bytes": 2138270
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/WN18RR/DistMult/replicate_05/shuffled_text/risk_coverage.tsv",
+          "sha256": "3eb04b92c83b5a007d30f68068a63e46ad64e01d8b145604d04fdb2effc5bb40",
+          "size_bytes": 1430893
+        }
+      },
+      "report": {
+        "path": "reports/official_test/WN18RR/DistMult/replicate_05/shuffled_text.json",
+        "sha256": "c663bdc02697b8018a3d555f7f5c0129e9aff17eb349cb445468bf3754e22c9d",
+        "size_bytes": 7434
+      },
+      "run_id": "wn18rr-distmult-official-r05-shuffled-text"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/CoDEx-M/TransE/replicate_01/random/metrics.json",
+          "sha256": "bd9a06dc2f6f13465534236d41ca19dba343c6a5fdf4aee37913408201cdf0b1",
+          "size_bytes": 3522
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/CoDEx-M/TransE/replicate_01/random/ece_bins.tsv",
+          "sha256": "24eb276a26044e6bf9b32ea36c554c39fce3e382f5b42d443a97001e313f71a7",
+          "size_bytes": 3495
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/CoDEx-M/TransE/replicate_01/random/per_query.tsv",
+          "sha256": "0f61d9f5f092ae3fde9c529c7eeb7a104fe64548e904884aca054b1a2398a49c",
+          "size_bytes": 6905233
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/CoDEx-M/TransE/replicate_01/random/risk_coverage.tsv",
+          "sha256": "78328e1fd2c005c934037b526f8b547c70e96258195faf0e731d6490425e5958",
+          "size_bytes": 5005160
+        }
+      },
+      "report": {
+        "path": "reports/official_test/CoDEx-M/TransE/replicate_01/random.json",
+        "sha256": "6ccf91d782d698cce5ca2d67fd5e02a822ffe95021fea6cc1c737a4a0fa51dd4",
+        "size_bytes": 7340
+      },
+      "run_id": "codex-m-transe-official-r01-random"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/CoDEx-M/TransE/replicate_01/correct_text/metrics.json",
+          "sha256": "31e3b7fe8887db8575036962cf7d89259042c7e0556cec3be4e3146348a5e251",
+          "size_bytes": 3528
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/CoDEx-M/TransE/replicate_01/correct_text/ece_bins.tsv",
+          "sha256": "274261c70709308f1f5c65ba516a4b7a61f0e4d0d3c06e453468755612322bb5",
+          "size_bytes": 3524
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/CoDEx-M/TransE/replicate_01/correct_text/per_query.tsv",
+          "sha256": "3252b1c837eb0380afca1568b44588ab084f286777423dc8ba73acb40ab28579",
+          "size_bytes": 7004023
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/CoDEx-M/TransE/replicate_01/correct_text/risk_coverage.tsv",
+          "sha256": "2c616aaf2ccf79816c58194703a9b7e2888ec23ac3a106bd6b3ce0b8dc0da332",
+          "size_bytes": 5002369
+        }
+      },
+      "report": {
+        "path": "reports/official_test/CoDEx-M/TransE/replicate_01/correct_text.json",
+        "sha256": "e2092220b947543cb1b842bced6237c59e065d87596661c38318bad639b99625",
+        "size_bytes": 7375
+      },
+      "run_id": "codex-m-transe-official-r01-correct-text"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/CoDEx-M/TransE/replicate_01/shuffled_text/metrics.json",
+          "sha256": "d76187afbf96b590973ef5305de33381c02a1cc55cf6909b1798f7c3a01e4c8d",
+          "size_bytes": 3531
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/CoDEx-M/TransE/replicate_01/shuffled_text/ece_bins.tsv",
+          "sha256": "07fa2841184990cf01963825bfca1ef9904116ac7f893daa080f40a3df5959ca",
+          "size_bytes": 3505
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/CoDEx-M/TransE/replicate_01/shuffled_text/per_query.tsv",
+          "sha256": "dd75e843a4ffdc45a86926bbad51fe54adf57ac546b6b3c636311effb4bf308b",
+          "size_bytes": 7051335
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/CoDEx-M/TransE/replicate_01/shuffled_text/risk_coverage.tsv",
+          "sha256": "a0871dab5f79d096781e1b2ea008406e6751fbb424106d90556c0910ab414bc9",
+          "size_bytes": 5007893
+        }
+      },
+      "report": {
+        "path": "reports/official_test/CoDEx-M/TransE/replicate_01/shuffled_text.json",
+        "sha256": "3508876ba94983f8386c458c936b368752242045f988341b3e126059ad06373e",
+        "size_bytes": 7384
+      },
+      "run_id": "codex-m-transe-official-r01-shuffled-text"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/CoDEx-M/TransE/replicate_02/random/metrics.json",
+          "sha256": "ba6be67cdb4f3d39f00e93aaed7104c6eac83d005fb50d895baf55e6bf37f18b",
+          "size_bytes": 3516
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/CoDEx-M/TransE/replicate_02/random/ece_bins.tsv",
+          "sha256": "7cbb121302db0ba4e075a52dbb6a4c6ebb707070fe160676869707646e82ed5c",
+          "size_bytes": 3473
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/CoDEx-M/TransE/replicate_02/random/per_query.tsv",
+          "sha256": "724199720a0a3153fcddeaeb7f92a843b796c22bd00df5e70cffce057d31e2e1",
+          "size_bytes": 6905201
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/CoDEx-M/TransE/replicate_02/random/risk_coverage.tsv",
+          "sha256": "9c0fbc23d1e128addd31f6bd134975f7e8e49998f1593283bea479e0016a357f",
+          "size_bytes": 5003786
+        }
+      },
+      "report": {
+        "path": "reports/official_test/CoDEx-M/TransE/replicate_02/random.json",
+        "sha256": "26e4436ca9f94431f7860f901bc02c195a93a8e7ed126326f25dff8ce14059df",
+        "size_bytes": 7334
+      },
+      "run_id": "codex-m-transe-official-r02-random"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/CoDEx-M/TransE/replicate_02/correct_text/metrics.json",
+          "sha256": "52037ca33512022a198df5396ee8308b68956fcb19f5b8b966e4565bb8df2a4f",
+          "size_bytes": 3531
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/CoDEx-M/TransE/replicate_02/correct_text/ece_bins.tsv",
+          "sha256": "be6b0d46ad97b426c804e60a2ad4370af2eaed786f99502a555b07783da9a07d",
+          "size_bytes": 3514
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/CoDEx-M/TransE/replicate_02/correct_text/per_query.tsv",
+          "sha256": "71c571fc4f1676a8ec3202690406e47fcf060b5e9394d75c8d1423a94a5b88af",
+          "size_bytes": 7025188
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/CoDEx-M/TransE/replicate_02/correct_text/risk_coverage.tsv",
+          "sha256": "9e70bba9a0b224b1748728bc2bf077e5c40370eb19ca77bee00a10079ba0f2cb",
+          "size_bytes": 5002674
+        }
+      },
+      "report": {
+        "path": "reports/official_test/CoDEx-M/TransE/replicate_02/correct_text.json",
+        "sha256": "fe36251da0e5cb73ddd50c4dd0e7b938263d78c17d7c401bdfc0c5e99ff0fe91",
+        "size_bytes": 7379
+      },
+      "run_id": "codex-m-transe-official-r02-correct-text"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/CoDEx-M/TransE/replicate_02/shuffled_text/metrics.json",
+          "sha256": "1bf1dffc505baaf7cdf8b31546d6c1431d7ef90559ff85e9e3ea4e1cbb77c737",
+          "size_bytes": 3527
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/CoDEx-M/TransE/replicate_02/shuffled_text/ece_bins.tsv",
+          "sha256": "00776ff81f8331ebc280b2e38183e07d389ec0335b42953cf56a0275a130cf88",
+          "size_bytes": 3495
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/CoDEx-M/TransE/replicate_02/shuffled_text/per_query.tsv",
+          "sha256": "c18256981f2467633d7b25f6c38930123ecdb2a1b4b471cab6ed16b4b8949d97",
+          "size_bytes": 7050872
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/CoDEx-M/TransE/replicate_02/shuffled_text/risk_coverage.tsv",
+          "sha256": "3c3502aacac60838853b96a967c6a49daf1f67394b913e7cc74428578aa5ba3e",
+          "size_bytes": 5006591
+        }
+      },
+      "report": {
+        "path": "reports/official_test/CoDEx-M/TransE/replicate_02/shuffled_text.json",
+        "sha256": "7914da1e87976b1b802fff70c54499f19c5101a935b534877d6ec83cc8594234",
+        "size_bytes": 7380
+      },
+      "run_id": "codex-m-transe-official-r02-shuffled-text"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/CoDEx-M/TransE/replicate_03/random/metrics.json",
+          "sha256": "61ff76593c848655d0da5255976fb5d8706b9bed82ed1c25866a6bc076890eff",
+          "size_bytes": 3516
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/CoDEx-M/TransE/replicate_03/random/ece_bins.tsv",
+          "sha256": "186a1afa8d7b8e5afacc22fb91d1418da01c0e4b645bd5fb6f53dc093fad65b0",
+          "size_bytes": 3496
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/CoDEx-M/TransE/replicate_03/random/per_query.tsv",
+          "sha256": "e22baa5dfe4aee33d06138e3edd619c893adb6cf9326ad6b3209395d393b6bed",
+          "size_bytes": 6905627
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/CoDEx-M/TransE/replicate_03/random/risk_coverage.tsv",
+          "sha256": "59746ba0e93fab1ebff3da4056150ea01fab605056efaffece2e637cdf642a1c",
+          "size_bytes": 5003064
+        }
+      },
+      "report": {
+        "path": "reports/official_test/CoDEx-M/TransE/replicate_03/random.json",
+        "sha256": "3064d4f12f072d21c22766a33b90ab7053ada26faed0bc4c1c29c20358c2f852",
+        "size_bytes": 7334
+      },
+      "run_id": "codex-m-transe-official-r03-random"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/CoDEx-M/TransE/replicate_03/correct_text/metrics.json",
+          "sha256": "c9aa8d01789b86ef617d82d5aa349bd9488cb770ffd8500ad6737981c331c08d",
+          "size_bytes": 3533
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/CoDEx-M/TransE/replicate_03/correct_text/ece_bins.tsv",
+          "sha256": "26ee6f0dc2c3d299c07e639618ed7c2d231e756c3c94294d23447511306c152a",
+          "size_bytes": 3519
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/CoDEx-M/TransE/replicate_03/correct_text/per_query.tsv",
+          "sha256": "4c27052a599710440f5251b9e6bf51c14c19c27c6ef7dc6abffebedf7122987f",
+          "size_bytes": 7026530
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/CoDEx-M/TransE/replicate_03/correct_text/risk_coverage.tsv",
+          "sha256": "e9c9d7fdbbb3abadc04efbd62021f3c0a28e52ecd1b8bc0b771c9074aec4e986",
+          "size_bytes": 5002317
+        }
+      },
+      "report": {
+        "path": "reports/official_test/CoDEx-M/TransE/replicate_03/correct_text.json",
+        "sha256": "431c886b69216b1d5bad0da32e4597033a0c981624936b94bfcc8c1a9aee2e08",
+        "size_bytes": 7381
+      },
+      "run_id": "codex-m-transe-official-r03-correct-text"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/CoDEx-M/TransE/replicate_03/shuffled_text/metrics.json",
+          "sha256": "d18798fbfff6f5dca15f8b427cee3929382c72f1a42986dd52d80ab91a1fbb8e",
+          "size_bytes": 3532
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/CoDEx-M/TransE/replicate_03/shuffled_text/ece_bins.tsv",
+          "sha256": "dbb624b782a0eb24a5dba51e44cad18e9d8b6205eff9e06f8838c366fe904554",
+          "size_bytes": 3487
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/CoDEx-M/TransE/replicate_03/shuffled_text/per_query.tsv",
+          "sha256": "2eea4e40ae6a5962720eb2c7f0ba6a25c0e896b14e2b6fb857155a019f1fb82c",
+          "size_bytes": 7050086
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/CoDEx-M/TransE/replicate_03/shuffled_text/risk_coverage.tsv",
+          "sha256": "22088133a83f50708c8ccbcfe54b88993dcc0b4d4f1bdaf40389ecd7abf9ba8a",
+          "size_bytes": 5007212
+        }
+      },
+      "report": {
+        "path": "reports/official_test/CoDEx-M/TransE/replicate_03/shuffled_text.json",
+        "sha256": "473affbee7467fa70f9ac1d60766ebc7230bc9ed0d324ecd700b638922bb03e8",
+        "size_bytes": 7385
+      },
+      "run_id": "codex-m-transe-official-r03-shuffled-text"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/CoDEx-M/TransE/replicate_04/random/metrics.json",
+          "sha256": "354137d4c09a5b2e5225b81c326bae31d9a2254eb423e1cfb3f3800612683199",
+          "size_bytes": 3520
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/CoDEx-M/TransE/replicate_04/random/ece_bins.tsv",
+          "sha256": "2974d9edf809b959f2082e1159bcf569591be2a2b7853ccabb4c1d538364a4c7",
+          "size_bytes": 3502
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/CoDEx-M/TransE/replicate_04/random/per_query.tsv",
+          "sha256": "0510ddb18ba9a658ea92c1ef9c072311d6c70f9bd3709ed27add4b27a6a0addb",
+          "size_bytes": 6905619
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/CoDEx-M/TransE/replicate_04/random/risk_coverage.tsv",
+          "sha256": "e935a6228dc7a1aaa897b6cf371feb850e538a2d21cef52f4944b254f0f50cbc",
+          "size_bytes": 5004095
+        }
+      },
+      "report": {
+        "path": "reports/official_test/CoDEx-M/TransE/replicate_04/random.json",
+        "sha256": "6248887cb7a89aed043bac69d7ee33ee028e62615b88e9222b261529279f7d3b",
+        "size_bytes": 7338
+      },
+      "run_id": "codex-m-transe-official-r04-random"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/CoDEx-M/TransE/replicate_04/correct_text/metrics.json",
+          "sha256": "357b71114f829ad9bfd93efdc576b5cd48812a3ef7ed878311b87beb9a4834b8",
+          "size_bytes": 3528
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/CoDEx-M/TransE/replicate_04/correct_text/ece_bins.tsv",
+          "sha256": "9769949c59b727cf1aaa0071d25463c44d433cd7ac46e79eb8f8b9f1ae53dea9",
+          "size_bytes": 3542
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/CoDEx-M/TransE/replicate_04/correct_text/per_query.tsv",
+          "sha256": "70558b495895ffb533618788004f1cb6f6e91071c61834775cb650ad1bcddedd",
+          "size_bytes": 7025427
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/CoDEx-M/TransE/replicate_04/correct_text/risk_coverage.tsv",
+          "sha256": "66147fbfba1d9d88ad802cf9cfa75a65d41f536ff0e3a75f112352c470d42eee",
+          "size_bytes": 5002511
+        }
+      },
+      "report": {
+        "path": "reports/official_test/CoDEx-M/TransE/replicate_04/correct_text.json",
+        "sha256": "4d0b2a005555a14f2ffcd5321c253e1e8f913f4c4d2ea4e677fbb0fb5ac1dd46",
+        "size_bytes": 7376
+      },
+      "run_id": "codex-m-transe-official-r04-correct-text"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/CoDEx-M/TransE/replicate_04/shuffled_text/metrics.json",
+          "sha256": "9f15e97f8f48895778767d665cb430a3f84c2fdc22c3ecf9f40cb2b72217cccf",
+          "size_bytes": 3528
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/CoDEx-M/TransE/replicate_04/shuffled_text/ece_bins.tsv",
+          "sha256": "2cfdac2a405213cee7648c20eb4d108ab0e90f50ec6505d155500c10e9fcbcaf",
+          "size_bytes": 3521
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/CoDEx-M/TransE/replicate_04/shuffled_text/per_query.tsv",
+          "sha256": "68ce90e09361e40298fadeae1555831849647c4f0698a3456185e1f0b213edc3",
+          "size_bytes": 7051201
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/CoDEx-M/TransE/replicate_04/shuffled_text/risk_coverage.tsv",
+          "sha256": "a75b523cdbf7ac44a59da9f856007daf441e85cd162e757f70f9a5e6e778d711",
+          "size_bytes": 5006932
+        }
+      },
+      "report": {
+        "path": "reports/official_test/CoDEx-M/TransE/replicate_04/shuffled_text.json",
+        "sha256": "46767dc6b2fa957fcd7270f9667c34e84b74607d930568261542d986d1d1ba5b",
+        "size_bytes": 7381
+      },
+      "run_id": "codex-m-transe-official-r04-shuffled-text"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/CoDEx-M/TransE/replicate_05/random/metrics.json",
+          "sha256": "539660b1f8f942fcb58263c14fcdf0ca72c5dadeba10ad0ea9938961c5082618",
+          "size_bytes": 3514
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/CoDEx-M/TransE/replicate_05/random/ece_bins.tsv",
+          "sha256": "be7d835203ce9c33a251d8387803e225e54f16d2610fe2a5f349e87a6033f9ff",
+          "size_bytes": 3566
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/CoDEx-M/TransE/replicate_05/random/per_query.tsv",
+          "sha256": "44a893b3cf31dc09192a12b2a569c14247e6405273c8b631d28b3e70159c7b10",
+          "size_bytes": 6884790
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/CoDEx-M/TransE/replicate_05/random/risk_coverage.tsv",
+          "sha256": "96055728c14d7115a07480c1eb43f4df7b9ec352783afc92484ac9ff21b07408",
+          "size_bytes": 5004808
+        }
+      },
+      "report": {
+        "path": "reports/official_test/CoDEx-M/TransE/replicate_05/random.json",
+        "sha256": "5ee3ed21a5d4a035853e3b90f1e1c42a9c8e76f1b89547b9ba88ae42bc5f466e",
+        "size_bytes": 7331
+      },
+      "run_id": "codex-m-transe-official-r05-random"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/CoDEx-M/TransE/replicate_05/correct_text/metrics.json",
+          "sha256": "a3c35ecfc4495acd09899c589477d6fff34ec860948ca69b110c4c2fd1003967",
+          "size_bytes": 3524
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/CoDEx-M/TransE/replicate_05/correct_text/ece_bins.tsv",
+          "sha256": "0ad7c73659cdbe3458eb754e2618e23946d9dee6d96fdb6b83eeba78d1bd4600",
+          "size_bytes": 3520
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/CoDEx-M/TransE/replicate_05/correct_text/per_query.tsv",
+          "sha256": "76454a20ed8f6750865de0ad6a30e2a313ae3f7eea3edba1a4fddf3d744da72b",
+          "size_bytes": 7024581
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/CoDEx-M/TransE/replicate_05/correct_text/risk_coverage.tsv",
+          "sha256": "dc0fd415341d9fe4e6988d36a208af1d8945193393180f3966ba086592d562de",
+          "size_bytes": 5003342
+        }
+      },
+      "report": {
+        "path": "reports/official_test/CoDEx-M/TransE/replicate_05/correct_text.json",
+        "sha256": "9fe9ff893726d3713ab0e996f272e3319b10bbf6302ba6cc368823c7f36a8303",
+        "size_bytes": 7372
+      },
+      "run_id": "codex-m-transe-official-r05-correct-text"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/CoDEx-M/TransE/replicate_05/shuffled_text/metrics.json",
+          "sha256": "31905ceae95e81d85809602c9275e6af4380b50423c5a5c42e7029a219f75a61",
+          "size_bytes": 3537
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/CoDEx-M/TransE/replicate_05/shuffled_text/ece_bins.tsv",
+          "sha256": "654771e02bc2081cf0357436f7a3b6d2e6617f910398821cd85540618d5e17c0",
+          "size_bytes": 3491
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/CoDEx-M/TransE/replicate_05/shuffled_text/per_query.tsv",
+          "sha256": "c685c2a823156ce184cca01d548d69eef3db40f342b76ac88f510037db4ba6a9",
+          "size_bytes": 7050789
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/CoDEx-M/TransE/replicate_05/shuffled_text/risk_coverage.tsv",
+          "sha256": "0ccf4a5e7ead24bf8a496b58c19d735964e949738e9c6571bf413ec00096ae0e",
+          "size_bytes": 5006945
+        }
+      },
+      "report": {
+        "path": "reports/official_test/CoDEx-M/TransE/replicate_05/shuffled_text.json",
+        "sha256": "98915f464d7a205e0aeb28e59baefd34d2795cbc59a52bbd7ec3ba92c31e1ef7",
+        "size_bytes": 7390
+      },
+      "run_id": "codex-m-transe-official-r05-shuffled-text"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/CoDEx-M/DistMult/replicate_01/random/metrics.json",
+          "sha256": "7f1097180007bf4337e46564f89daf3d6bd4b9d8f2b1420a1b23eb8f2584e122",
+          "size_bytes": 3521
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/CoDEx-M/DistMult/replicate_01/random/ece_bins.tsv",
+          "sha256": "a94fa1487afae69b3c2f1ed9ecd735b69ed686b775744fbbd461d10867319bb0",
+          "size_bytes": 4019
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/CoDEx-M/DistMult/replicate_01/random/per_query.tsv",
+          "sha256": "c179984e71c498ef14e476dd5af12356f0c4840533511c16e720c88f60928be8",
+          "size_bytes": 6881760
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/CoDEx-M/DistMult/replicate_01/random/risk_coverage.tsv",
+          "sha256": "d0c7a944d59427190b547315e28b156809466de66672332cb1d5afbac0c8cf59",
+          "size_bytes": 4948480
+        }
+      },
+      "report": {
+        "path": "reports/official_test/CoDEx-M/DistMult/replicate_01/random.json",
+        "sha256": "3060763c7dda261dbed02d0d73ca5d3d063a3b1e6b2db684a23f74d7aded3c2c",
+        "size_bytes": 7351
+      },
+      "run_id": "codex-m-distmult-official-r01-random"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/CoDEx-M/DistMult/replicate_01/correct_text/metrics.json",
+          "sha256": "5cc60d9f82124204ef5e4d45d74364e1a1555414371354cdf8e276e922ff2a5a",
+          "size_bytes": 3502
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/CoDEx-M/DistMult/replicate_01/correct_text/ece_bins.tsv",
+          "sha256": "1c9ea419b6703eb69e52baae8d8fceecd1e48f0124f9e1308bacb4898d20c7f0",
+          "size_bytes": 4021
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/CoDEx-M/DistMult/replicate_01/correct_text/per_query.tsv",
+          "sha256": "d83098a299e7ea3c232007e5fd940d2417b6ed6a290b13e2b8715e08e8728853",
+          "size_bytes": 6958286
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/CoDEx-M/DistMult/replicate_01/correct_text/risk_coverage.tsv",
+          "sha256": "f0b0bb55dc95a69b40d0f0dcccd1d2a210f1b2c0ae38c11c30cbb2ee50469109",
+          "size_bytes": 4905108
+        }
+      },
+      "report": {
+        "path": "reports/official_test/CoDEx-M/DistMult/replicate_01/correct_text.json",
+        "sha256": "98170e2e66437fab5f565ef3537f13c783158bd04bda188e1d1f7efb019b6ebd",
+        "size_bytes": 7360
+      },
+      "run_id": "codex-m-distmult-official-r01-correct-text"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/CoDEx-M/DistMult/replicate_01/shuffled_text/metrics.json",
+          "sha256": "0d1682823d86f4a5756525f3a692e411fbdeaa6e88e1a41063d271bbdc4d6cbe",
+          "size_bytes": 3525
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/CoDEx-M/DistMult/replicate_01/shuffled_text/ece_bins.tsv",
+          "sha256": "19e3071727a1c6a4f55a159439c958d5e8119c3f28eaad2f35be6768da57cb03",
+          "size_bytes": 4050
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/CoDEx-M/DistMult/replicate_01/shuffled_text/per_query.tsv",
+          "sha256": "fa563df4123cc0c0bf1efdb2aae6b42f84c0104f1c7be07ed80eeac809d35f13",
+          "size_bytes": 7020799
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/CoDEx-M/DistMult/replicate_01/shuffled_text/risk_coverage.tsv",
+          "sha256": "3b1c79108c94281ca70dea4b45de00b6248cb2969e6286acc54e4518dc3e9955",
+          "size_bytes": 4943701
+        }
+      },
+      "report": {
+        "path": "reports/official_test/CoDEx-M/DistMult/replicate_01/shuffled_text.json",
+        "sha256": "359400bb76826e6224843d5c78f4631cb34cc60f9428c0b936653230d5a52abb",
+        "size_bytes": 7390
+      },
+      "run_id": "codex-m-distmult-official-r01-shuffled-text"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/CoDEx-M/DistMult/replicate_02/random/metrics.json",
+          "sha256": "9c3e66f4a7ec949c84518157a602c44fe189e4cd57b1e15ea3f1eeed63b46f26",
+          "size_bytes": 3516
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/CoDEx-M/DistMult/replicate_02/random/ece_bins.tsv",
+          "sha256": "cdf74fa1aa01a4fe422fd23bae0824e9a95b9a737ea3b7c0b0fabbf748d3339c",
+          "size_bytes": 4017
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/CoDEx-M/DistMult/replicate_02/random/per_query.tsv",
+          "sha256": "6bf2bc62e5558c4f82d3249ef1abcb56cc899ee283f82568b86bd013ba806730",
+          "size_bytes": 6882198
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/CoDEx-M/DistMult/replicate_02/random/risk_coverage.tsv",
+          "sha256": "427542cbc8234637548c1c32be4e09f0caa9b5437973d5d280e8e57fb5907ba6",
+          "size_bytes": 4949487
+        }
+      },
+      "report": {
+        "path": "reports/official_test/CoDEx-M/DistMult/replicate_02/random.json",
+        "sha256": "88615ac8618522982bdb9510e7248b74658fd05d281f9ce7eeb601e4ae53f198",
+        "size_bytes": 7346
+      },
+      "run_id": "codex-m-distmult-official-r02-random"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/CoDEx-M/DistMult/replicate_02/correct_text/metrics.json",
+          "sha256": "57ee752a70920fdc3f96534bbdb8ba0824704c2d67453867838e1164345ccad1",
+          "size_bytes": 3519
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/CoDEx-M/DistMult/replicate_02/correct_text/ece_bins.tsv",
+          "sha256": "c8701d832063f102e6fc09626e05b0c6e249c850940320e03fccbf326076ae69",
+          "size_bytes": 4028
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/CoDEx-M/DistMult/replicate_02/correct_text/per_query.tsv",
+          "sha256": "a3d8dee369549e4e35266613129e88d787c900d416936e279ec3b9bd2267de31",
+          "size_bytes": 6957934
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/CoDEx-M/DistMult/replicate_02/correct_text/risk_coverage.tsv",
+          "sha256": "6c87b923b62dcf158b0aea94183d97ce424b1dad1cf7af7e4178f97878f1de2b",
+          "size_bytes": 4906387
+        }
+      },
+      "report": {
+        "path": "reports/official_test/CoDEx-M/DistMult/replicate_02/correct_text.json",
+        "sha256": "7e63e2bd3999a40666f80dd77485344316a6206727cc5c4323347dd4e2241f42",
+        "size_bytes": 7377
+      },
+      "run_id": "codex-m-distmult-official-r02-correct-text"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/CoDEx-M/DistMult/replicate_02/shuffled_text/metrics.json",
+          "sha256": "00aff9bad190031b82a8680d52a19c66c364897e5948fef7b84ce16a5ed73539",
+          "size_bytes": 3533
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/CoDEx-M/DistMult/replicate_02/shuffled_text/ece_bins.tsv",
+          "sha256": "7a171536bd1108a22a578929908523b6c117fcf4b767cafe59ed2d46980bc2db",
+          "size_bytes": 4047
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/CoDEx-M/DistMult/replicate_02/shuffled_text/per_query.tsv",
+          "sha256": "9fcac5b88dfbc450fad7e77857466040a0a5720fe641ce42e122a52e1e96b6e9",
+          "size_bytes": 7020251
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/CoDEx-M/DistMult/replicate_02/shuffled_text/risk_coverage.tsv",
+          "sha256": "965f352a490a786188e2d585371e08c527b3afe2907bf21b7bc0ba2b194fed59",
+          "size_bytes": 4942449
+        }
+      },
+      "report": {
+        "path": "reports/official_test/CoDEx-M/DistMult/replicate_02/shuffled_text.json",
+        "sha256": "5804530fb69ebdb66f1662b24b382965ad1d988280c72d1ae81eae6dc9bafa0d",
+        "size_bytes": 7398
+      },
+      "run_id": "codex-m-distmult-official-r02-shuffled-text"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/CoDEx-M/DistMult/replicate_03/random/metrics.json",
+          "sha256": "4355cbcb00ec701b1987b88e7c6bea0dbc97ac24e91f57d7867497a283c40f66",
+          "size_bytes": 3527
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/CoDEx-M/DistMult/replicate_03/random/ece_bins.tsv",
+          "sha256": "26e9e1789ea016b1affad61ac31c8e6129be48d38d1869109dfb06884f6d836d",
+          "size_bytes": 3963
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/CoDEx-M/DistMult/replicate_03/random/per_query.tsv",
+          "sha256": "2def1a01c1eaa45aa6389604608769e8711c95d988e310d7a2ffd76d04b652a7",
+          "size_bytes": 6881926
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/CoDEx-M/DistMult/replicate_03/random/risk_coverage.tsv",
+          "sha256": "0e4d25ad95ad64c2c542cb65f4a0cea08b35bc4771c7e725e047afbea1337c53",
+          "size_bytes": 4948231
+        }
+      },
+      "report": {
+        "path": "reports/official_test/CoDEx-M/DistMult/replicate_03/random.json",
+        "sha256": "b93549c98c6ccc9bd6dfca219647848670715fedab1cd058f31e1674d118289c",
+        "size_bytes": 7357
+      },
+      "run_id": "codex-m-distmult-official-r03-random"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/CoDEx-M/DistMult/replicate_03/correct_text/metrics.json",
+          "sha256": "5ce541e3f40484d6ab2b338a00c637a7647cdc1aaf504d91c565404e87a58608",
+          "size_bytes": 3527
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/CoDEx-M/DistMult/replicate_03/correct_text/ece_bins.tsv",
+          "sha256": "cc27e41dea0f5830ecd8db631c87f85ccdc7d07031fa14b3b83a33996d8c1920",
+          "size_bytes": 4012
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/CoDEx-M/DistMult/replicate_03/correct_text/per_query.tsv",
+          "sha256": "3c654e4f9aa9d8a5e0f8894aaf1cff9e313f92c29f70b3c845f40dd21726d1fe",
+          "size_bytes": 6979004
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/CoDEx-M/DistMult/replicate_03/correct_text/risk_coverage.tsv",
+          "sha256": "bb8302c9efe1372f8d673627667faa7935c293f0b8bd2729c88ee32deddadb89",
+          "size_bytes": 4903726
+        }
+      },
+      "report": {
+        "path": "reports/official_test/CoDEx-M/DistMult/replicate_03/correct_text.json",
+        "sha256": "3338bf80f86659e2eba9033661d52ab53488b009c807ebde255e0843d2ce50dc",
+        "size_bytes": 7386
+      },
+      "run_id": "codex-m-distmult-official-r03-correct-text"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/CoDEx-M/DistMult/replicate_03/shuffled_text/metrics.json",
+          "sha256": "015d3adb8e6f54788b81d055b144f2c706100cfefebd7db3b5ad1e0ab48952d3",
+          "size_bytes": 3505
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/CoDEx-M/DistMult/replicate_03/shuffled_text/ece_bins.tsv",
+          "sha256": "c06b354269d594efa90574bc5d76f895d5056d42641bd657e31fb8bfd61649d4",
+          "size_bytes": 4037
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/CoDEx-M/DistMult/replicate_03/shuffled_text/per_query.tsv",
+          "sha256": "81f85fa468ec7389d0f31af438b33c4e8b05c04f58e436c6cb2c7f65eb4ea450",
+          "size_bytes": 7020219
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/CoDEx-M/DistMult/replicate_03/shuffled_text/risk_coverage.tsv",
+          "sha256": "370bfe969de27551cb74c761a0461c743ba6bda659d5a97585f925e90d4e5c68",
+          "size_bytes": 4943504
+        }
+      },
+      "report": {
+        "path": "reports/official_test/CoDEx-M/DistMult/replicate_03/shuffled_text.json",
+        "sha256": "61d3ac886050c5ffeb5f75987595f2733677a0f3715ed14983697e404e8cca97",
+        "size_bytes": 7370
+      },
+      "run_id": "codex-m-distmult-official-r03-shuffled-text"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/CoDEx-M/DistMult/replicate_04/random/metrics.json",
+          "sha256": "7dc83f4701bd369553abc04e7f9f7434dd40d5022bfc1b415a6e3b27a5a19466",
+          "size_bytes": 3522
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/CoDEx-M/DistMult/replicate_04/random/ece_bins.tsv",
+          "sha256": "bbea0adffd5f402596d6c6c85efdea8634249b5ccd08d27295a669d53891f91a",
+          "size_bytes": 3973
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/CoDEx-M/DistMult/replicate_04/random/per_query.tsv",
+          "sha256": "1bef08717fa46e7fad1e7d7921cdfe22567dc4d48c9e987d578b0ec7857fae47",
+          "size_bytes": 6882784
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/CoDEx-M/DistMult/replicate_04/random/risk_coverage.tsv",
+          "sha256": "a2a73a518b14b4f89304756a85e16798529ce2eb8d7900b52b8dbc0c2874fee6",
+          "size_bytes": 4947723
+        }
+      },
+      "report": {
+        "path": "reports/official_test/CoDEx-M/DistMult/replicate_04/random.json",
+        "sha256": "546d6efa634f75823c6dffd7a40e9437029ab43edcdd1b3fec8e1307d306e3ea",
+        "size_bytes": 7352
+      },
+      "run_id": "codex-m-distmult-official-r04-random"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/CoDEx-M/DistMult/replicate_04/correct_text/metrics.json",
+          "sha256": "ae7795ab45461e4f849be2b7fd70be18bcb4cb0526e3aaf4150e349a0ea3e674",
+          "size_bytes": 3530
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/CoDEx-M/DistMult/replicate_04/correct_text/ece_bins.tsv",
+          "sha256": "397cc81d75e28ae6c375ba21aaeca9474785ddd28e63fd229ba9877fa55940d2",
+          "size_bytes": 4038
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/CoDEx-M/DistMult/replicate_04/correct_text/per_query.tsv",
+          "sha256": "8eee06b26d5bba9229c10ef5f9a15f300c4a5b8f325356a2321e29435e0baa62",
+          "size_bytes": 6997860
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/CoDEx-M/DistMult/replicate_04/correct_text/risk_coverage.tsv",
+          "sha256": "ef608d05ef2dd6a1c57beaf129156516cd7d99d4bc6a0b107506afb36aa922d0",
+          "size_bytes": 4917035
+        }
+      },
+      "report": {
+        "path": "reports/official_test/CoDEx-M/DistMult/replicate_04/correct_text.json",
+        "sha256": "1cba61a684d1720e5b32f330837e952b900948b6c86592f85b0ca8fd9a4c7b60",
+        "size_bytes": 7390
+      },
+      "run_id": "codex-m-distmult-official-r04-correct-text"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/CoDEx-M/DistMult/replicate_04/shuffled_text/metrics.json",
+          "sha256": "40fec27156a1c21db065be71237988393bfbfec3baafb191af225874dec30584",
+          "size_bytes": 3519
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/CoDEx-M/DistMult/replicate_04/shuffled_text/ece_bins.tsv",
+          "sha256": "f40bd2b24b53f98b3e80730f7bfec193f60c66e1ded04e258d506d984b3aca8a",
+          "size_bytes": 4055
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/CoDEx-M/DistMult/replicate_04/shuffled_text/per_query.tsv",
+          "sha256": "855930f33f2e5997cd07a506aa39b83ae5d45678f6797931e02a07c3a84b3b46",
+          "size_bytes": 7020646
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/CoDEx-M/DistMult/replicate_04/shuffled_text/risk_coverage.tsv",
+          "sha256": "800a68932ccf4df545addd1e33a7b8dd7c39822f7aa8ea19a0ec0f1a2700c350",
+          "size_bytes": 4944766
+        }
+      },
+      "report": {
+        "path": "reports/official_test/CoDEx-M/DistMult/replicate_04/shuffled_text.json",
+        "sha256": "5d1eadad76ba0d737106d16f725278df4c18cca73f47d10fdb4f78dca80a6504",
+        "size_bytes": 7384
+      },
+      "run_id": "codex-m-distmult-official-r04-shuffled-text"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/CoDEx-M/DistMult/replicate_05/random/metrics.json",
+          "sha256": "82641a8b8d7ad13be37d4ba8912b861aa6a988d75bf720a2e162c3a0a24730cc",
+          "size_bytes": 3519
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/CoDEx-M/DistMult/replicate_05/random/ece_bins.tsv",
+          "sha256": "8fd758853d067577ffac7e95f83ade886513a6d8da350d6642cc39eab1f3e65a",
+          "size_bytes": 4012
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/CoDEx-M/DistMult/replicate_05/random/per_query.tsv",
+          "sha256": "08e1540ffaa0108300aaca7ae3c9ea1229e8db183d7c8beab5d97372a4e2f4c1",
+          "size_bytes": 6882595
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/CoDEx-M/DistMult/replicate_05/random/risk_coverage.tsv",
+          "sha256": "67898cf7f80bc10472b361531f0719d98dc70d3ea86b0cde73ed1444efd8897b",
+          "size_bytes": 4949515
+        }
+      },
+      "report": {
+        "path": "reports/official_test/CoDEx-M/DistMult/replicate_05/random.json",
+        "sha256": "e4ab458e7779b3d94dade6335c310fc54e29ebbc3e804f2d1db73267040e2ae0",
+        "size_bytes": 7349
+      },
+      "run_id": "codex-m-distmult-official-r05-random"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/CoDEx-M/DistMult/replicate_05/correct_text/metrics.json",
+          "sha256": "61c6c044fa62aecc23fe327256cf50ac4c88b793b134386b483bd484004c6567",
+          "size_bytes": 3513
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/CoDEx-M/DistMult/replicate_05/correct_text/ece_bins.tsv",
+          "sha256": "cc2b3f46384589f60e397b87acf8fe4dc7effebaa104e27b7ed020f86baa4de2",
+          "size_bytes": 4027
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/CoDEx-M/DistMult/replicate_05/correct_text/per_query.tsv",
+          "sha256": "1424eb4aab7575bdfcd044b770c7a39d31f25c40e97bc4ab44d1144439688cd7",
+          "size_bytes": 6956563
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/CoDEx-M/DistMult/replicate_05/correct_text/risk_coverage.tsv",
+          "sha256": "5c21d5eaf1c12131eb28ae97fccc883ce59324691fe8aaa4f70970d4e1ea271b",
+          "size_bytes": 4915059
+        }
+      },
+      "report": {
+        "path": "reports/official_test/CoDEx-M/DistMult/replicate_05/correct_text.json",
+        "sha256": "77dd7a690a89469d5db1d07736a78eaec71b44704c3cf616f0cd2a6de2c4ea5a",
+        "size_bytes": 7371
+      },
+      "run_id": "codex-m-distmult-official-r05-correct-text"
+    },
+    {
+      "artifacts": {
+        "aggregate_metrics": {
+          "path": "artifacts/official_test/CoDEx-M/DistMult/replicate_05/shuffled_text/metrics.json",
+          "sha256": "ef168377ba60fe8e0a06751eec7b1c7483c70010fccb1b8f11b294ec48e31ae2",
+          "size_bytes": 3539
+        },
+        "ece_bins": {
+          "path": "artifacts/official_test/CoDEx-M/DistMult/replicate_05/shuffled_text/ece_bins.tsv",
+          "sha256": "8931478c584bcb854b4152bd807ad7c22fb6d7ae20c7a8fc174aac5c839e8f4d",
+          "size_bytes": 4041
+        },
+        "per_query_table": {
+          "path": "artifacts/official_test/CoDEx-M/DistMult/replicate_05/shuffled_text/per_query.tsv",
+          "sha256": "f823fb73b1fd039784681f1dddf8491377aa23edc33094a75291570fd0f56027",
+          "size_bytes": 7020526
+        },
+        "risk_coverage": {
+          "path": "artifacts/official_test/CoDEx-M/DistMult/replicate_05/shuffled_text/risk_coverage.tsv",
+          "sha256": "4dac6c68d9b618c1f8ceddf0e4a58c534010e2f22b0214299f670686932fbf22",
+          "size_bytes": 4945016
+        }
+      },
+      "report": {
+        "path": "reports/official_test/CoDEx-M/DistMult/replicate_05/shuffled_text.json",
+        "sha256": "8bc8f3340d5382766aabf25b99a4914e6dcf1668ec578e12a5f628c54738038f",
+        "size_bytes": 7404
+      },
+      "run_id": "codex-m-distmult-official-r05-shuffled-text"
+    }
+  ],
+  "schema_version": 1,
+  "status": "official_test_results_audited_and_frozen",
+  "test_data_accessed": true,
+  "test_metrics_computed": true
+}

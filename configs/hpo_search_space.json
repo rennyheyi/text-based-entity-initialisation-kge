@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "status": "hpo_search_space_frozen_pending_design",
+  "official_result": false,
+  "protocol_sha256": "98d2eeb474d22beb703a8edd073996dda23fb5f772d71f9d7fb4244ecaa0e1dc",
+  "required_hardware_preflight": {
+    "configuration_sha256": "1768965fa38972b00504b18f11a7cf1dde0678dade59606c40eb4d1687c53053",
+    "status": "hardware_feasibility_preflight_passed_pending_hpo_design",
+    "validation_or_test_metrics_computed": false
+  },
+  "datasets": ["FB15k-237", "WN18RR", "CoDEx-M"],
+  "models": ["TransE", "DistMult"],
+  "candidate_count_per_unit": 12,
+  "fixed_training": {
+    "entity_embedding_dimension": 384,
+    "relation_embedding_dimension": 384,
+    "optimiser": "Adam",
+    "adam_beta1": 0.9,
+    "adam_beta2": 0.999,
+    "adam_epsilon": 1e-8,
+    "weight_decay": 0.0,
+    "objective": "mean_softplus_negative_minus_positive",
+    "negative_sampler": "uniform_single_side_train_seen_reject_train_truth",
+    "initialisation_condition": "random"
+  },
+  "search_space": {
+    "learning_rate": {
+      "distribution": "log_uniform",
+      "minimum": 0.0001,
+      "maximum": 0.003
+    },
+    "batch_size": [256, 512, 1024],
+    "negatives_per_positive": [1, 16, 64],
+    "regularisation_coefficient": [0.0, 0.0001, 0.001, 0.01, 0.1],
+    "transe_distance_norm": [1, 2],
+    "transe_exact_count_per_norm": 6
+  },
+  "stage_plan": {
+    "stage_1": {
+      "candidates": 12,
+      "tuning_replicates": [1],
+      "epochs": 25,
+      "validation_epochs": [25],
+      "advance": 4
+    },
+    "stage_2": {
+      "candidates": 4,
+      "tuning_replicates": [1, 2],
+      "epochs": 75,
+      "validation_epochs": [75],
+      "advance": 2
+    },
+    "stage_3": {
+      "candidates": 2,
+      "tuning_replicates": [1, 2, 3],
+      "epochs": 200,
+      "validation_every_epochs": 10,
+      "advance": 1
+    }
+  },
+  "seed_derivation": {
+    "prefix": "Integrating External Evidence to Reduce Uncertainty in Link Prediction",
+    "digest": "SHA-256",
+    "integer_rule": "first_four_digest_bytes_unsigned_big_endian",
+    "candidate_rng": "NumPy Generator(PCG64)",
+    "tuning_replicates": [
+      {"replicate": 1, "seed": 347869531},
+      {"replicate": 2, "seed": 2594257857},
+      {"replicate": 3, "seed": 3877759316}
+    ],
+    "hpo_design_seeds": [
+      {"dataset": "FB15k-237", "model": "TransE", "seed": 3687661691},
+      {"dataset": "FB15k-237", "model": "DistMult", "seed": 1578249420},
+      {"dataset": "WN18RR", "model": "TransE", "seed": 61651425},
+      {"dataset": "WN18RR", "model": "DistMult", "seed": 3751609374},
+      {"dataset": "CoDEx-M", "model": "TransE", "seed": 1196443311},
+      {"dataset": "CoDEx-M", "model": "DistMult", "seed": 2640021856}
+    ],
+    "training_namespaces": [
+      "random_entity_initialisation",
+      "relation_initialisation",
+      "batch_order",
+      "negative_sampling",
+      "data_loader_workers"
+    ]
+  }
+}

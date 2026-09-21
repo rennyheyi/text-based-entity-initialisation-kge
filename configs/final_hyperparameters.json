@@ -1,0 +1,225 @@
+{
+  "fixed_training": {
+    "adam_beta1": 0.9,
+    "adam_beta2": 0.999,
+    "adam_epsilon": 1e-08,
+    "entity_embedding_dimension": 384,
+    "initialisation_condition": "random",
+    "negative_sampler": "uniform_single_side_train_seen_reject_train_truth",
+    "objective": "mean_softplus_negative_minus_positive",
+    "optimiser": "Adam",
+    "relation_embedding_dimension": 384,
+    "weight_decay": 0.0
+  },
+  "official_result": false,
+  "protocol_sha256": "98d2eeb474d22beb703a8edd073996dda23fb5f772d71f9d7fb4244ecaa0e1dc",
+  "schema_version": 1,
+  "selection_condition": "random_initialisation_only",
+  "selection_metric": "mean_combined_filtered_validation_mrr_by_candidate_epoch",
+  "selection_target": "candidate_epoch_pair",
+  "source_hpo_design_sha256": "3487938ccafb1ad4f7f4a0be037a717ce8b8769606bb652d1ccdc66250f1bb93",
+  "source_stage_2_design_sha256": "f28776481ecff19142f8174245c4ab11b95aeaeffd74f11188c827e41848ffd9",
+  "source_stage_3_report_manifest_sha256": "c4398fda2fe9ef1f2a5720ffa6d6ee08de8a5be381c52351c56776b5110d95ec",
+  "source_stage_3_runner_git_commit": "280d4af6956270089f8ebfc18e28f218f2817fed",
+  "stage_3_attempt_lock_sha256": "60e94d473c5fb76ccae8028eba21585bd5673dd23afb240b06de6c66d77e0f2f",
+  "stage_3_design_sha256": "f96ac9322f7c78049dc9064ed03adc2dec74910b78d831eabe6a3af63b5974bc",
+  "status": "final_hyperparameters_frozen_pending_official_experiment_design",
+  "test_data_accessed": false,
+  "text_conditions_accessed": false,
+  "tie_breaking": [
+    "earlier_epoch",
+    "smaller_negatives_per_positive",
+    "smaller_batch_size",
+    "lexicographically_smaller_candidate_id"
+  ],
+  "tuning_replicates": [
+    1,
+    2,
+    3
+  ],
+  "units": [
+    {
+      "candidate_configuration_sha256": "ee84eba1056c5a03152d06811c46ea2742cb08ef5bd3b85c8ef4836aa56dfd63",
+      "candidate_id": "fb15k237-transe-c08-ee84eba1056c",
+      "dataset": "FB15k-237",
+      "model": "TransE",
+      "parameters": {
+        "batch_size": 256,
+        "learning_rate": 0.00024641810111778275,
+        "negatives_per_positive": 64,
+        "regularisation_coefficient": 0.0001,
+        "transe_distance_norm": 2
+      },
+      "selection_mean_combined_filtered_validation_mrr": 0.2420435990810352,
+      "selection_replicate_validation_mrr": {
+        "1": 0.2421533632965217,
+        "2": 0.24140367205618318,
+        "3": 0.24257376189040067
+      },
+      "source_stage_3_report_sha256_by_replicate": {
+        "1": "cf5b001d661d337f6d1b0172ca5943c942514d21f0ff5adc3493e773d113507f",
+        "2": "569e845b6ab94797c2908d2f3c2971d3395e47a69e5343e20211a35febff00bc",
+        "3": "c388635365899535f06d3d73440066f59fed1370b9ba0f6a3c8753365d22744a"
+      },
+      "source_validation_rank_sha256_by_replicate": {
+        "1": "84521fb4526f29139e1cd9309ba898547cb66995577a76260441db6c6f9533b1",
+        "2": "49c098f2116cae0484563ec013334b86c9dd96bbee313f945cc0b85c79aef996",
+        "3": "268bdf2f6e6f6360eced4094ce8467764fb7c99ae379c8afae77c044ec272ce6"
+      },
+      "training_epochs": 50,
+      "unit_id": "fb15k237-transe"
+    },
+    {
+      "candidate_configuration_sha256": "040d629286961759ef993a1fd23d299303dcb4996eab42d269282e02e038d2a8",
+      "candidate_id": "fb15k237-distmult-c04-040d62928696",
+      "dataset": "FB15k-237",
+      "model": "DistMult",
+      "parameters": {
+        "batch_size": 1024,
+        "learning_rate": 0.0002240108993512661,
+        "negatives_per_positive": 64,
+        "regularisation_coefficient": 0.001
+      },
+      "selection_mean_combined_filtered_validation_mrr": 0.2602300964464769,
+      "selection_replicate_validation_mrr": {
+        "1": 0.25981916918296527,
+        "2": 0.258816871248566,
+        "3": 0.26205424890789936
+      },
+      "source_stage_3_report_sha256_by_replicate": {
+        "1": "29bd3d2cdfd007e67db42c568156928524344c07f46cf4875dfe9e038bf93958",
+        "2": "574fbdf6f7e238a1b98020ca5b4f28b752aa90844b69b361a3ebc7edd50bef7a",
+        "3": "eff3f5a076e6e2b7a611835ca9c15705f460a6b827ff1039649868cb5c874ac5"
+      },
+      "source_validation_rank_sha256_by_replicate": {
+        "1": "7c0bd60481694e1bf6e8f6c2042f0891b342bcfddf31c7a269eed1d4736f708d",
+        "2": "7cdc4b2c155e76f070a1188b6034f3353f9636c1a0ab4979b79741b2f5632091",
+        "3": "34419a0465f72461a3e6af885a02ddde57a0004578160aae0f714376803bf90c"
+      },
+      "training_epochs": 90,
+      "unit_id": "fb15k237-distmult"
+    },
+    {
+      "candidate_configuration_sha256": "cbc7bd2fc01626901f4754a0fe5545e339bc28d6df932bf5779939c564c6abbc",
+      "candidate_id": "wn18rr-transe-c11-cbc7bd2fc016",
+      "dataset": "WN18RR",
+      "model": "TransE",
+      "parameters": {
+        "batch_size": 1024,
+        "learning_rate": 0.0026303653918607808,
+        "negatives_per_positive": 1,
+        "regularisation_coefficient": 0.0,
+        "transe_distance_norm": 2
+      },
+      "selection_mean_combined_filtered_validation_mrr": 0.18690340101434635,
+      "selection_replicate_validation_mrr": {
+        "1": 0.18736944000535538,
+        "2": 0.18667790620186756,
+        "3": 0.1866628568358161
+      },
+      "source_stage_3_report_sha256_by_replicate": {
+        "1": "47ebac40467d36f47180130889d4ae74d0c98d75ec569a1552256bc6841e6994",
+        "2": "6441669770019c25e8963c90d825a6f3a505f1352a2e672c788fa8c73fb40831",
+        "3": "f25af883caa302ab02683c927e8cd9888c73806ec8ab8fda22be7f4cb84fd988"
+      },
+      "source_validation_rank_sha256_by_replicate": {
+        "1": "321d88464936630c22a5e31496ea83cc956bddd4e911f2d5b3cfbeda7897c79c",
+        "2": "dc925f947ce66117640b52bab074fe5ccb3b964fba1335c7fc1596a27bc1e208",
+        "3": "99e2cb88804a6baa58260994625d042217d3db5cc33d20b850b4bcf21db9ea98"
+      },
+      "training_epochs": 70,
+      "unit_id": "wn18rr-transe"
+    },
+    {
+      "candidate_configuration_sha256": "98326bc0e618c7cd2ad96c77430ed3a484d5002edb37d061120fd6cfb0b09294",
+      "candidate_id": "wn18rr-distmult-c08-98326bc0e618",
+      "dataset": "WN18RR",
+      "model": "DistMult",
+      "parameters": {
+        "batch_size": 512,
+        "learning_rate": 0.0006736353063100325,
+        "negatives_per_positive": 64,
+        "regularisation_coefficient": 0.0
+      },
+      "selection_mean_combined_filtered_validation_mrr": 0.4067487695601873,
+      "selection_replicate_validation_mrr": {
+        "1": 0.40920066656592563,
+        "2": 0.4061518267095671,
+        "3": 0.4048938154050691
+      },
+      "source_stage_3_report_sha256_by_replicate": {
+        "1": "b9895a2d0e8086c2b7a3de310ad0910693b32c8fae82d30fb7fe0804dfbc481a",
+        "2": "babaf3adb1d6dadef91d19e20a2855ff088b6044752753669ec0561e30b6b5c4",
+        "3": "69f729262db80a736c906cc047f9ecbe1b7c5357cac66e836ad80a88a766974b"
+      },
+      "source_validation_rank_sha256_by_replicate": {
+        "1": "5cc6ad03cd1babf886639208dc3b27fe581cdfc587c79c77ed3c8137243a9325",
+        "2": "927ed70bf2c31b086a72726e31ea1751cbe0db6bca08a6b45c7512c1161ca4ba",
+        "3": "dc98d5e099b5b52f4c0936fa0153b8bff732075692dd13537caabe7629ce015d"
+      },
+      "training_epochs": 100,
+      "unit_id": "wn18rr-distmult"
+    },
+    {
+      "candidate_configuration_sha256": "a0a9e0e959c30b1e1505ea46ba3abe23db04cae74a6aecc4dbb6abe37b5ea0fd",
+      "candidate_id": "codexm-transe-c11-a0a9e0e959c3",
+      "dataset": "CoDEx-M",
+      "model": "TransE",
+      "parameters": {
+        "batch_size": 1024,
+        "learning_rate": 0.00010204664170299752,
+        "negatives_per_positive": 64,
+        "regularisation_coefficient": 0.0001,
+        "transe_distance_norm": 2
+      },
+      "selection_mean_combined_filtered_validation_mrr": 0.18223875329321848,
+      "selection_replicate_validation_mrr": {
+        "1": 0.18192741254476913,
+        "2": 0.18238308643469614,
+        "3": 0.1824057609001902
+      },
+      "source_stage_3_report_sha256_by_replicate": {
+        "1": "01a87820d4f209e31e9105be273aa63e2009bf32e310d6138ab56dbd00b55f6e",
+        "2": "7a7dae27188972e9a27c7292795b44d1a0754248206ca53d3b696f4677e58e64",
+        "3": "6946ef0db46a3d81ddede8c4348585d62978b5eec99c0dcf0d6d26287aac94b1"
+      },
+      "source_validation_rank_sha256_by_replicate": {
+        "1": "cc9158d0ae5ef86683c39797dddc526b43e748fe1dd07d82ccbd5e510f14c572",
+        "2": "175e517eba00151a9faa2a9a86f7c9154188af6f29c32197d1198d4b9cc7918e",
+        "3": "a873c5cb19a84e51d5d4228c72353c53b7d68ba3332899578ce41308c1504195"
+      },
+      "training_epochs": 200,
+      "unit_id": "codexm-transe"
+    },
+    {
+      "candidate_configuration_sha256": "c84667d7750ad176c22bd99fa55174c299cfc202bd08f1ea93b21d9af7c3f55c",
+      "candidate_id": "codexm-distmult-c11-c84667d7750a",
+      "dataset": "CoDEx-M",
+      "model": "DistMult",
+      "parameters": {
+        "batch_size": 512,
+        "learning_rate": 0.000620154012927797,
+        "negatives_per_positive": 64,
+        "regularisation_coefficient": 0.0
+      },
+      "selection_mean_combined_filtered_validation_mrr": 0.24467492288869394,
+      "selection_replicate_validation_mrr": {
+        "1": 0.24391097082092414,
+        "2": 0.24577048459200362,
+        "3": 0.24434331325315406
+      },
+      "source_stage_3_report_sha256_by_replicate": {
+        "1": "9d820a077c398c02f04dda01b8b4388e93dbd5806ced87d92ea409cb761a3e52",
+        "2": "c29b91fe1700566eb200999033ca0805905d4eadec6160573911cc173a37eb04",
+        "3": "bd4fcbc97ce9379a43032c3c6edf83e60ca643c3bcfd809c2a8bd53b818373c2"
+      },
+      "source_validation_rank_sha256_by_replicate": {
+        "1": "eb3e00cca1d1f2125e5dc6efcc2b1db0876f0e9d646a9b1b102812200539152d",
+        "2": "f1fd0463ecec162ba2656951c8ef94ec40fe910793ef9d4aea69e1273057c898",
+        "3": "74ea117bb1e32dd710e6eee4ac653a41fb894e99098901eb69b99b8f38b62404"
+      },
+      "training_epochs": 10,
+      "unit_id": "codexm-distmult"
+    }
+  ]
+}
